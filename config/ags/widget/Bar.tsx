@@ -91,15 +91,10 @@ function Media() {
                 (cover) => `background-image: url('${cover}');`
               )}
             />
-            {/* <label
-              label={bind(ps[0], "metadata").as(
-                () => `${ps[0].title} - ${ps[0].artist}`
-              )}
-            /> */}
             <label
               label={bind(ps[0], "metadata").as(() => {
                 const text = `${ps[0].title} - ${ps[0].artist}`;
-                return text.length > 30 ? text.slice(0, 30) + "…" : text;
+                return text.length > 20 ? text.slice(0, 20) + "…" : text;
               })}
             />
           </box>

@@ -54,7 +54,6 @@ window.Bar {
             background-color: $bg;
             padding: 0 .5em;
             border-radius: $radius;
-            margin-right: 8px;
             border: .2rem solid rgba(51, 204, 255, 0.93);
             box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.5);
 
@@ -63,11 +62,6 @@ window.Bar {
                     padding: 4px 8px;
                     background-color: transparent;
                 }
-
-                // button:hover,
-                // button:active {
-                //     color: $bg;
-                // }
 
             }
 
@@ -95,7 +89,7 @@ window.Bar {
             background-color: $bg;
             padding: 0 1em;
             border-radius: $radius;
-            margin: 0 1em;
+            margin-right: 1em;
             border: .2rem solid rgba(0, 255, 153, 0.93);
             box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.7);
         }
