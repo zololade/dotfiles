@@ -91,10 +91,16 @@ function Media() {
                 (cover) => `background-image: url('${cover}');`
               )}
             />
-            <label
+            {/* <label
               label={bind(ps[0], "metadata").as(
                 () => `${ps[0].title} - ${ps[0].artist}`
               )}
+            /> */}
+            <label
+              label={bind(ps[0], "metadata").as(() => {
+                const text = `${ps[0].title} - ${ps[0].artist}`;
+                return text.length > 30 ? text.slice(0, 30) + "…" : text;
+              })}
             />
           </box>
         ) : (
@@ -135,8 +141,16 @@ function FocusedClient() {
 
   return (
     <box className="Focused" visible={focused.as(Boolean)}>
-      {focused.as(
-        (client) => client && <label label={bind(client, "class").as(String)} />
+      {focused.as((client) =>
+        client ? (
+          <label
+            label={bind(client, "class").as((str) =>
+              str && str.length > 20 ? str.slice(0, 20) + "…" : str ?? "Unknown"
+            )}
+          />
+        ) : (
+          <label label="No Window" />
+        )
       )}
     </box>
   );
