@@ -1,0 +1,21 @@
+;; Time vars
+(defpoll HOUR :interval "5s" `date +"%I"`)
+(defpoll MIN  :interval "5s" `date +"%M"`)
+(defpoll MER  :interval "5s" `date +"%p"`)
+(defpoll DAY  :interval "5s" `date +"%A"`)
+
+(defwindow clock
+  :monitor 0
+  :stacking "bg"
+  :windowtype "normal"
+  :wm-ignore true
+  :focusable false
+  :geometry (geometry :x "3%"
+                      ;;:width "25%" 
+                      ;;:height "20%"
+                      :anchor "center right")
+  (box
+  :orientation "v" 
+  :spacing -15  
+  (label :text "${HOUR}:${MIN} ${MER}" :class "time_main")
+  (label :text DAY :class "time_day")))

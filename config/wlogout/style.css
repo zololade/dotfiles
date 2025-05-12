@@ -1,0 +1,51 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: rgba(30, 30, 46, 0.50);
+}
+
+button {
+	border-radius: 0;
+	border-color: #f5e0dc;
+	text-decoration-color: #cdd6f4;
+	color: #cdd6f4;
+	background-color: rgba(24, 24, 37, 0.8);
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+	/* 20% Overlay 2, 80% mantle */
+	background-color: rgba(48, 50, 66, 0.80);
+	outline-style: none;
+}
+
+#lock {
+    background-image: url("/home/ololade/.config/wlogout/mocha/rosewater/lock.svg");
+}
+
+#logout {
+    background-image: url("/home/ololade/.config/wlogout/mocha/rosewater/logout.svg");
+}
+
+#suspend {
+    background-image: url("/home/ololade/.config/wlogout/mocha/rosewater/suspend.svg");
+}
+
+#hibernate {
+    background-image: url("/home/ololade/.config/wlogout/mocha/rosewater/hibernate.svg");
+}
+
+#shutdown {
+    background-image: url("/home/ololade/.config/wlogout/mocha/rosewater/shutdown.svg");
+}
+
+#reboot {
+    background-image: url("/home/ololade/.config/wlogout/mocha/rosewater/reboot.svg");
+}

@@ -1,0 +1,130 @@
+#!/bin/bash
+
+set -euo pipefail
+
+# === CONFIGURATION ===
+API_KEY=""
+WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
+CATEGORY="100"             # 010: Anime, 100: General, 001: People
+PURITY="100"               # 100: SFW, 110: SFW+Suggestive
+SORTING="random"
+MIN_RESOLUTION="2560x1440"
+COLORS="000000"
+MAX_WALLPAPERS=8
+RETRY_COUNT=3
+LAST_RUN_FILE="$HOME/.last_wallpaper_run"
+HISTORY_FILE="$HOME/.wallpaper_history.log"
+QUERY1="landscape"
+QUERY2="minimalism"
+QUERY3="fantasy art"
+MAX_RESULTS=8
+SEED=$(date '+%Y-%m-%d')
+
+# === UTILITIES ===
+log() {
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1"
+}
+
+require() {
+    command -v "$1" >/dev/null 2>&1 || { log "Missing dependency: $1"; exit 1; }
+}
+
+# === CHECK DEPENDENCIES ===
+require curl
+require jq
+require identify
+require swww
+
+mkdir -p "$WALLPAPER_DIR"
+touch "$HISTORY_FILE"
+
+# === PREVENT MULTIPLE DAILY RUNS ===
+if [ -f "$LAST_RUN_FILE" ] && [ "$(cat "$LAST_RUN_FILE")" == "$SEED" ]; then
+    log "Script already ran today."
+    exit 0
+fi
+
+# === INTERNET CONNECTIVITY CHECK ===
+if ! ping -q -c 1 -W 2 8.8.8.8 &>/dev/null; then
+    log "No internet connection."
+    exit 1
+fi
+
+# === FETCH AND SET WALLPAPER ===
+download_wallpaper() {
+    local page=1
+    local attempt=1
+
+    log "Fetching wallpapers from Wallhaven..."
+
+    RESPONSE=$(curl -s -G "https://wallhaven.cc/api/v1/search" \
+        -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" \
+        -H "Accept: application/json" \
+        --data-urlencode "apikey=$API_KEY" \
+        --data-urlencode "purity=$PURITY" \
+        --data-urlencode "categories=$CATEGORY" \
+        --data-urlencode "colors=$COLORS" \
+        --data-urlencode "atleast=$MIN_RESOLUTION" \
+        --data-urlencode "sorting=$SORTING" \
+        --data-urlencode "seed=$SEED" \
+        --data-urlencode "page=$page" \
+	--data-urlencode "q=$QUERY1" \
+	--data-urlencode "q=$QUERY2" \
+        --data-urlencode "q=$QUERY3")
+
+    # === Validate JSON response ===
+    if ! echo "$RESPONSE" | jq empty 2>/dev/null; then
+        log "Invalid response from API – possibly blocked or bad API key."
+        exit 1
+    fi
+
+    IMAGE_URLS=($(echo "$RESPONSE" | jq -r '.data[].path'))
+
+    for IMAGE_URL in "${IMAGE_URLS[@]:0:$MAX_RESULTS}"; do
+        if grep -q "$IMAGE_URL" "$HISTORY_FILE"; then
+            log "Already used: $IMAGE_URL"
+            continue
+        fi
+
+        FILE_NAME="$WALLPAPER_DIR/wallpaper_$(date +%s).${IMAGE_URL##*.}"
+        log "Downloading: $IMAGE_URL"
+        curl -s -o "$FILE_NAME" "$IMAGE_URL"
+
+        if [ -f "$FILE_NAME" ] && identify "$FILE_NAME" &>/dev/null; then
+            swww img "$FILE_NAME" --transition-type any --transition-duration 2
+            echo "$IMAGE_URL" >> "$HISTORY_FILE"
+            echo "$FILE_NAME" > "$HOME/.current_wallpaper"
+            [ -x "$HOME/.config/hypr/scripts/image-grab" ] && "$HOME/.config/hypr/scripts/image-grab"
+
+            log "Wallpaper applied successfully!"
+            manage_wallpapers
+            echo "$SEED" > "$LAST_RUN_FILE"
+            return
+        else
+            log "Invalid image, skipping."
+            rm -f "$FILE_NAME"
+        fi
+
+        ((attempt++))
+        if [ $attempt -gt $RETRY_COUNT ]; then
+            log "Max retry limit reached."
+            break
+        fi
+    done
+
+    log "No suitable wallpaper found after $RETRY_COUNT attempts."
+}
+
+# === DELETE OLD WALLPAPERS IF OVER LIMIT ===
+manage_wallpapers() {
+    local total
+    total=$(ls -1 "$WALLPAPER_DIR" | wc -l)
+    if [ "$total" -gt "$MAX_WALLPAPERS" ]; then
+        log "Cleaning up old wallpapers..."
+        ls -1t "$WALLPAPER_DIR" | tail -n +$(($MAX_WALLPAPERS + 1)) | xargs -d '\n' -P 4 -I {} rm -f "$WALLPAPER_DIR/{}"
+        log "Cleanup complete."
+    fi
+}
+
+# === EXECUTE ===
+download_wallpaper

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=mousepad
+MimeType=text/plain;
+Name=mousepad
+NoDisplay=true
+Type=Application

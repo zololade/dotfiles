@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cp "$(cat ~/.current_wallpaper)" ~/.config/hypr/img
+

@@ -1,0 +1,159 @@
+@use "sass:color";
+
+
+$bg: rgb(36, 40, 59);
+$fg: #f1f1f1;
+$accent: #378DF7;
+$radius: 7px;
+
+window.Bar {
+    color: #c0caf5;
+    background-color: transparent;
+    font-size: .95em;
+    margin-top: 5em;
+
+    .wrapper {
+        margin: .5rem 1rem .5rem 1rem;
+
+        label {
+            margin: 0 8px;
+        }
+
+        .Workspaces {
+            background-color: $bg;
+            padding: 0 .5em;
+            border-radius: $radius;
+            border: .2rem solid rgba(51, 204, 255, 0.93);
+            box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.5);
+
+
+            button {
+                all: unset;
+                background-color: transparent;
+
+                &:hover label {
+                    color: $accent;
+                }
+            }
+
+            label {
+                transition: 200ms;
+                padding: 0 8px;
+                margin: 2px;
+
+                border-bottom: 1pt solid transparent;
+            }
+
+            .focused label {
+                color: $accent;
+                border-color: $accent;
+            }
+        }
+
+        .tray-wifi {
+            background-color: $bg;
+            padding: 0 .5em;
+            border-radius: $radius;
+            margin-right: 8px;
+            border: .2rem solid rgba(51, 204, 255, 0.93);
+            box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.5);
+
+            .SysTray {
+                button {
+                    padding: 4px 8px;
+                    background-color: transparent;
+                }
+
+                // button:hover,
+                // button:active {
+                //     color: $bg;
+                // }
+
+            }
+
+            .Wifi-pos {
+                padding: 4px 8px;
+            }
+        }
+
+
+        .Focused {
+            background-color: $bg;
+            margin-left: 1rem;
+            border-radius: $radius;
+            border: .2rem solid rgba(0, 255, 153, 0.93);
+            box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.7);
+        }
+
+        .FocusedClient {
+            color: $accent;
+
+
+        }
+
+        .mediaPos {
+            background-color: $bg;
+            padding: 0 1em;
+            border-radius: $radius;
+            margin: 0 1em;
+            border: .2rem solid rgba(0, 255, 153, 0.93);
+            box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.7);
+        }
+
+        .Media .Cover {
+            min-height: 1.2em;
+            min-width: 1.2em;
+            border-radius: $radius;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .Battery label {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .AudioSlider {
+            background-color: $bg;
+            padding: 0 1em;
+            border-radius: $radius;
+            border: .2rem solid rgba(51, 204, 255, 0.93);
+            box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.5);
+
+            * {
+                all: unset;
+            }
+
+            icon {
+                margin-right: .6em;
+            }
+
+            & {
+                margin: 0 1em;
+            }
+
+            trough {
+                background-color: color.adjust($fg, $alpha: -0.8);
+                border-radius: $radius;
+            }
+
+            highlight {
+                background-color: $accent;
+                min-height: .8em;
+                border-radius: $radius;
+            }
+
+
+        }
+
+        .batTime {
+            background-color: $bg;
+            padding: 0 1em;
+            border-radius: $radius;
+            border: .2rem solid rgba(0, 255, 153, 0.93);
+            box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.7);
+        }
+
+
+    }
+}
