@@ -1,0 +1,23 @@
+#!/bin/bash
+
+outfile="my_packages.txt"
+echo "Exporting installed packages to $outfile"
+echo "Generated on $(date)" > "$outfile"
+echo "======================" >> "$outfile"
+
+echo -e "\n[DNF Packages]" >> "$outfile"
+dnf repoquery --userinstalled >> "$outfile"
+
+echo -e "\n[Flatpak Packages]" >> "$outfile"
+flatpak list --app --columns=application >> "$outfile"
+
+echo -e "\n[Nix Packages]" >> "$outfile"
+nix --extra-experimental-features 'nix-command flakes' profile list >> "$outfile"
+
+echo -e "\n[NPM Global Packages]" >> "$outfile"
+npm list -g --depth=0 | grep '──' | awk '{print $2}' | cut -d@ -f1 >> "$outfile"
+
+echo -e "\n[Cargo Crates]" >> "$outfile"
+cargo install --list | grep '^[a-zA-Z0-9_-]* v' | awk '{print $1}' >> "$outfile"
+
+echo -e "\n[Done] Backup complete!" >> "$outfile"
