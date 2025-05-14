@@ -12,18 +12,37 @@ function SysTray() {
 
   return (
     <box className="SysTray">
-      {bind(tray, "items").as((items) =>
-        items.map((item) => (
-          <menubutton
-            tooltipMarkup={bind(item, "tooltipMarkup")}
-            usePopover={false}
-            actionGroup={bind(item, "actionGroup").as((ag) => ["dbusmenu", ag])}
-            menuModel={bind(item, "menuModel")}
-          >
-            <icon gicon={bind(item, "gicon")} />
-          </menubutton>
-        ))
-      )}
+      {bind(tray, "items").as((items) => {
+        if (items.length <= 6) {
+          return items.map((item) => (
+            <menubutton
+              tooltipMarkup={bind(item, "tooltipMarkup")}
+              usePopover={false}
+              actionGroup={bind(item, "actionGroup").as((ag) => [
+                "dbusmenu",
+                ag,
+              ])}
+              menuModel={bind(item, "menuModel")}
+            >
+              <icon gicon={bind(item, "gicon")} />
+            </menubutton>
+          ));
+        } else {
+          return items.slice(0, 6).map((item) => (
+            <menubutton
+              tooltipMarkup={bind(item, "tooltipMarkup")}
+              usePopover={false}
+              actionGroup={bind(item, "actionGroup").as((ag) => [
+                "dbusmenu",
+                ag,
+              ])}
+              menuModel={bind(item, "menuModel")}
+            >
+              <icon gicon={bind(item, "gicon")} />
+            </menubutton>
+          ));
+        }
+      })}
     </box>
   );
 }
@@ -84,22 +103,32 @@ function Media() {
       {bind(mpris, "players").as((ps) =>
         ps[0] ? (
           <box>
-            <box
-              className="Cover"
-              valign={Gtk.Align.CENTER}
-              css={bind(ps[0], "coverArt").as(
-                (cover) => `background-image: url('${cover}');`
-              )}
-            />
+            {bind(ps[0], "coverArt").as((cover) =>
+              cover ? (
+                <box
+                  className="Cover"
+                  valign={Gtk.Align.CENTER}
+                  css={`
+                    background-image: url("${cover}");
+                  `}
+                />
+              ) : (
+                <></>
+              )
+            )}
             <label
               label={bind(ps[0], "metadata").as(() => {
-                const text = `${ps[0].title} - ${ps[0].artist}`;
-                return text.length > 20 ? text.slice(0, 20) + "…" : text;
+                if (ps[0].title || ps[0].artist) {
+                  const text = `${ps[0].title} - ${ps[0].artist}`;
+                  return text.length > 20 ? text.slice(0, 20) + "…" : text;
+                } else {
+                  return "Nothing Playing";
+                }
               })}
             />
           </box>
         ) : (
-          <label label="Nothing Playing" />
+          <label label="Media Offline" />
         )
       )}
     </box>
@@ -151,7 +180,7 @@ function FocusedClient() {
   );
 }
 
-function Time({ format = "%H:%M - %A %e." }) {
+function Time({ format = "%H:%M - %a %e" }) {
   const time = Variable<string>("").poll(
     1000,
     () => GLib.DateTime.new_now_local().format(format)!
