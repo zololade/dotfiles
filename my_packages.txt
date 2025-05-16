@@ -1,4 +1,4 @@
-Generated on Wed May 14 07:57:20 AM WAT 2025
+Generated on Fri May 16 03:19:07 AM WAT 2025
 ======================
 
 [DNF Packages]
@@ -14,7 +14,7 @@ NetworkManager-ppp-1:1.52.0-1.fc42.x86_64
 NetworkManager-pptp-gnome-1:1.2.12-9.fc42.x86_64
 NetworkManager-sstp-gnome-1:1.3.1-11.fc42.x86_64
 NetworkManager-tui-1:1.52.0-1.fc42.x86_64
-NetworkManager-vpnc-gnome-1:1.4.0-2.fc42.x86_64
+NetworkManager-vpnc-gnome-1:1.4.0-3.fc42.x86_64
 NetworkManager-wifi-1:1.52.0-1.fc42.x86_64
 NetworkManager-wwan-1:1.52.0-1.fc42.x86_64
 PackageKit-gstreamer-plugin-0:1.2.8-9.fc42.x86_64
@@ -27,13 +27,13 @@ alacritty-0:0.15.1-1.fc42.x86_64
 alsa-sof-firmware-0:2025.01.1-1.fc42.noarch
 alsa-ucm-0:1.2.14-2.fc42.noarch
 alsa-utils-0:1.2.14-1.fc42.x86_64
-amd-gpu-firmware-0:20250410-1.fc42.noarch
-amd-ucode-firmware-0:20250410-1.fc42.noarch
+amd-gpu-firmware-0:20250509-1.fc42.noarch
+amd-ucode-firmware-0:20250509-1.fc42.noarch
 anaconda-0:42.27.12-1.fc42.x86_64
 anaconda-install-env-deps-0:42.27.12-1.fc42.x86_64
 anaconda-live-0:42.27.12-1.fc42.noarch
 at-0:3.2.5-14.fc42.x86_64
-atheros-firmware-0:20250410-1.fc42.noarch
+atheros-firmware-0:20250509-1.fc42.noarch
 attr-0:2.5.2-5.fc42.x86_64
 audit-0:4.0.3-2.fc42.x86_64
 authselect-0:1.5.1-1.fc42.x86_64
@@ -49,7 +49,7 @@ bind-utils-32:9.18.36-1.fc42.x86_64
 blueman-1:2.4.4-2.fc42.x86_64
 bluez-cups-0:5.81-2.fc42.x86_64
 bolt-0:0.9.8-4.fc42.x86_64
-brcmfmac-firmware-0:20250410-1.fc42.noarch
+brcmfmac-firmware-0:20250509-1.fc42.noarch
 breeze-gtk-0:6.3.5-1.fc42.noarch
 btrfs-assistant-0:2.1.1-3.fc42.x86_64
 btrfs-progs-0:6.14-1.fc42.x86_64
@@ -57,12 +57,12 @@ bzip2-0:1.0.8-20.fc42.x86_64
 cabextract-0:1.11-7.fc42.x86_64
 chrony-0:4.6.1-2.fc42.x86_64
 cifs-utils-0:7.2-1.fc42.x86_64
-cirrus-audio-firmware-0:20250410-1.fc42.noarch
+cirrus-audio-firmware-0:20250509-1.fc42.noarch
 clamav-0:1.4.2-1.fc42.x86_64
 clamav-freshclam-0:1.4.2-1.fc42.x86_64
 clamd-0:1.4.2-1.fc42.x86_64
 clamtk-0:6.18-3.fc42.noarch
-code-0:1.100.0-1746623202.el8.x86_64
+code-0:1.100.2-1747260629.el8.x86_64
 colord-0:1.4.7-6.fc42.x86_64
 compsize-0:1.5^git20250123.d79eacf-12.fc42.x86_64
 containerd.io-0:1.7.27-3.1.fc42.x86_64
@@ -71,7 +71,7 @@ cpio-0:2.15-4.fc42.x86_64
 crontabs-0:1.11^20190603git9e74f2d-5.fc42.noarch
 cryptsetup-0:2.7.5-2.fc42.x86_64
 cups-1:2.4.12-2.fc42.x86_64
-cups-browsed-1:2.1.1-3.fc42.x86_64
+cups-browsed-1:2.1.1-4.fc42.x86_64
 cups-filters-1:2.0.1-3.fc42.x86_64
 cups-pk-helper-0:0.2.7-9.fc42.x86_64
 curl-0:8.11.1-4.fc42.x86_64
@@ -118,12 +118,12 @@ file-0:5.46-1.fc42.x86_64
 filesystem-0:3.18-42.fc42.x86_64
 firewalld-0:2.3.0-5.fc42.noarch
 fish-0:4.0.1-2.fc42.x86_64
-flatpak-0:1.16.0-2.fc42.x86_64
+flatpak-0:1.16.1-1.fc42.x86_64
 fpaste-0:0.5.0.0-2.fc42.noarch
 fprintd-pam-0:1.94.5-1.fc42.x86_64
 fuzzel-0:1.11.1-3.fc42.x86_64
 fwupd-0:2.0.9-1.fc42.x86_64
-fzf-0:0.61.3-1.fc42.x86_64
+fzf-0:0.62.0-1.fc42.x86_64
 gammastep-0:2.0.11-1.fc42.x86_64
 gfs2-utils-0:3.5.1-7.fc42.x86_64
 ghostscript-0:10.05.0-1.fc42.x86_64
@@ -137,7 +137,7 @@ gnome-keyring-pam-0:48.0-1.fc42.x86_64
 gnome-themes-extra-0:3.28-22.fc42.x86_64
 gnupg2-0:2.4.7-2.fc42.x86_64
 gobject-introspection-devel-0:1.84.0-1.fc42.x86_64
-google-chrome-stable-0:136.0.7103.92-1.x86_64
+google-chrome-stable-0:136.0.7103.113-1.x86_64
 google-droid-sans-fonts-0:20200215-22.fc42.noarch
 grim-0:1.4.1-5.fc42.x86_64
 grub2-efi-ia32-1:2.12-28.fc42.x86_64
@@ -180,39 +180,41 @@ hyprsunset-0:0.2.0-3.fc42.x86_64
 hyprsysteminfo-0:0.1.3-7.fc42.x86_64
 hyprwayland-scanner-devel-0:0.4.4-1.fc42.x86_64
 imv-0:4.5.0-5.fc42.x86_64
-intel-audio-firmware-0:20250410-1.fc42.noarch
-intel-gpu-firmware-0:20250410-1.fc42.noarch
-intel-vsc-firmware-0:20250410-1.fc42.noarch
+intel-audio-firmware-0:20250509-1.fc42.noarch
+intel-gpu-firmware-0:20250509-1.fc42.noarch
+intel-vsc-firmware-0:20250509-1.fc42.noarch
 iproute-0:6.12.0-3.fc42.x86_64
 iptables-nft-0:1.8.11-7.fc42.x86_64
 iptstate-0:2.2.7-8.fc42.x86_64
 iputils-0:20240905-3.fc42.x86_64
 irqbalance-2:1.9.4-6.fc42.x86_64
 iscsi-initiator-utils-0:6.2.1.11-0.git4b3e853.fc42.x86_64
-iwlegacy-firmware-0:20250410-1.fc42.noarch
-iwlwifi-dvm-firmware-0:20250410-1.fc42.noarch
-iwlwifi-mvm-firmware-0:20250410-1.fc42.noarch
+iwlegacy-firmware-0:20250509-1.fc42.noarch
+iwlwifi-dvm-firmware-0:20250509-1.fc42.noarch
+iwlwifi-mvm-firmware-0:20250509-1.fc42.noarch
 kanshi-0:1.7.0-3.fc42.x86_64
 kbd-0:2.7.1-3.fc42.x86_64
 kbd-legacy-0:2.7.1-3.fc42.noarch
 kernel-0:6.14.0-63.fc42.x86_64
 kernel-0:6.14.5-300.fc42.x86_64
+kernel-0:6.14.6-300.fc42.x86_64
 kernel-modules-0:6.14.0-63.fc42.x86_64
 kernel-modules-0:6.14.5-300.fc42.x86_64
+kernel-modules-0:6.14.6-300.fc42.x86_64
 kernel-modules-extra-0:6.14.0-63.fc42.x86_64
 kernel-modules-extra-0:6.14.5-300.fc42.x86_64
+kernel-modules-extra-0:6.14.6-300.fc42.x86_64
 kexec-tools-0:2.0.31-1.fc42.x86_64
 kvantum-0:1.1.4-1.fc42.x86_64
 langpacks-en-0:4.2-4.fc42.noarch
 less-0:668-2.fc42.x86_64
-libertas-firmware-0:20250410-1.fc42.noarch
+libertas-firmware-0:20250509-1.fc42.noarch
 libglvnd-gles-1:1.7.0-7.fc42.x86_64
 libgtop2-0:2.41.3-3.fc42.x86_64
 libreoffice-1:25.2.3.2-1.fc42.x86_64
 libva-intel-media-driver-0:25.1.4-1.fc42.x86_64
 livesys-scripts-0:0.8.0-1.fc42.noarch
 logrotate-0:3.22.0-3.fc42.x86_64
-lpf-spotify-client-0:1.2.60.564-1.fc42.x86_64
 lrzsz-0:0.12.20-74.fc42.x86_64
 lsof-0:4.98.0-7.fc42.x86_64
 lvm2-0:2.03.30-3.fc42.x86_64
@@ -232,7 +234,7 @@ minicom-0:2.9-4.fc42.x86_64
 mousepad-0:0.6.5-1.fc42.x86_64
 mpage-0:2.5.7-22.fc42.x86_64
 msttcore-fonts-installer-0:2.6-1.noarch
-mt7xxx-firmware-0:20250410-1.fc42.noarch
+mt7xxx-firmware-0:20250509-1.fc42.noarch
 mtr-2:0.95-12.fc42.x86_64
 ncurses-0:6.5-5.20250125.fc42.x86_64
 net-tools-0:2.0-0.73.20160912git.fc42.x86_64
@@ -243,11 +245,11 @@ nodejs-1:22.15.0-2.fc42.x86_64
 nss-mdns-0:0.15.1-25.fc42.x86_64
 ntfs-3g-2:2022.10.3-8.fc42.x86_64
 ntfsprogs-2:2022.10.3-8.fc42.x86_64
-nvidia-gpu-firmware-0:20250410-1.fc42.noarch
+nvidia-gpu-firmware-0:20250509-1.fc42.noarch
 nvme-cli-0:2.13-1.fc42.x86_64
 nwg-look-0:1.0.5-1.fc42.x86_64
 nwg-wrapper-0:0.1.3-10.fc42.noarch
-nxpwireless-firmware-0:20250410-1.fc42.noarch
+nxpwireless-firmware-0:20250509-1.fc42.noarch
 okular-0:25.04.0-2.fc42.x86_64
 open-sans-fonts-0:1.10-23.fc42.noarch
 open-vm-tools-desktop-0:12.4.0-4.fc42.x86_64
@@ -289,7 +291,7 @@ qt6ct-0:0.9-13.fc42.x86_64
 quota-1:4.09-8.fc42.x86_64
 ranger-0:1.9.4-3.fc42.noarch
 realmd-0:0.17.1-15.fc42.x86_64
-realtek-firmware-0:20250410-1.fc42.noarch
+realtek-firmware-0:20250509-1.fc42.noarch
 rit-rachana-fonts-0:1.5.2-3.fc42.noarch
 rootfiles-0:8.1-38.fc42.noarch
 rpm-0:4.20.1-1.fc42.x86_64
@@ -299,7 +301,7 @@ rsync-0:3.4.1-3.fc42.x86_64
 rsyslog-0:8.2412.0-3.fc42.x86_64
 samba-client-2:4.22.1-1.fc42.x86_64
 sddm-0:0.21.0-9.fc42.x86_64
-selinux-policy-targeted-0:41.39-1.fc42.noarch
+selinux-policy-targeted-0:41.40-1.fc42.noarch
 setroubleshoot-0:3.3.35-4.fc42.x86_64
 setup-0:2.15.0-13.fc42.noarch
 shadow-utils-2:4.17.4-1.fc42.x86_64
@@ -310,7 +312,6 @@ smartmontools-1:7.5-1.fc42.x86_64
 sos-0:4.8.2-2.fc42.noarch
 spice-vdagent-0:0.22.1-8.fc42.x86_64
 spice-webdavd-0:3.0-11.fc42.x86_64
-spotify-client-0:1.2.60.564-1.fc42.x86_64
 sssd-common-0:2.10.2-3.fc42.x86_64
 sssd-kcm-0:2.10.2-3.fc42.x86_64
 sssd-proxy-0:2.10.2-3.fc42.x86_64
@@ -330,7 +331,7 @@ tar-2:1.35-5.fc42.x86_64
 tcpdump-14:4.99.5-3.fc42.x86_64
 teamd-0:1.32-11.fc42.x86_64
 time-0:1.9-26.fc42.x86_64
-tiwilink-firmware-0:20250410-1.fc42.noarch
+tiwilink-firmware-0:20250509-1.fc42.noarch
 tlp-0:1.7.0-3.fc42.noarch
 tlp-rdw-0:1.7.0-3.fc42.noarch
 traceroute-3:2.1.6-2.fc42.x86_64
@@ -379,32 +380,32 @@ zram-generator-defaults-0:1.2.1-2.fc42.noarch
 [Flatpak Packages]
 com.elsevier.MendeleyDesktop
 com.protonvpn.www
+com.spotify.Client
 org.videolan.VLC
 
 [Nix Packages]
 Name:               [1mbtop[0m
 Flake attribute:    legacyPackages.x86_64-linux.btop
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/b3582c75c7f21ce0b429898980eddbbf05c68e55?narHash=sha256-FshoQvr6Aor5SnORVvh/ZdJ1Sa2U4ZrIMwKBX5k2wu0%3D
-Store paths:        /nix/store/2i7bf2dcfsv3h870ssw2dqbb25zh8p1b-btop-1.4.2
+Locked flake URL:   github:NixOS/nixpkgs/eaeed9530c76ce5f1d2d8232e08bec5e26f18ec1?narHash=sha256-ByfPRQuqj%2BnhtVV0koinEpmJw0KLzNbgcgi9EF%2BNVow%3D
+Store paths:        /nix/store/97sdgfl6yyrfqgdxpa04aqb3clzsrnq7-btop-1.4.3
 
 Name:               [1mcliphist[0m
 Flake attribute:    legacyPackages.x86_64-linux.cliphist
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/b3582c75c7f21ce0b429898980eddbbf05c68e55?narHash=sha256-FshoQvr6Aor5SnORVvh/ZdJ1Sa2U4ZrIMwKBX5k2wu0%3D
+Locked flake URL:   github:NixOS/nixpkgs/eaeed9530c76ce5f1d2d8232e08bec5e26f18ec1?narHash=sha256-ByfPRQuqj%2BnhtVV0koinEpmJw0KLzNbgcgi9EF%2BNVow%3D
 Store paths:        /nix/store/z91jvwlazma4jq5h5nsn4zfwz83rd3iz-cliphist-0.6.1
 
 Name:               [1meww[0m
 Flake attribute:    legacyPackages.x86_64-linux.eww
 Original flake URL: flake:nixpkgs
-Locked flake URL:   github:NixOS/nixpkgs/b3582c75c7f21ce0b429898980eddbbf05c68e55?narHash=sha256-FshoQvr6Aor5SnORVvh/ZdJ1Sa2U4ZrIMwKBX5k2wu0%3D
+Locked flake URL:   github:NixOS/nixpkgs/eaeed9530c76ce5f1d2d8232e08bec5e26f18ec1?narHash=sha256-ByfPRQuqj%2BnhtVV0koinEpmJw0KLzNbgcgi9EF%2BNVow%3D
 Store paths:        /nix/store/h727dhhwyhg1a7fx5r0capbbhijzq9fj-eww-0.6.0-unstable-2025-03-25
 
 Name:               [1mnix[0m
 Store paths:        /nix/store/xlg2s2hdngc2gjb6kfwac1g7b4q2pcg5-nix-2.28.3
 
 [NPM Global Packages]
-@ts-for-gir/cli@4.0.0-beta.23
 sass@1.87.0
 
 [Cargo Crates]
