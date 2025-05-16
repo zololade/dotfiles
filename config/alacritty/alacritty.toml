@@ -7,6 +7,6 @@ general.import = [
 ]
 
 [window]
-padding.x = 10
-padding.y = 10
+#padding.x = 10
+#padding.y = 10
 opacity = 0.8

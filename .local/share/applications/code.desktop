@@ -2,7 +2,7 @@
 Name=Visual Studio Code
 Comment=Code Editing. Redefined.
 GenericName=Text Editor
-Exec=/usr/share/code/code --password-store=gnome-libsecret %F
+Exec=/usr/share/code/code --ozone-platform=wayland --enable-features=UseOzonePlatform --gtk-version=3 --password-store=gnome-libsecret %F
 Icon=vscode
 Type=Application
 StartupNotify=false
@@ -24,5 +24,5 @@ Name[ko]=새 빈 창
 Name[ru]=Новое пустое окно
 Name[zh_CN]=新建空窗口
 Name[zh_TW]=開新空視窗
-Exec=/usr/share/code/code --new-window --password-store=gnome-libsecret %F
+Exec=/usr/share/code/code --ozone-platform=wayland --enable-features=UseOzonePlatform --gtk-version=3 --new-window --password-store=gnome-libsecret %F
 Icon=vscode

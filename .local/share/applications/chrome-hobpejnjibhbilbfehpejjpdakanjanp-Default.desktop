@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Snapchat
+Exec=/opt/google/chrome/google-chrome --ozone-platform=wayland --enable-features=UseOzonePlatform --gtk-version=3 --profile-directory=Default --app-id=hobpejnjibhbilbfehpejjpdakanjanp
+Icon=chrome-hobpejnjibhbilbfehpejjpdakanjanp-Default
+StartupWMClass=crx_hobpejnjibhbilbfehpejjpdakanjanp

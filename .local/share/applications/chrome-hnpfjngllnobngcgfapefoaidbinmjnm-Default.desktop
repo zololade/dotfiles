@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=WhatsApp Web
-Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=hnpfjngllnobngcgfapefoaidbinmjnm
+Exec=/opt/google/chrome/google-chrome --ozone-platform=wayland --enable-features=UseOzonePlatform --gtk-version=3 --profile-directory=Default --app-id=hnpfjngllnobngcgfapefoaidbinmjnm
 Icon=chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default
 StartupWMClass=crx_hnpfjngllnobngcgfapefoaidbinmjnm

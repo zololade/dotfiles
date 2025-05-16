@@ -89,7 +89,9 @@ function BatteryLevel() {
     <box className="Battery" visible={bind(bat, "isPresent")}>
       <icon icon={bind(bat, "batteryIconName")} />
       <label
-        label={bind(bat, "percentage").as((p) => `${Math.floor(p * 100)} %`)}
+        label={bind(bat, "percentage").as(
+          (p) => `${Math.floor(p * 100)} %`
+        )}
       />
     </box>
   );
@@ -120,7 +122,9 @@ function Media() {
               label={bind(ps[0], "metadata").as(() => {
                 if (ps[0].title || ps[0].artist) {
                   const text = `${ps[0].title} - ${ps[0].artist}`;
-                  return text.length > 20 ? text.slice(0, 20) + "…" : text;
+                  return text.length > 20
+                    ? text.slice(0, 20) + "…"
+                    : text;
                 } else {
                   return "Nothing Playing";
                 }
@@ -165,12 +169,31 @@ function FocusedClient() {
 
   return (
     <box className="Focused" visible={focused.as(Boolean)}>
+      {/*
+        First we bind the focusedClient itself; whenever it changes,
+        we reify a new subtree. Inside that, we bind client.class so
+        we get notified _again_ as soon as the class string is set.
+      */}
       {focused.as((client) =>
         client ? (
-          <label
-            label={bind(client, "class").as((str) =>
-              str && str.length > 20 ? str.slice(0, 20) + "…" : str ?? "Unknown"
+          <icon
+            className="FocusedIcon"
+            tooltipMarkup={bind(client, "class").as((str) =>
+              str && str.length > 30
+                ? str.slice(0, 30) + "…"
+                : str ?? "Unknown"
             )}
+            size={32}
+            /** Bind directly to client.class */
+            icon={bind(client, "class").as((cls) => {
+              const theme = Gtk.IconTheme.get_default();
+              // sanitize and lowercase
+              const name = (cls ?? "unknown").toLowerCase();
+              // fallback if the theme doesn’t have it
+              return theme.has_icon(name)
+                ? name
+                : "application-x-executable";
+            })}
           />
         ) : (
           <label label="No Window" />
@@ -187,7 +210,11 @@ function Time({ format = "%H:%M - %a %e" }) {
   );
 
   return (
-    <label className="Time" onDestroy={() => time.drop()} label={time()} />
+    <label
+      className="Time"
+      onDestroy={() => time.drop()}
+      label={time()}
+    />
   );
 }
 
