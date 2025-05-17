@@ -6,6 +6,45 @@ import Battery from "gi://AstalBattery";
 import Wp from "gi://AstalWp";
 import Network from "gi://AstalNetwork";
 import Tray from "gi://AstalTray";
+import { interval } from "astal/time";
+import { exec, execAsync } from "astal/process";
+import { Variable } from "astal";
+
+function IdleToggle() {
+  const isIdleInhibited = Variable(true);
+  const scriptPath = `/home/ololade/.config/ags/scripts/toggle_idle`;
+
+  async function checkIdleStatus() {
+    try {
+      await execAsync(["pgrep", "-x", "hypridle"]);
+      isIdleInhibited.set(true); // Process found
+    } catch (e) {
+      const eData = e;
+      isIdleInhibited.set(false); // Process not found or error
+    }
+  }
+
+  const toggleIdle = () => {
+    exec([scriptPath]);
+    isIdleInhibited.set(!isIdleInhibited.get());
+    checkIdleStatus();
+  };
+
+  interval(2000, () => {
+    checkIdleStatus();
+  });
+
+  return (
+    <box className="IdleInhibitorClass">
+      <button
+        label={bind(isIdleInhibited).as((v) =>
+          v ? "😴 Chill Mode" : "🔥 Stay Awake"
+        )}
+        onClicked={toggleIdle}
+      />
+    </box>
+  );
+}
 
 function SysTray() {
   const tray = Tray.get_default();
@@ -242,6 +281,7 @@ export default function Bar(monitor: Gdk.Monitor) {
             <box className="tray-wifi">
               <SysTray />
               <Wifi />
+              <IdleToggle />
             </box>
             <AudioSlider />
             <box className="batTime">
