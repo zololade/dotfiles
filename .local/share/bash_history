@@ -1,0 +1,974 @@
+ld
+ls
+cd mnix=packages
+cd nix-packages
+cd nixos-flakes
+cd nixos-flakes
+cd nixos-flake
+btop
+cd nixos-flakes/host
+cd nixos-flakes/hosts
+cd nixos-flake/hosts
+cd nixos-flake/hosts/ololade/modiles
+cd nixos-flake/hosts/ololade/modules
+cd nixos-flake/hosts/ololade/module
+cd nixos-flake/hosts/ololade/
+cd ~/nixos-flake/hosts/ololade/modules
+nano packages.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cd nixos-flake
+ls
+btop
+btop
+cd nixos-flake
+btop
+cd nixos-flake
+nano flake.nix
+nano home-manager/home.nix
+nano home-manager/home.nix
+cd nixos-flake
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git status
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cd nixos-flake
+nano flake.nix
+btop
+ls -a
+ls
+which ags
+which astal
+ags run
+nix --extra-experimental-features 'nix-command flakes' develop
+ags
+ags
+cd nixos-flakes
+cd nixos-flake
+ags
+nix --extra-experimental-features 'nix-command flakes' develop
+ags
+ags
+
+ags run
+cd nixos-flake
+ags
+nix --extra-experimental-features 'nix-command flakes' develop
+ags run
+cd nixos-flake
+nano flake.nix
+nano flake.nix
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nix --extra-experimental-features 'nix-command flakes' develop
+ags
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "fix"
+cd nixos-flake
+nano flake.nix
+nix --extra-experimental-features 'nix-command flakes' develop
+nano flake.nix
+nano flake.nix
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nix --extra-experimental-features 'nix-command flakes' develop
+ags
+nano flake.nix
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ags 
+nix --extra-experimental-features 'nix-command flakes' develop
+nano flake.nix
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nix --extra-experimental-features 'nix-command flakes' develop
+ags run
+nano hosts/ololade/module/packages.nix
+nano hosts/ololade/modules/packages.nix
+nano home-manager/home.nix
+nano flake.nix
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+nano flake.nix
+nano flake.nix
+nano flake.nix
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nix --extra-experimental-features 'nix-command flakes' develop
+pkill hypridle
+ags run
+nano flake.nix
+cat flake.nix
+nano flake.nix
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+cat flake.nix
+nano flake.nix
+cat flake.nix
+ags status
+git status
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cat flake.nix
+nano flake.nix
+git add .
+git commit -m "fix"
+nano home-manager/home.nix
+git add .
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+git add .
+
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "fix"
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+cat flake.nix
+nano flake.nix
+git add .
+nano flake.nix
+git commit -m "fix"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "fix"
+nano flake.nix
+nano flake.nix
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cat flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#olol
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cat flake.nix
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+nano flake.nix
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+nano flake.nix
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "stable flake"
+nano flake.nix
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "stable flake"
+nano home-manager/home.nix
+git add .
+git commit -m "stable flake"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade --show-trace
+nano home-manager/home.nix
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade --show-trace
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cat home-manager/home.nix
+cat flake.nix
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cat flake.nix
+cat home-manager/home.nix
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cat home-manager/home.nix
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+mv flake.lock flake.lock.bak
+mv flake.lock flake.lock.bak
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "reset"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+mv flake.lock.bak flake.lock
+git add .
+git commit -m "reset"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+git status
+git status
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+nano flake.lock
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.lock
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+cat flake.nix
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "reset"
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cat home-manager/home.nix
+nano flake.nix
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+nano home-manager/home.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cd hosts
+cd ololade
+ranger
+home-manager switch --flake ~/nixos-flake#ololade
+home-manager switch --flake ~/nixos-flake#ololade
+cd ..
+cd ..
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+nano home-manager/home.nix
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "reset"
+nano home-manager/home.nix
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cat home-manager/home.nix
+cat flake.nix
+nix flake show github:aylur/ags
+nix flake show github:aylur/ags --extra-experimental-features 'nix-command flakes'
+cat flake.nix
+nix flake show github:aylur/ags
+nix flake show github:aylur/ags --extra-experimental-features 'nix-command flakes'
+cat flake.nix
+nano home-manager/home.nix
+cat home-manager/home.nix
+ramger
+ranger
+nano home-manager/home.nix
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "reset"
+nix flake show github:aylur/ags --extra-experimental-features 'nix-command flakes'
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+cd nixos-flake
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano flake.nix
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+git add .
+git commit -m "fix"
+nix --extra-experimental-features 'nix-command flakes' develop
+cd nixos-flakes
+cd nixos-flake
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+home-manager news
+home-manager news
+which home-manager
+home-manager --flake ~/nixos-flake#ololade news
+home-manager --flake ~/nixos-flake#ololade news --extra-experimental-feature
+home-manager --flake ~/nixos-flake#ololade news --extra-experimental-features 'nix-command flakes'
+home-manager --flake ~/nixos-flake#ololade news
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+cd nixos-flake
+nix flake show github:aylur/ags --extra-experimental-features 'nix-command flakes'
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ags
+ags run
+cd nixos-flake
+nix flake show github:aylur/ags --extra-experimental-features 'nix-command flakes'
+ranger
+ags run
+find /nix/store -name 'AstalHyprland.typelib'
+cd nixos-flake
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ags run
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ags run
+cat home/home.nix
+cat home-manager/home.nix
+astal
+astal -h
+find $(nix eval --raw nixpkgs.lib.getLib pkgs) -name 'AstalHyprland-1.0.typelib'
+find $(nix eval --raw nixpkgs.lib.getLib pkgs) -name 'AstalHyprland-1.0.typelib'
+find $(nix eval --raw nixpkgs#glib.giTypes) -name 'AstalHyprland-1.0.typelib'
+find $(nix eval --raw nixpkgs#glib.giTypes) -name 'AstalHyprland-1.0.typelib' --extra-experimental-features 'nix-command flakes'
+find --extra-experimental-features 'nix-command flakes' $(nix eval --raw nixpkgs#glib.giTypes) -name 'AstalHyprland-1.0.typelib' 
+find $(nix --extra-experimental-features 'nix-command flakes' eval --raw nixpkgs#glib)/share/gir-1.0 -name 'AstalHyprland-1.0.typelib'
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+nix flake show github:aylur/ags --extra-experimental-features 'nix-command flakes'
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ags run
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ags run
+ags run
+cd nixos-flake
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+find /nix/store -name 'AstalHyprland-1.0.typelib' 2>/dev/null
+ags run
+ranger
+nix flake show github:aylur/ags --extra-experimental-features 'nix-command flakes'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+nix-store -l /nix/store/8skqia42l6pzaqllgl00x8hpw8fjll77-home-manager-path.drv
+nix-store -l /nix/store/8skqia42l6pzaqllgl00x8hpw8fjll77-home-manager-path.drv
+nix-store -l /nix/store/8skqia42l6pzaqllgl00x8hpw8fjll77-home-manager-path.drv
+nix-collect-garbage -d
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+nix-collect-garbage -d
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+nix-collect-garbage -d
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+nix-collect-garbage -d
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+nix-collect-garbage -d
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+nix-collect-garbage -d
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ags run
+ags quit --instance astal
+ags quit --instance js
+ags run
+ags run
+ags run
+ags run
+ranger
+ags quit --instance js
+ranger
+ags run
+ranger
+cd nixos-flake
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+chmod +x /home/ololade/.config/ags/scripts/toggle_idle
+ags quit --instance js
+ags run
+cd nixos-flake
+ranger
+cd nixos-flake
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+bluetoothctl
+ranger
+ranger
+cd nixos-flake
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+home-manager switch -b backup --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+upowerd
+ranger
+cd nixos-flake
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ags quit --instance js
+ags run
+ranger
+cd nixos-flake
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cd nixos-flake
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ranger
+cd nixos-flake
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+blueman-applet
+blueman-manager
+ranger
+cd nixos-flake
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+python3
+ls -l ~/.my_private_envs/coolwall/bin/python
+/home/ololade/.config/coolwall.py
+mkdir /home/ololade/.my_private_envs
+cd /home/ololade/.my_private_envs
+python3 -m venv coolwall
+/home/ololade/.config/coolwall.py
+source /home/ololade/.my_private_envs/coolwall/bin/activate
+pip -i requests
+pip install requests
+pip install subprocess
+deactivate
+/home/ololade/.config/coolwall.py
+chmod +x /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+source /home/ololade/.my_private_envs/coolwall/bin/activate
+/home/ololade/.config/coolwall.py
+python /home/ololade/.config/coolwall.py
+pip install jq
+python /home/ololade/.config/coolwall.py
+python /home/ololade/.config/coolwall.py
+deactivate
+source /home/ololade/.my_private_envs/coolwall/bin/activate
+python /home/ololade/.config/coolwall.py
+pip install jq
+python /home/ololade/.config/coolwall.py
+python pip install jq
+jq --version
+deactivate
+ranger
+cd nixos-flake
+cd 
+cd nixos-flake
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+source /home/ololade/.my_private_envs/coolwall/bin/activate
+python /home/ololade/.config/coolwall.py
+python /home/ololade/.config/coolwall.py
+python /home/ololade/.config/coolwall.py
+cd nixos-flake
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ranger
+cd nixos-flake
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo reboot
+blueman-applet &
+blueman-applet &
+systemctl status bluetooth
+sudo systemctl restart bluetooth
+systemctl --user restart blueman-applet
+ranger
+ranger
+cd nixos-flake
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+tlp status
+systemctl tlp status
+systemctl tlp
+systemctl status tlp
+cd nixos-flake
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ranger
+cd nixos-flake
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ranger
+cd nixos-flake
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ranger
+Hyprland -v
+ranger
+ranger
+cd nixos-flake
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+cd nixos-flake
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+Hyprland
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cd nixos-flake
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+blueman-tray
+blueman-applet
+flatpak install flathub com.protonvpn.www
+flatpak install flathub com.protonvpn.www
+flatpak install flathub com.protonvpn.www
+flatpak install flathub com.elsevier.MendeleyDesktop
+flatpak install flathub org.videolan.VLC
+flatpak install flathub com.spotify.Client
+ranger
+flatpak install flathub com.spotify.Client
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cat /var/log/sddm.log | grep -i theme
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+cat /var/log/sddm.log | grep -i theme
+journalctl -u display-manager.service -b | grep -i sddm
+journalctl -u display-manager.service -b | grep -i sddm
+ranger
+nix path-info /run/current-system/sw | grep sddm-astronaut
+nix --extra-experimental-features "flakes nix-command"path-info /run/current-system/sw | grep sddm-astronaut
+nix --extra-experimental-features "flakes nix-command" path-info /run/current-system/sw | grep sddm-astronaut
+nix --extra-experimental-features "flakes nix-command" path-info /run/current-system/sw | grep sddm-astronaut
+nix --extra-experimental-features "flake nix-command" path-info /run/current-system/sw | grep sddm-astronaut
+nix --extra-experimental-features "flakes nix-command" path-info /run/current-system/sw | grep sddm-astronaut
+nix-store -q --requisites /run/current-system/sw | grep sddm-astronaut
+nix-store -q --tree /run/current-system/sw | grep astronaut
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ls -R /nix/store/lqi4ic5hvkm4qimbqzvsn7535c6hgbhh-sddm-astronaut-1.0-unstable-2025-01-05
+nix-store -q --list /nix/store/lqi4ic5hvkm4qimbqzvsn7535c6hgbhh-sddm-astronaut-1.0-unstable-2025-01-05
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+journalctl -u display-manager.service -b | grep -i "sddm-astronaut-theme"
+ls "${pkgs.sddm-astronaut}/share/sddm/themes"
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ranger
+ldd $(which sddm-greeter-qt6) | grep multimedia
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+journalctl -u display-manager.service -b | grep -Ei 'greeter|astronaut'
+ls -R /nix/store/lqi4ic5hvkm4qimbqzvsn7535c6hgbhh-sddm-astronaut-1.0-unstable-2025-01-05
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+journalctl -u display-manager.service -b | grep -Ei 'greeter|astronaut'
+ranger
+journalctl -u display-manager.service -b | grep -Ei 'greeter|astronaut'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+journalctl -u display-manager.service -b | grep -Ei 'greeter|astronaut'
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ls -R /nix/store/lqi4ic5hvkm4qimbqzvsn7535c6hgbhh-sddm-astronaut-1.0-unstable-2025-01-05
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ranger
+ranger
+ranger
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo systemctl restart display-manager
+ranger
+ranger
+journalctl -u display-manager.service -b | grep -Ei 'greeter|astronaut'
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ranger
+ranger
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ranger
+ls /run/current-system/sw/share/sddm/themes
+cd sddm-astronaut-theme
+cd /run/current-system/sw/share/sddm/themes/sddm-astronaut-theme
+cd
+ls /run/current-system/sw/share/sddm/themes/sddm-astronaut-theme
+ls /run/current-system/sw/share/sddm/themes/sddm-astronaut-theme/Themes
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ranger
+sudo ranger
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nix-prefetch-url --unpack   https://github.com/Keyitdev/sddm-astronaut-theme/archive/bf4d017.tar.gz
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ranger
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ranger
+cd Downloads
+sudo git clone -b master --depth 1 https://github.com/keyitdev/sddm-astronaut-theme.git
+sudo git clone -b master --depth 1 https://github.com/keyitdev/sddm-astronaut-theme.git
+sudo git clone -b master --depth 1 https://github.com/keyitdev/sddm-astronaut-theme.git
+ls /run/current-system/sw/share
+ls /run/current-system/sw/share/sddm/theme/
+ls /run/current-system/sw/share/sddm/theme
+ls /run/current-system/sw/share/sddm/
+ls /run/current-system/sw/share/sddm/themes
+ls /run/current-system/sw/share/sddm/themes/sddm-asrtonaut/theme
+ls /run/current-system/sw/share/sddm/themes/sddm-asrtonaut-theme
+ls /run/current-system/sw/share/sddm/themes/sddm-astronaut-theme
+cat /run/current-system/sw/share/sddm/themes/sddm-astronaut-theme/Main.qml
+cat /run/current-system/sw/share/sddm/themes/sddm-astronaut-theme/Themes/cyberpun.conf
+cat /run/current-system/sw/share/sddm/themes/sddm-astronaut-theme/Themes/cyberpunk.conf
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo systemctl restart display-manager
+ls /run/current-system/sw/share/sddm/themes/
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+journalctl -u display-manager.service -b | grep -Ei 'greeter'
+cat /etc/nixos/configuration.nix | grep -A10 sddm
+ranger
+cat  /home/ololade/nixos-flake/hosts/ololade/modules/services.nix
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo systemctl restart display-manager
+journalctl -u display-manager.service -b | grep -Ei 'greeter'
+ls /nix/store/x6szwni97qprb4ik1dd8a7w2jx46iglc-sddm-wrapped/bin
+ls /nix/store/x6szwni97qprb4ik1dd8a7w2jx46iglc-sddm-wrapped/
+ls /nix/store/x6szwni97qprb4ik1dd8a7w2jx46iglc-sddm-wrapped/share
+ls /nix/store/x6szwni97qprb4ik1dd8a7w2jx46iglc-sddm-wrapped/share/sddm
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo systemctl restart display-manager
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+sudo systemctl restart display-manager
+ranger
+ranger
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+ranger
+ranger
+echo $(HOME)
+echo ($HOME)
+echo "$HOME"
+cat "$HOME.config/ags/scripts/toggle_idle"
+cat "$HOME/.config/ags/scripts/toggle_idle"
+"$HOME/.config/ags/scripts/toggle_idle"
+nano "$HOME/.config/ags/scripts/toggle_idle"
+chmod +x "$HOME/.config/ags/scripts/toggle_idle"
+"$HOME/.config/ags/scripts/toggle_idle"
+ranger
+cat /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+chmod +x /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+chmod +x /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+chmod +x /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+chmod +x /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+chmod +x /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+/usr/bin/env python3
+nano /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+ranger
+nano /home/ololade/.config/coolwall.py
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+/home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+ranger
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+chmod +x /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+nix-shell
+nano /home/ololade/.config/coolwall.py
+nix-shell -i python --packages python311 python311Packages.requests curl jq imagemagick swww
+nix-shell -run python --packages python311 python311Packages.requests curl jq imagemagick swww
+nix-shell --run python --packages python311 python311Packages.requests curl jq imagemagick swww
+nix-shell --experimental-features 'nix-command flakes' --run python --packages python311 python311Packages.requests curl jq imagemagick swww
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+cat /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nix-shell --version
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+cat /home/ololade/.config/coolwall.py
+python0.13
+python3.13
+python313
+python3.1.3
+python3 -v
+nano /home/ololade/.config/coolwall.py
+ranger
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+python3.13
+/home/ololade/.config/coolwall.py
+cat /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+journalctl --user -u app-picom@autostart.service
+ranger
+home-manager switch --flake ~/nixos-flake#ololade --extra-experimental-features 'nix-command flakes'
+sudo nixos-rebuild switch --flake ~/nixos-flake#ololade
+nano /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py
+nano /home/ololade/.config/coolwall.py
+chmod +x /home/ololade/.config/coolwall.py
+/home/ololade/.config/coolwall.py

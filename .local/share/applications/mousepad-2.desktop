@@ -1,6 +1,6 @@
 [Desktop Entry]
 Exec=mousepad
-MimeType=application/json;
+MimeType=application/schema+json;
 Name=mousepad
 NoDisplay=true
 Type=Application

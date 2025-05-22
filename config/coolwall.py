@@ -1,5 +1,7 @@
-#!/home/ololade/.my_private_envs/coolwall/bin/python3.13
-"""cool wallpaper script"""
+#!/usr/bin/env nix-shell
+#!nix-shell --extra-experimental-features "flakes" -i python3 -p python3 python3Packages.requests imagemagick swww curl jq
+
+
 
 import shutil
 import json
