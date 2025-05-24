@@ -29,12 +29,7 @@
   alternate-active-foreground: @blue;
 
 }
-element {
-    padding: 1px ;
-    cursor:  pointer;
-    spacing: 5px ;
-    border:  0;
-}
+
 element normal.normal {
     background-color: transparent;
     text-color:       @normal-foreground;
@@ -84,37 +79,19 @@ element-icon {
     text-color:       inherit;
 }
 window {
-    padding:          5;
     background-color: @background;
-    border:           1;
+    border: 2;
 }
-mainbox {
-    padding: 0;
-    border:  0;
-}
-message {
-    padding:      1px ;
-    border-color: @separatorcolor;
-    border:       2px dash 0px 0px ;
-}
+
+
 textbox {
     text-color: @foreground;
 }
 listview {
-    padding:      2px 0px 0px ;
     scrollbar:    false;
     border-color: @separatorcolor;
-    spacing:      2px ;
-    fixed-height: 0;
-    border:       2px dash 0px 0px ;
 }
-scrollbar {
-    width:        4px ;
-    padding:      0;
-    handle-width: 5px ;
-    border-radius:       1;
-    handle-color: @normal-foreground;
-}
+
 sidebar {
     border-color: @separatorcolor;
     border:       2px dash 0px 0px ;
@@ -154,9 +131,7 @@ case-indicator {
 entry {
     text-color:        @normal-foreground;
     cursor:            text;
-    spacing:           0;
     placeholder-color: Gray;
-    placeholder:       "Type to filter";
 }
 prompt {
     spacing:    0;

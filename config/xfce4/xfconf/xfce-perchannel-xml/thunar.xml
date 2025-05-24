@@ -26,4 +26,5 @@
   <property name="misc-full-path-in-tab-title" type="bool" value="false"/>
   <property name="last-menubar-visible" type="bool" value="false"/>
   <property name="last-statusbar-visible" type="bool" value="true"/>
+  <property name="last-splitview-separator-position" type="int" value="672"/>
 </channel>
