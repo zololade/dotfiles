@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=vim
+MimeType=text/plain;
+Name=vim
+NoDisplay=true
+Terminal=true
+Type=Application

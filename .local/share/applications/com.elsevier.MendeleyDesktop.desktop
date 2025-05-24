@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Mendeley Desktop
+GenericName=Research Paper Manager
+Comment=Mendeley Desktop is software for managing and sharing research papers
+Exec=env QT_QPA_PLATFORM=xcb flatpak run --branch=stable --arch=x86_64 --command=mendeleydesktop --file-forwarding com.elsevier.MendeleyDesktop @@ %f @@
+Icon=com.elsevier.MendeleyDesktop
+Terminal=false
+Type=Application
+Categories=Education;Literature;Qt;
+X-SuSE-translate=false
+MimeType=x-scheme-handler/mendeley;application/pdf;text/x-bibtex;
+X-Mendeley-Version=1
+StartupWMClass=Mendeley Desktop
+X-Flatpak-Tags=proprietary;
+X-Flatpak=com.elsevier.MendeleyDesktop

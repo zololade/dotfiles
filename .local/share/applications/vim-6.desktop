@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=vim
+MimeType=application/x-zerosize;
+Name=vim
+NoDisplay=true
+Terminal=true
+Type=Application
