@@ -1,3 +1,6 @@
 [submodule "config/nvim"]
 	path = config/nvim
 	url = https://github.com/zololade/starter.git
+[submodule "config/ags"]
+	path = config/ags
+	url = https://github.com/zololade/ags.git
