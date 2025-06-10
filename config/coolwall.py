@@ -1,5 +1,5 @@
 #!/usr/bin/env nix-shell
-#!nix-shell --extra-experimental-features "flakes" -i python3 -p python3 python3Packages.requests imagemagick swww curl jq
+#!nix-shell -i python3 -p python3 python3Packages.requests imagemagick swww curl jq
 
 
 
@@ -26,7 +26,7 @@ MAX_WALLPAPERS = 8
 RETRY_COUNT = 3
 LAST_RUN_FILE = Path.home() / ".last_wallpaper_run"
 HISTORY_FILE = Path.home() / ".wallpaper_history.log"
-QUERY_LIST = ["landscape", "digital art"]
+QUERY_LIST = ["digital art"]
 MAX_RESULTS = 8
 SEED = datetime.date.today().isoformat()
 
