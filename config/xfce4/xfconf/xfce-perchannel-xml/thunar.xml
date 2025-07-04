@@ -5,7 +5,7 @@
   <property name="last-icon-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_75_PERCENT"/>
   <property name="last-window-maximized" type="bool" value="true"/>
   <property name="misc-single-click" type="bool" value="false"/>
-  <property name="last-separator-position" type="int" value="296"/>
+  <property name="last-separator-position" type="int" value="224"/>
   <property name="hidden-bookmarks" type="array">
     <value type="string" value="file:///"/>
     <value type="string" value="computer:///"/>
@@ -18,7 +18,7 @@
   <property name="tree-icon-size" type="string" value="THUNAR_ICON_SIZE_16"/>
   <property name="misc-symbolic-icons-in-sidepane" type="bool" value="true"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,101,97,76,72,50,50,285,50,50,60,50,107"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,101,97,76,72,50,50,357,50,50,60,50,107"/>
   <property name="last-side-pane" type="string" value="THUNAR_SIDEPANE_TYPE_SHORTCUTS"/>
   <property name="last-image-preview-visible" type="bool" value="true"/>
   <property name="misc-text-beside-icons" type="bool" value="false"/>
