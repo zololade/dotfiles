@@ -158,7 +158,6 @@
     "format": "{temperatureC}°C {icon}",
     "format-icons": ["", "", ""],
     "format-critical": "{temperatureC}°C {icon}",
-    "interval": 5,
     "min-length": 8,
     "max-length": 8,
     "thermal-zone": 2,
