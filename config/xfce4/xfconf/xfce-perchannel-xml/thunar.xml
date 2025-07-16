@@ -18,7 +18,7 @@
   <property name="tree-icon-size" type="string" value="THUNAR_ICON_SIZE_16"/>
   <property name="misc-symbolic-icons-in-sidepane" type="bool" value="true"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,101,97,76,72,50,50,357,50,50,60,50,107"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,101,97,76,72,50,50,145,50,50,60,50,620"/>
   <property name="last-side-pane" type="string" value="THUNAR_SIDEPANE_TYPE_SHORTCUTS"/>
   <property name="last-image-preview-visible" type="bool" value="true"/>
   <property name="misc-text-beside-icons" type="bool" value="false"/>
@@ -26,7 +26,7 @@
   <property name="misc-full-path-in-tab-title" type="bool" value="false"/>
   <property name="last-menubar-visible" type="bool" value="false"/>
   <property name="last-statusbar-visible" type="bool" value="true"/>
-  <property name="last-splitview-separator-position" type="int" value="503"/>
+  <property name="last-splitview-separator-position" type="int" value="516"/>
   <property name="last-window-width" type="int" value="1366"/>
   <property name="last-window-height" type="int" value="768"/>
   <property name="tree-icon-emblems" type="bool" value="true"/>

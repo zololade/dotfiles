@@ -17,7 +17,7 @@ monitor = 0
 follow = keyboard
 
 # Geometry
-width = (200, 400)
+width = (200, 250)
 offset = 10x0 # margin from the top (to allow for Polybar)
 
 # Scale factor. It is auto-detected if value is 0.
