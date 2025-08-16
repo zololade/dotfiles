@@ -53,4 +53,3 @@
   :recipe (:host github :repo "catppuccin/emacs"))
 
 (package! inhibit-mouse)
-(package! emmet-mode)
