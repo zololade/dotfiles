@@ -53,3 +53,5 @@
   :recipe (:host github :repo "catppuccin/emacs"))
 
 (package! inhibit-mouse)
+(package! copilot
+  :recipe (:host github :repo "copilot-emacs/copilot.el" :files ("*.el")))
