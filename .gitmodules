@@ -1,3 +1,6 @@
 [submodule "config/ags"]
 	path = config/ags
 	url = https://github.com/zololade/ags.git
+[submodule "config/hyprland"]
+	path = config/hyprland
+	url = git@github.com:zololade/hypr.git
