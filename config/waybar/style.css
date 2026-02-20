@@ -11,6 +11,7 @@ window#waybar {
  background: @background;
 }
 
+#idle_inhibitor:hover,
 #custom-cachy:hover,
 #cpu:hover,
 #network:hover,
@@ -35,6 +36,7 @@ window#waybar {
 #pulseaudio.microphone,
 #backlight,
 #battery,
+#idle_inhibitor,
 #custom-powermenu {
  color: @foreground;
  padding: 6px 0;

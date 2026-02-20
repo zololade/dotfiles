@@ -38,7 +38,7 @@
   "custom/cachy": {
     "format": "",
     "tooltip": false,
-    "on-click": "alacritty",
+    "on-click": "kitty",
     "on-click-right": "kitty"
   },
   "hyprland/workspaces": {
@@ -225,7 +225,18 @@
 },
 "custom/powermenu": {
   "format": "<span size='13pt'>󰐥</span>",
-  "on-click": "$HOME/.config/rofi/powermenu/powermenu.sh",
+  "on-click": "wlogout",
   "tooltip": false
-}
+}, "idle_inhibitor": {
+   "format": "{icon}",
+
+   "format-icons": {
+     "activated": "󰈈",
+     "deactivated": "󰈉"
+   },
+
+   "tooltip-format-activated": "Presentation Mode",
+   "tooltip-format-deactivated": "Idle Mode",
+   "start-activated": false
+ }
 }
