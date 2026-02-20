@@ -1,18 +1,15 @@
-#!/usr/bin/env nix-shell
-#!nix-shell -i python3 -p python3 python3Packages.requests imagemagick swww curl jq
+#!/usr/bin/python3
 
-
-
-import shutil
-import json
-import sys
 import datetime
+import json
 import logging
-from pathlib import Path
 import os
+import shutil
 import subprocess
-import requests
+import sys
+from pathlib import Path
 
+import requests
 
 # === CONFIGURATION ===
 API_KEY = ""
