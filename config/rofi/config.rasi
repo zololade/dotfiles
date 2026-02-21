@@ -41,9 +41,9 @@ listview {
 }
 
 element {
-    padding:        8px 16px;
-    spacing:        8px;
-    border-radius:  10px;
+    padding:        7px 16px;
+    spacing:        7px;
+    border-radius:  9px;
 }
 
 element-icon {
