@@ -117,12 +117,10 @@
     "ethernet": "<span size='12pt'>󰈀</span>",
     "disconnected": "<span size='12pt'>󰤩</span>",
     "disabled": "<span size='12pt'>󰤭</span>",
-    "vpn": "<span size='12pt'>󰌾</span>" 
   },
   "format-wifi": "{icon}",
   "format-ethernet": "{icon}",
   "format-disconnected": "{icon}",
-  "format-vpn": "{icon}",
   "format-disabled": "{icon}",
   "interval": 5,
   "tooltip-format": "{essid}\t{gwaddr}",
