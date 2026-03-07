@@ -37,6 +37,7 @@ Personal dotfiles for my Hyprland setup on **openSUSE Tumbleweed**.
 | Terminal | Kitty |
 | System monitor | Btop |
 | CPU optimization | auto-cpufreq |
+| Thermal management | thermald |
 | Memory optimization | zram + swappiness tuning |
 | Wallpaper manager | swww |
 | Theme (GTK, icons, cursor)| Catppuccin (all flavours) |
