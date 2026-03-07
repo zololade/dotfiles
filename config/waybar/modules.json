@@ -109,6 +109,7 @@
   ]
 },
 "network": {
+  "interface": "wl*",
   "format-icons": {
     "wifi": [
       "<span size='12pt'>󰤯</span>",
@@ -120,6 +121,7 @@
     "ethernet": "<span size='12pt'>󰈀</span>",
     "disconnected": "<span size='12pt'>󰤩</span>",
     "disabled": "<span size='12pt'>󰤭</span>",
+    "vpn": "<span size='12pt'>󰌾</span>" 
   },
   "format-wifi": "{icon}",
   "format-ethernet": "{icon}",
