@@ -11,8 +11,6 @@ Personal dotfiles for my Hyprland setup on **openSUSE Tumbleweed**.
 | **OS** | openSUSE Tumbleweed |
 | **WM** | Hyprland 0.54 |
 | **Shell** | bash + Starship |
-| **Terminal** | Kitty |
-| **Editor** | Zed/vscode |
 | **Theme** | Catppuccin Mocha |
 
 ---
@@ -28,7 +26,21 @@ Personal dotfiles for my Hyprland setup on **openSUSE Tumbleweed**.
 | Lock screen | Hyprlock |
 | Idle daemon | Hypridle |
 | Logout menu | Wlogout |
-| Wallpaper | coolwall |
+| Clipboard history | cliphist |
+| wayland clipboard utility | wl-clipboard |
+|  network manager | NetworkManager-applet |
+| polkit agent | hyprpolkit |
+| AirPlay receiver | uxplay |
+| Spotify client | EasyRPM (Wayland support with `ELECTRON_OZONE_PLATFORM_HINT=wayland`) |
+| VPN client | ProtonVPN (Flatpak) |
+| Editor | Zed (also vscode) |
+| Terminal | Kitty |
+| System monitor | Btop |
+| CPU optimization | auto-cpufreq |
+| Memory optimization | zram + swappiness tuning |
+| Wallpaper manager | swww |
+| Theme (GTK, icons, cursor)| Catppuccin (all flavours) |
+| Fonts | JetBrains Mono, Fira Code, Monaspace (all Nerd Font variants) |
 
 ---
 
@@ -115,5 +127,4 @@ Wlogout icons are available in all flavours and accent colours.
 
 - Hyprland config is split into modular files under `hyprland/config.d/`
 - Waybar modules are separated into `modules.json` for cleaner config management
-- Spotify runs via EasyRPM with `ELECTRON_OZONE_PLATFORM_HINT=wayland`
 - ProtonVPN runs via Flatpak
