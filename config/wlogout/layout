@@ -6,7 +6,7 @@
 }
 {
     "label" : "hibernate",
-    "action" : "systemctl suspend",
+    "action" : "systemctl hibernate",
     "text" : "Hibernate",
     "keybind" : "h"
 }
