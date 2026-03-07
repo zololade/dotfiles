@@ -10,9 +10,9 @@ Personal dotfiles for my Hyprland setup on **openSUSE Tumbleweed**.
 |---|---|
 | **OS** | openSUSE Tumbleweed |
 | **WM** | Hyprland 0.54 |
-| **Shell** | Zsh + Starship |
+| **Shell** | bash + Starship |
 | **Terminal** | Kitty |
-| **Editor** | Zed |
+| **Editor** | Zed/vscode |
 | **Theme** | Catppuccin Mocha |
 
 ---
@@ -72,9 +72,11 @@ exit
 # Create symlink so sudo can find it
 sudo rm -f /usr/local/bin/auto-cpufreq
 sudo ln -s /opt/auto-cpufreq/venv/bin/auto-cpufreq /usr/local/bin/auto-cpufreq
+# This might not work even with the symlink, so you may need to run it with the full path: /opt/auto-cpufreq/venv/bin/auto-cpufreq
 ```
 
 Monitor:
+
 ```bash
 sudo auto-cpufreq --stats
 ```
@@ -82,6 +84,7 @@ sudo auto-cpufreq --stats
 ### Memory (zram + swappiness)
 
 zram is enabled with swappiness tuned for performance. Check current values:
+
 ```bash
 cat /proc/sys/vm/swappiness
 swapon --show
@@ -92,6 +95,7 @@ swapon --show
 ## 🔗 Symlinks (Stow)
 
 If using GNU Stow to manage symlinks:
+
 ```bash
 cd ~/dotfiles
 stow config
