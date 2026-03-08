@@ -22,13 +22,13 @@ Personal dotfiles for my Hyprland setup on **openSUSE Tumbleweed**.
 | Compositor | Hyprland |
 | Bar | Waybar |
 | Launcher | Rofi |
-| Notifications | Dunst |
+| Notifications | Dunst/swaync |
 | Lock screen | Hyprlock |
 | Idle daemon | Hypridle |
 | Logout menu | Wlogout |
 | Clipboard history | cliphist |
 | wayland clipboard utility | wl-clipboard |
-|  network manager | NetworkManager-applet |
+| network manager | NetworkManager-applet |
 | polkit agent | hyprpolkit |
 | AirPlay receiver | uxplay |
 | Spotify client | EasyRPM (Wayland support with `ELECTRON_OZONE_PLATFORM_HINT=wayland`) |
