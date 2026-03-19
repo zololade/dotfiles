@@ -20,6 +20,23 @@ window#waybar {
   color: @fg;
 }
 
+/* This adds space between the icon and the text label */
+#window > box > image {
+  margin-right: 10px;
+}
+
+/* If you want to hide the icon when no windows are open */
+window#waybar.empty #window {
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+}
+#window {
+  color: @fg;
+  padding: 0 5px;
+  border-bottom: 2px solid @fg;
+  margin: 1px 2px;
+}
+
 #workspaces {
   /* background-color: @bg; */
   background-color: transparent;
@@ -35,7 +52,7 @@ window#waybar {
   font-family: "JetBrainsMono Nerd Font";
   padding: 0 5px;
   margin: 1px 2px;
-  border: 2px solid transparent;
+  border: 0px solid transparent;
   border-bottom: 2px solid @fgFade;
 }
 

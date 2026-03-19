@@ -44,8 +44,15 @@
 		}
 	},
 	"hyprland/window": {
-		"format": "{class}",
-		"max-length": 50
+		"icon": true,
+		"icon-size": 14,
+		"format": "{}",
+		"separate-outputs": true,
+		"rewrite": {
+			"(.*) — Mozilla Firefox": "Firefox",
+			"(.*) - Visual Studio Code": "Code",
+			"kitty": "Terminal"
+		}
 	},
 	"clock#1": {
 		"format": "{:%A}",
