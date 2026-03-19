@@ -1,30 +1,40 @@
-@define-color bg #1e1e2e;
-@define-color fg #cdd6f4;
-@define-color dark-fg #bac2de;
-@define-color rosewater #f5e0dc;
-@define-color flamingo #f2cdcd;
-@define-color pink #f5c2e7;
-@define-color mauve #cba6f7;
-@define-color red #f38ba8;
-@define-color maroon #eba0ac;
-@define-color peach #fab387;
-@define-color yellow #f9e2af;
-@define-color green #a6e3a1;
-@define-color teal #94e2d5;
-@define-color sky #89dceb;
-@define-color sapphire #74c7ec;
-@define-color blue #89b4fa;
-@define-color lavender #b4befe;
-@define-color text #cdd6f4;
-@define-color subtext1 #bac2de;
-@define-color subtext0 #a6adc8;
-@define-color overlay2 #9399b2;
-@define-color overlay1 #7f849c;
-@define-color overlay0 #6c7086;
-@define-color surface2 #585b70;
-@define-color surface1 #45475a;
-@define-color surface0 #313244;
-@define-color base #1e1e2e;
-@define-color mantle #181825;
-@define-color crust #11111b;
-@define-color gray2 #9399b2;
+/* Core & Grayscale */
+@define-color bg       alpha(#1e1e2e, 0.55);
+@define-color fg       alpha(#cdd6f4, 0.7);
+@define-color dark-fg  alpha(#bac2de, 0.7);
+@define-color base     alpha(#1e1e2e, 0.7);
+@define-color mantle   alpha(#181825, 0.7);
+@define-color crust    alpha(#11111b, 0.7);
+
+/* Text & Subtext */
+@define-color text     alpha(#cdd6f4, 0.7);
+@define-color subtext1 alpha(#bac2de, 0.7);
+@define-color subtext0 alpha(#a6adc8, 0.7);
+
+/* Overlays & Surfaces */
+@define-color overlay2 alpha(#9399b2, 0.7);
+@define-color overlay1 alpha(#7f849c, 0.7);
+@define-color overlay0 alpha(#6c7086, 0.7);
+@define-color surface2 alpha(#585b70, 0.7);
+@define-color surface1 alpha(#45475a, 0.7);
+@define-color surface0 alpha(#313244, 0.7);
+@define-color gray2    alpha(#9399b2, 0.7);
+
+/* Accents */
+@define-color rosewater alpha(#f5e0dc, 0.7);
+@define-color flamingo  alpha(#f2cdcd, 0.7);
+@define-color pink      alpha(#f5c2e7, 0.7);
+@define-color mauve     alpha(#cba6f7, 0.7);
+@define-color red       alpha(#f38ba8, 0.7);
+@define-color maroon    alpha(#eba0ac, 0.7);
+@define-color peach     alpha(#fab387, 0.7);
+@define-color yellow    alpha(#f9e2af, 0.7);
+@define-color green     alpha(#a6e3a1, 0.7);
+@define-color teal      alpha(#94e2d5, 0.7);
+@define-color sky       alpha(#89dceb, 0.7);
+@define-color sapphire  alpha(#74c7ec, 0.7);
+@define-color blue      alpha(#89b4fa, 0.7);
+@define-color lavender  alpha(#b4befe, 0.7);
+
+/* Special Fades (keeping your logic but adjusting) */
+@define-color fgFade    alpha(#f38ba8, 0.25);

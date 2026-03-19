@@ -16,7 +16,7 @@ label {
 }
 
 window#waybar {
-  background: transparent;
+  background: @bg;
   color: @fg;
 }
 
@@ -31,11 +31,12 @@ window#waybar {
 
 #workspaces button {
   background-color: transparent;
-  color: @fg;
+  color: @fgFade;
   font-family: "JetBrainsMono Nerd Font";
   padding: 0 5px;
   margin: 1px 2px;
   border: 2px solid transparent;
+  border-bottom: 2px solid @fgFade;
 }
 
 #workspaces button:hover {
@@ -121,7 +122,7 @@ window#waybar {
   color: @red;
   border-bottom: 2px solid @red;
   padding: 0 8px;
-  margin: 1px 2px;
+  margin: 1px 0px 1px 2px;
 }
 
 #custom-swaync {
