@@ -1,130 +1,166 @@
-@import "./colors.css";
+@import url("colors.css");
 
 * {
- font-family: "JetBrainsMono Nerd Font Propo";
- font-size: 16px;
- border-radius: 0;
- box-shadow: none;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0px;
+  font-family: "JetBrains Mono Nerd Font";
+  font-size: 10pt;
+  font-weight: 700;
+  padding-bottom: 0px;
+}
+
+label {
+  font-family: "JetBrainsMono Nerd Font";
 }
 
 window#waybar {
- background: @background;
+  background: transparent;
+  color: @fg;
 }
 
-#idle_inhibitor:hover,
-#custom-cachy:hover,
-#cpu:hover,
-#network:hover,
-#bluetooth:hover,
-#pulseaudio:hover,
-#pulseaudio.microphone:hover,
-#pulseaudio.sink-muted:hover,
-#custom-powermenu:hover {
- opacity: 0.5;
-}
-
-#custom-cachy,
-#cpu,
-#clock,
-#mpris,
-#custom-menu,
-#tray,
-#privacy,
-#network,
-#bluetooth,
-#pulseaudio,
-#pulseaudio.microphone,
-#backlight,
-#battery,
-#idle_inhibitor,
-#custom-powermenu {
- color: @foreground;
- padding: 6px 0;
+#workspaces {
+  /* background-color: @bg; */
+  background-color: transparent;
+  color: @dark-fg;
+  font-family: "JetBrainsMono Nerd Font";
+  padding: 0 5px;
+  margin: 1px 2px;
 }
 
 #workspaces button {
- color: @foreground;
- padding: 0;
+  background-color: transparent;
+  color: @fg;
+  font-family: "JetBrainsMono Nerd Font";
+  padding: 0 5px;
+  margin: 1px 2px;
+  border: 2px solid transparent;
 }
+
+#workspaces button:hover {
+  color: @peach;
+  padding: 0 5px;
+  margin: 1px 2px;
+}
+
+#workspaces button.focused,
 #workspaces button.active {
- color: @color2;
+  background: transparent;
+  color: @red;
+  font-weight: bold;
+  padding: 0 5px;
+  margin: 1px 2px;
+  border-bottom: 2px solid @red;
 }
 
-#privacy {
- margin: 4px;
- color: @color3;
+#clock.1 {
+  color: @green;
+  border-bottom: 2px solid @green;
+  font-family: "JetBrainsMono Nerd Font";
+  padding: 0 5px;
+  margin: 1px 2px;
 }
 
-#clock {
- color: @color4;
+#clock.2 {
+  color: @green;
+  border-bottom: 2px solid @green;
+  font-family: "JetBrainsMono Nerd Font";
+  padding: 0 5px;
+  margin: 1px 2px;
 }
 
-#mpris {
- color: @color3;
+#clock.3 {
+  color: @green;
+  border-bottom: 2px solid @green;
+  font-family: "JetBrainsMono Nerd Font";
+  padding: 0 5px;
+  margin: 1px 2px;
 }
 
-#network.disabled {
- color: @color1;
-}
-#network.wifi {
- color: @color2;
-}
-#network.ethernet {
- color: @color3;
+#custom-cpu {
+  font-size: 12px;
+  color: @blue;
+  border-bottom: 2px solid @blue;
+  padding: 0 5px;
+  margin: 1px 2px;
 }
 
-#bluetooth.disabled {
- color: @color1;
-}
-#bluetooth.connected {
- color: @color4;
-}
-
-#pulseaudio.sink-muted:not(.microphone) {
- color: @color3;
-}
-#pulseaudio.microphone.source-muted {
- color: @color1;
+#custom-memory {
+  font-size: 12px;
+  color: @lavender;
+  border-bottom: 2px solid @lavender;
+  padding: 0 5px;
+  margin: 1px 2px;
 }
 
-#battery.plugged {
- color: @color4;
-}
-#battery.charging {
- color: @color2;
-}
-#battery.critical {
- color: @color3;
+#custom-disk-home {
+  font-size: 12px;
+  color: @peach;
+  border-bottom: 2px solid @peach;
+  padding: 0 5px;
+  margin: 1px 2px;
 }
 
-tooltip {
- background: @background;
- border: 1px solid @foreground;
-}
-tooltip * {
- color: @foreground;
- margin: 2px;
- background: @background;
+#pulseaudio {
+  color: @green;
+  border-bottom: 2px solid @green;
+  font-family: "JetBrainsMono Nerd Font";
+  padding: 0 5px;
+  margin: 1px 2px;
 }
 
-#pulseaudio-slider,
-#backlight-slider {
- min-height: 80px;
+#tray {
+  color: @blue;
+  border-bottom: 2px solid @blue;
+  padding: 0 5px;
+  margin: 1px 2px;
 }
 
-#pulseaudio-slider slider,
-#backlight-slider slider {
- background: transparent;
+#custom-powermenu {
+  color: @red;
+  border-bottom: 2px solid @red;
+  padding: 0 8px;
+  margin: 1px 2px;
 }
 
-#pulseaudio-slider trough,
-#backlight-slider trough {
- min-width: 8px;
+#custom-swaync {
+  color: @dark-fg;
+  border-bottom: 2px solid @peach;
+  padding: 0 5px;
+  margin: 1px 2px;
 }
 
-#pulseaudio-slider highlight {
- background: @color4;
+#custom-swaync.notification {
+  background: @red;
+  color: @bg;
+  font-weight: bold;
+  padding: 0 5px;
+  margin: 1px 2px;
 }
-#backlight-slider highlight {
- background: @color3;
+
+#custom-swaync.dnd {
+  color: @gray2;
+  border-bottom: 2px solid @gray2;
+  padding: 0 5px;
+  margin: 1px 2px;
+}
+
+#custom-weather {
+  color: @peach;
+  border-bottom: 2px solid @peach;
+  padding: 0 5px;
+  margin: 1px 2px;
+}
+
+#idle_inhibitor {
+  color: @fg;
+  border-bottom: 2px solid @fg;
+  padding: 0 5px;
+  margin: 1px 2px;
+}
+
+#idle_inhibitor.activated {
+  color: @green;
+  border-bottom: 2px solid @green;
 }

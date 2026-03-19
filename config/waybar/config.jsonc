@@ -1,25 +1,129 @@
+// -*- mode: json -*-
 {
- "reload_style_on_change": true,
- "toggle": true,
- "layer": "top",
- "position": "left",
- "margin-top": 0,
- "margin-bottom": 0,
- "margin-left": 0,
- "margin-right": 0,
- "spacing": 0,
- "include": ["~/.config/waybar/modules.json"],
- "modules-left": ["custom/cachy", "clock", "cpu"],
- "modules-center": ["mpris", "hyprland/workspaces", "privacy"],
- "modules-right": [
-  "group/extras",
-  "network",
-  "bluetooth",
-  "pulseaudio#microphone",
-  "idle_inhibitor",
-  "group/audio",
-  "group/brightness",
-  "battery",
-  "custom/powermenu",
- ],
+	"layer": "top",
+	"position": "top",
+	"exclusive-zone": true,
+	"autohide": true,
+	"modules-left": [
+		"hyprland/workspaces",
+		"hyprland/window",
+	],
+	"modules-center": [
+		"clock#1",
+		"clock#2",
+		"clock#3",
+	],
+	"modules-right": [
+		"custom/weather",
+		"custom/cpu",
+		"custom/memory",
+		"custom/disk-home",
+		"pulseaudio",
+		"custom/swaync",
+		"idle_inhibitor",
+		"tray",
+		"custom/powermenu"
+	],
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"active-only": false,
+		"sort-by-number": false,
+		"on-click": "activate",
+		"all-outputs": false,
+		"format-icons": {
+			"1": "1",
+			"2": "2",
+			"3": "3",
+			"4": "4",
+			"5": "5",
+			"6": "6",
+			"7": "7",
+			"8": "8",
+			"9": "9",
+			"10": "10"
+		}
+	},
+	"hyprland/window": {
+		"format": "{class}",
+		"max-length": 50
+	},
+	"clock#1": {
+		"format": "{:%A}",
+		"tooltip": false
+	},
+	"clock#2": {
+		"format": "{:%B %e, %Y}",
+		"tooltip": false
+	},
+	"clock#3": {
+		"format": "{:%I:%M %p}",
+		"tooltip": false
+	},
+	"custom/disk-home": {
+		"exec": "~/.config/waybar/scripts/disk-home.sh",
+		"interval": 30,
+		"format": "{}"
+	},
+	"tray": {
+		"icon-size": 13,
+		"spacing": 8,
+		"show-passive-items": false
+	},
+	"custom/memory": {
+		"exec": "~/.config/waybar/scripts/memory.sh",
+		"interval": 5,
+		"tooltip": false
+	},
+	"custom/cpu": {
+		"exec": "~/.config/waybar/scripts/cpu.sh",
+		"interval": 5,
+		"tooltip": false
+	},
+	"custom/weather": {
+		"exec": "~/.config/waybar/scripts/weather.sh",
+		"interval": 300,
+		"format": "{}",
+		"tooltip": true,
+		"return-type": "json",
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume:2}%",
+		"format-bluetooth": "{icon} {volume}% 󰂯",
+		"format-muted": "MUTE",
+		"format-icons": {
+			"headphones": "󰋋",
+			"default": [
+				"󰕿",
+				"󰖀"
+			]
+		},
+		"scroll-step": 5,
+		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+		"on-click-right": "pavucontrol",
+		"on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+",
+		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-"
+	},
+	"custom/powermenu": {
+		"format": "󰐥",
+		"tooltip": "Power Menu",
+		"on-click": "wlogout"
+	},
+	"custom/swaync": {
+		"tooltip": true,
+		"format": "󰂚 {}",
+		"exec": "swaync-client -c",
+		"interval": 1,
+		"on-click": "swaync-client -t -sw",
+		"on-click-right": "swaync-client -d -sw"
+	},
+	"idle_inhibitor": {
+		"format": "{icon}",
+		"format-icons": {
+			"activated": "󰅶",
+			"deactivated": "󰛊"
+		},
+		"tooltip": true,
+		"tooltip-format-activated": "Screen will stay awake",
+		"tooltip-format-deactivated": "Screen can sleep"
+	}
 }
