@@ -16,7 +16,7 @@ label {
 }
 
 window#waybar {
-  background: @bg;
+  background: @waybar-special-bg;
   color: @fg;
 }
 
