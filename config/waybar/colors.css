@@ -38,4 +38,4 @@
 
 /* Special Fades (keeping your logic but adjusting) */
 @define-color fgFade    alpha(#f38ba8, 0.25);
-@define-color waybar-special-bg rgba(30, 30, 46, 0.35);
+@define-color waybar-special-bg rgba(30, 30, 46, 0.4);

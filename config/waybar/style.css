@@ -18,6 +18,7 @@ label {
 window#waybar {
   background: @waybar-special-bg;
   color: @fg;
+  border-radius: 3px;
 }
 
 /* This adds space between the icon and the text label */
@@ -43,7 +44,7 @@ window#waybar.empty #window {
   color: @dark-fg;
   font-family: "JetBrainsMono Nerd Font";
   padding: 0 5px;
-  margin: 1px 2px;
+  margin: 1px 0px;
 }
 
 #workspaces button {
@@ -139,7 +140,7 @@ window#waybar.empty #window {
   color: @red;
   border-bottom: 2px solid @red;
   padding: 0 8px;
-  margin: 1px 0px 1px 2px;
+  margin: 1px 5px 1px 2px;
 }
 
 #custom-swaync {

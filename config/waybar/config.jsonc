@@ -3,6 +3,7 @@
 	"layer": "bottom",
 	"position": "top",
 	"exclusive-zone": true,
+	"margin": "10 15 0 15 ",
 	"autohide": true,
 	"modules-left": [
 		"hyprland/workspaces",
