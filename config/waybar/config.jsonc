@@ -1,6 +1,6 @@
 // -*- mode: json -*-
 {
-	"layer": "top",
+	"layer": "bottom",
 	"position": "top",
 	"exclusive-zone": true,
 	"autohide": true,
