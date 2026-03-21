@@ -23,7 +23,7 @@ MAX_WALLPAPERS = 8
 RETRY_COUNT = 3
 LAST_RUN_FILE = Path.home() / ".last_wallpaper_run"
 HISTORY_FILE = Path.home() / ".wallpaper_history.log"
-QUERY_LIST = ["programming","code"]
+QUERY_LIST = ["minimal"]
 MAX_RESULTS = 8
 SEED = datetime.date.today().isoformat()
 
