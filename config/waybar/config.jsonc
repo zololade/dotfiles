@@ -23,6 +23,7 @@
 		"custom/swaync",
 		"idle_inhibitor",
 		"tray",
+		"battery",
 		"custom/powermenu"
 	],
 	"hyprland/workspaces": {
@@ -110,6 +111,25 @@
 		"on-click-right": "pavucontrol",
 		"on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+",
 		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-"
+	},
+	"battery": {
+		"interval": 2,
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-full": "{icon} {capacity}%",
+		"format-charging": " {capacity}%",
+		"format-plugged": " {capacity}%",
+		"format-alt": "{icon} {time}",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
 	},
 	"custom/powermenu": {
 		"format": "󰐥",
