@@ -2,10 +2,10 @@
 
 # OpenWeatherMap API configuration
 API_KEY="4a6319aaf439c4357ea425d4ec5271a2"
-CITY="Lansing"
-STATE="Michigan"
-COUNTRY="US"
-UNITS="imperial"
+CITY="Ibadan"
+STATE="Oyo"
+COUNTRY="Nigeria"
+UNITS="metric"
 
 # Cache file location
 CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/waybar"
@@ -86,12 +86,12 @@ ICON=$(get_weather_icon $WEATHER_ID)
 # Create tooltip with detailed information
 TOOLTIP="<b>${CITY_NAME}</b>\n"
 TOOLTIP+="Condition: ${DESCRIPTION}\n"
-TOOLTIP+="Temperature: ${TEMP}°F (Feels like ${FEELS_LIKE}°F)\n"
+TOOLTIP+="Temperature: ${TEMP}°C (Feels like ${FEELS_LIKE}°C)\n"
 TOOLTIP+="Humidity: ${HUMIDITY}%\n"
 TOOLTIP+="Wind Speed: ${WIND_SPEED} mph"
 
 # Create output JSON
-OUTPUT="{\"text\": \"${ICON} ${TEMP}°F\", \"tooltip\": \"${TOOLTIP}\"}"
+OUTPUT="{\"text\": \"${ICON} ${TEMP}°C\", \"tooltip\": \"${TOOLTIP}\"}"
 
 # Save to cache for future use
 echo "$OUTPUT" > "$CACHE_FILE"
