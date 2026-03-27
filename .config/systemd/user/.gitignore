@@ -1,0 +1,4 @@
+*
+!coolwall.service
+!coolwall.timer
+!.gitignore
