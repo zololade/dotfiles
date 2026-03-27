@@ -68,18 +68,22 @@ async function fetchWallpapers() {
   });
 
   log("Fetching wallpapers...");
+  try {
+    const res = await fetch(
+      `https://wallhaven.cc/api/v1/search?${params}`,
+    );
 
-  const res = await fetch(
-    `https://wallhaven.cc/api/v1/search?${params}`,
-  );
+    if (!res.ok) {
+      console.error("Fetch failed.");
+      process.exit(1);
+    }
 
-  if (!res.ok) {
-    console.error("Fetch failed.");
+    const data = await res.json();
+    return data.data.map((i) => i.path).slice(0, MAX_RESULTS);
+  } catch (err) {
+    log("Error fetching.");
     process.exit(1);
   }
-
-  const data = await res.json();
-  return data.data.map((i) => i.path).slice(0, MAX_RESULTS);
 }
 
 // === DOWNLOAD ===
