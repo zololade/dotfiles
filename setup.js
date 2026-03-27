@@ -18,7 +18,7 @@ const DESTINATION = {
 
 const LOCATION = {
   config: ".config",
-  local: ".config",
+  local: ".local/bin",
 };
 
 const SYMLINK_ITEMS = [
