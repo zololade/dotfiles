@@ -20,6 +20,7 @@ const SYMLINK_FOLDERS = [
   { source: "waybar", destination: "waybar" },
   { source: "wlogout", destination: "wlogout" },
   { source: "starship.toml", destination: "starship.toml" },
+  { source: "coolwall.js", destination: "coolwall.js" },
 ];
 
 function createSymlink({ source, destination }) {
