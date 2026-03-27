@@ -12,28 +12,45 @@ const __dirname = dirname(__filename);
 
 const CONFIG = path.join(HOME, ".config");
 const SYMLINK_FOLDERS = [
-  "btop",
-  "hyprland",
-  "kitty",
-  "rofi",
-  "swaync",
-  "waybar",
-  "wlogout",
-  "starship.toml",
+  { source: "btop", destination: "btop" },
+  { source: "hyprland", destination: "hypr" },
+  { source: "kitty", destination: "kitty" },
+  { source: "rofi", destination: "rofi" },
+  { source: "swaync", destination: "swaync" },
+  { source: "waybar", destination: "waybar" },
+  { source: "wlogout", destination: "wlogout" },
+  { source: "starship.toml", destination: "starship.toml" },
 ];
 
-function createSymlink(folder) {
-  const currentPath = path.join(__dirname, "config", folder);
-  const symlinkPath = path.join(CONFIG, folder);
-  const isExistingPath = fs.existsSync(symlinkPath);
-  const isSymlink =
-    isExistingPath && fs.lstatSync(symlinkPath).isSymbolicLink();
+function createSymlink({ source, destination }) {
+  const currentPath = path.join(__dirname, "config", source);
+  const symlinkPath = path.join(CONFIG, destination);
 
-  if (isSymlink) return;
-  if (isExistingPath && !isSymlink) {
-    fs.renameSync(symlinkPath, path.join(CONFIG, `${folder}_bak`));
+  if (!fs.existsSync(currentPath)) {
+    console.log(`Missing source: ${source}`);
+    return;
   }
 
+  const exists = fs.existsSync(symlinkPath);
+
+  if (exists) {
+    const stat = fs.lstatSync(symlinkPath);
+
+    if (stat.isSymbolicLink()) {
+      console.log(`Skipping ${destination} (already linked)`);
+      return;
+    }
+
+    const backupPath = path.join(
+      CONFIG,
+      `${destination}_bak_${Date.now()}`,
+    );
+
+    console.log(`Backing up ${destination}`);
+    fs.renameSync(symlinkPath, backupPath);
+  }
+
+  console.log(`Linking ${destination}`);
   fs.symlinkSync(currentPath, symlinkPath);
 }
 
