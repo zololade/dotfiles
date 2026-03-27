@@ -21,6 +21,9 @@ const SYMLINK_FOLDERS = [
   { source: "wlogout", destination: "wlogout" },
   { source: "starship.toml", destination: "starship.toml" },
   { source: "coolwall.js", destination: "coolwall.js" },
+  { source: "gtk-3.0", destination: "gtk-3.0" },
+  { source: "gtk-4.0", destination: "gtk-4.0" },
+  { source: "mimeapps.list", destination: "mimeapps.list" },
 ];
 
 function createSymlink({ source, destination }) {
