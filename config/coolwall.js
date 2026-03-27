@@ -91,24 +91,29 @@ async function downloadWallpaper(url) {
   );
 
   log(`Downloading ${url}`);
+  try {
+    const res = await fetch(url);
+    if (!res.ok) return null;
 
-  const res = await fetch(url);
-  if (!res.ok) return null;
+    const buffer = Buffer.from(await res.arrayBuffer());
+    fs.writeFileSync(filename, buffer);
 
-  const buffer = Buffer.from(await res.arrayBuffer());
-  fs.writeFileSync(filename, buffer);
+    let isGoodImage = spawnSync(`identify`, [filename], {
+      stdio: "ignore",
+    });
 
-  let isGoodImage = spawnSync(`identify`, [filename], {
-    stdio: "ignore",
-  });
+    if (isGoodImage.status !== 0) {
+      log("Invalid image, deleting...");
+      fs.unlinkSync(filename);
+      return null;
+    }
 
-  if (isGoodImage.status !== 0) {
-    log("Invalid image, deleting...");
-    fs.unlinkSync(filename);
+    return filename;
+  } catch (err) {
+    log("Error fetching, deleting...");
+    if (fs.existsSync(filename)) fs.unlinkSync(filename);
     return null;
   }
-
-  return filename;
 }
 
 // === APPLY ===
