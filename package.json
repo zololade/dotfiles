@@ -1,0 +1,24 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "Personal dotfiles for my Hyprland setup on **openSUSE Tumbleweed**.",
+  "main": "setup.js",
+  "type": "module",
+  "bin": {
+    "dots-install": "./setup.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zololade/dotfiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zololade/dotfiles/issues"
+  },
+  "homepage": "https://github.com/zololade/dotfiles#readme"
+}
