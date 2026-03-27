@@ -31,8 +31,6 @@ Personal dotfiles for my Hyprland setup on **openSUSE Tumbleweed**.
 | Network manager            | NetworkManager-applet                                                 |
 | Polkit agent               | hyprpolkit                                                            |
 | AirPlay receiver           | uxplay                                                                |
-| Spotify client             | EasyRPM (Wayland support with `ELECTRON_OZONE_PLATFORM_HINT=wayland`) |
-| VPN client                 | ProtonVPN (Flatpak)                                                   |
 | Editor                     | Zed / VSCode                                                          |
 | Terminal                   | Kitty                                                                 |
 | System monitor             | btop                                                                  |
@@ -40,10 +38,14 @@ Personal dotfiles for my Hyprland setup on **openSUSE Tumbleweed**.
 | Thermal management         | thermald                                                              |
 | Memory optimization        | zram + swappiness tuning                                              |
 | Wallpaper manager          | swww                                                                  |
-| Theme (GTK, icons, cursor) | Catppuccin (all flavours)                                             |
+| Theme (GTK, icons, cursor) | Catppuccin (Mocha)                                                    |
 | Fonts                      | JetBrains Mono, Fira Code, Monaspace (all Nerd Font variants)         |
 
 ---
+
+## OpenSUSE Tumbleweed component installation
+
+run `./installer.sh` to install all dependencies and set up the system for the dotfiles configuration.
 
 ## 📁 Dotfiles Structure
 
