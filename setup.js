@@ -4,6 +4,7 @@ import fs from "fs";
 import path, { dirname } from "path";
 import os from "os";
 import { fileURLToPath } from "url";
+import { spawnSync } from "child_process";
 
 // === CONFIG ===
 const HOME = os.homedir();
@@ -12,7 +13,6 @@ const __dirname = dirname(__filename);
 
 const CONFIG = path.join(HOME, ".config");
 const LOCAL = path.join(HOME, ".local", "bin");
-fs.mkdirSync(LOCAL, { recursive: true });
 
 const SYMLINK_FOLDERS = [
   { source: "btop", destination: "btop", home: "config" },
@@ -40,7 +40,16 @@ const SYMLINK_FOLDERS = [
     home: "config",
   },
   { source: "nvim", destination: "nvim", home: "config" },
+  {
+    source: "systemd/user",
+    destination: "systemd/user",
+    home: "config",
+  },
 ];
+
+//==== make dirs ====
+fs.mkdirSync(path.join(CONFIG, "systemd"), { recursive: true });
+fs.mkdirSync(LOCAL, { recursive: true });
 
 const LOCATIONS = {
   config: CONFIG,
@@ -80,3 +89,10 @@ function createSymlink({ source, destination, home }) {
 }
 
 SYMLINK_FOLDERS.forEach(createSymlink);
+
+spawnSync("systemctl", [
+  "--user",
+  "enable",
+  "--now",
+  "coolwall.timer",
+]);
