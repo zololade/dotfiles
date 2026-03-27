@@ -57,7 +57,7 @@ const LOCATIONS = {
 };
 
 function createSymlink({ source, destination, home }) {
-  const currentPath = path.join(__dirname, "config", source);
+  const currentPath = path.join(__dirname, ".config", source);
   const symlinkPath = path.join(LOCATIONS[home], destination);
 
   if (!fs.existsSync(currentPath)) {
