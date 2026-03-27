@@ -1,0 +1,14 @@
+[Added Associations]
+application/pdf=org.kde.okular.desktop;
+inode/directory=dev.zed.Zed.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+
+[Default Applications]
+application/pdf=org.kde.okular.desktop;
+inode/directory=dev.zed.Zed.desktop;
+text/html=google-chrome.desktop
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/x-github-client=github-desktop.desktop
+x-scheme-handler/x-github-desktop-auth=github-desktop.desktop
