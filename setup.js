@@ -11,19 +11,16 @@ const HOME = os.homedir();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// These are where the links will be created on your SYSTEM
 const DESTINATION = {
   config: path.join(HOME, ".config"),
   local: path.join(HOME, ".local", "bin"),
 };
 
-// These are where the files live in your REPO
 const LOCATION = {
   config: ".config",
   local: ".config",
 };
 
-// Simplified symlink list
 const SYMLINK_ITEMS = [
   "btop",
   ["hyprland", "hypr"],
@@ -42,20 +39,13 @@ const SYMLINK_ITEMS = [
 ];
 
 function createSymlink(item) {
-  let source, destination, to;
+  let [source, destination, to] = Array.isArray(item)
+    ? item
+    : [item, item, "config"];
+  destination = destination || source;
+  to = to || "config";
 
-  if (Array.isArray(item)) {
-    source = item[0];
-    destination = item[1] || source;
-    to = item[2] || "config";
-  } else {
-    source = destination = item;
-    to = "config";
-  }
-
-  // Source: The file in your dotfiles folder
   const currentPath = path.join(__dirname, LOCATION[to], source);
-  // Target: The place in ~/.config or ~/.local/bin
   const symlinkPath = path.join(DESTINATION[to], destination);
 
   if (!fs.existsSync(currentPath)) {
@@ -63,52 +53,54 @@ function createSymlink(item) {
     return;
   }
 
-  // Ensure the parent directory (like ~/.config/systemd) exists
   fs.mkdirSync(path.dirname(symlinkPath), { recursive: true });
 
-  if (fs.existsSync(symlinkPath)) {
-    const stat = fs.lstatSync(symlinkPath);
+  // Use try/lstatSync because existsSync returns false for broken symlinks
+  try {
+    const stats = fs.lstatSync(symlinkPath);
 
-    if (stat.isSymbolicLink()) {
-      console.log(`Skipping ${destination} (already linked)`);
-      return;
+    if (stats.isSymbolicLink()) {
+      // Check if it already points to the right place
+      if (fs.readlinkSync(symlinkPath) === currentPath) {
+        console.log(
+          `Skipping ${destination} (already correctly linked)`,
+        );
+        return;
+      }
+      // If it's a link but points elsewhere (or is broken), remove it to re-link
+      fs.unlinkSync(symlinkPath);
+    } else {
+      // If it's a real file/folder, back it up
+      const backupPath = path.join(
+        DESTINATION[to],
+        `${destination}_bak_${Date.now()}`,
+      );
+      console.log(
+        `Backing up existing ${destination} to ${path.basename(backupPath)}`,
+      );
+      fs.renameSync(symlinkPath, backupPath);
     }
-
-    // Fixed: Changed LOCATIONS to DESTINATION to prevent ReferenceError
-    const backupPath = path.join(
-      DESTINATION[to],
-      `${destination}_bak_${Date.now()}`,
-    );
-
-    console.log(
-      `Backing up existing ${destination} to ${path.basename(backupPath)}`,
-    );
-    fs.renameSync(symlinkPath, backupPath);
+  } catch (e) {
+    // File doesn't exist, which is fine!
   }
 
   console.log(`Linking ${destination} -> ${symlinkPath}`);
-  try {
-    fs.symlinkSync(currentPath, symlinkPath);
-  } catch (err) {
-    console.error(`Failed to link ${destination}: ${err.message}`);
-  }
+  fs.symlinkSync(currentPath, symlinkPath);
 }
 
-// Create symlinks
 console.log("Starting symlink process...");
 SYMLINK_ITEMS.forEach(createSymlink);
-console.log("Symlink process complete.\n");
 
 // Enable systemd timer
-console.log("Enabling coolwall.timer...");
-const systemctl = spawnSync(
+console.log("\nReloading systemd and enabling coolwall.timer...");
+// Reload first so systemd finds the new symlinks in ~/.config/systemd/user
+spawnSync("systemctl", ["--user", "daemon-reload"], {
+  stdio: "inherit",
+});
+spawnSync(
   "systemctl",
   ["--user", "enable", "--now", "coolwall.timer"],
   { stdio: "inherit" },
 );
 
-if (systemctl.error) {
-  console.error(
-    `Failed to execute systemctl: ${systemctl.error.message}`,
-  );
-}
+console.log("\nSetup complete.");
