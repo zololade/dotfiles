@@ -28,7 +28,8 @@ sudo zypper install -y \
     slurp \
     grim \
     wl-clipboard \
-    xdg-desktop-portal-hyprland 
+    xdg-desktop-portal-hyprland \
+    xdg-desktop-portal-gtk
 
 echo "Installing fonts..."
 sudo zypper install -y \
