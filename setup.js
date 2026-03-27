@@ -11,63 +11,62 @@ const HOME = os.homedir();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const CONFIG = path.join(HOME, ".config");
-const LOCAL = path.join(HOME, ".local", "bin");
-
-const SYMLINK_FOLDERS = [
-  { source: "btop", destination: "btop", home: "config" },
-  { source: "hyprland", destination: "hypr", home: "config" },
-  { source: "kitty", destination: "kitty", home: "config" },
-  { source: "rofi", destination: "rofi", home: "config" },
-  { source: "swaync", destination: "swaync", home: "config" },
-  { source: "waybar", destination: "waybar", home: "config" },
-  { source: "wlogout", destination: "wlogout", home: "config" },
-  {
-    source: "starship.toml",
-    destination: "starship.toml",
-    home: "config",
-  },
-  {
-    source: "coolwall.js",
-    destination: "coolwall.js",
-    home: "local",
-  },
-  { source: "gtk-3.0", destination: "gtk-3.0", home: "config" },
-  { source: "gtk-4.0", destination: "gtk-4.0", home: "config" },
-  {
-    source: "mimeapps.list",
-    destination: "mimeapps.list",
-    home: "config",
-  },
-  { source: "nvim", destination: "nvim", home: "config" },
-  {
-    source: "systemd/user",
-    destination: "systemd/user",
-    home: "config",
-  },
-];
-
-//==== make dirs ====
-fs.mkdirSync(path.join(CONFIG, "systemd"), { recursive: true });
-fs.mkdirSync(LOCAL, { recursive: true });
-
-const LOCATIONS = {
-  config: CONFIG,
-  local: LOCAL,
+// These are where the links will be created on your SYSTEM
+const DESTINATION = {
+  config: path.join(HOME, ".config"),
+  local: path.join(HOME, ".local", "bin"),
 };
 
-function createSymlink({ source, destination, home }) {
-  const currentPath = path.join(__dirname, ".config", source);
-  const symlinkPath = path.join(LOCATIONS[home], destination);
+// These are where the files live in your REPO
+const LOCATION = {
+  config: ".config",
+  local: ".config",
+};
+
+// Simplified symlink list
+const SYMLINK_ITEMS = [
+  "btop",
+  ["hyprland", "hypr"],
+  "kitty",
+  "rofi",
+  "swaync",
+  "waybar",
+  "wlogout",
+  "starship.toml",
+  ["coolwall.js", "coolwall.js", "local"],
+  "gtk-3.0",
+  "gtk-4.0",
+  "mimeapps.list",
+  "nvim",
+  "systemd/user",
+];
+
+function createSymlink(item) {
+  let source, destination, to;
+
+  if (Array.isArray(item)) {
+    source = item[0];
+    destination = item[1] || source;
+    to = item[2] || "config";
+  } else {
+    source = destination = item;
+    to = "config";
+  }
+
+  // Source: The file in your dotfiles folder
+  const currentPath = path.join(__dirname, LOCATION[to], source);
+  // Target: The place in ~/.config or ~/.local/bin
+  const symlinkPath = path.join(DESTINATION[to], destination);
 
   if (!fs.existsSync(currentPath)) {
-    console.log(`Missing source: ${source}`);
+    console.warn(`[Warning] Missing source: ${currentPath}`);
     return;
   }
 
-  const exists = fs.existsSync(symlinkPath);
+  // Ensure the parent directory (like ~/.config/systemd) exists
+  fs.mkdirSync(path.dirname(symlinkPath), { recursive: true });
 
-  if (exists) {
+  if (fs.existsSync(symlinkPath)) {
     const stat = fs.lstatSync(symlinkPath);
 
     if (stat.isSymbolicLink()) {
@@ -75,24 +74,41 @@ function createSymlink({ source, destination, home }) {
       return;
     }
 
+    // Fixed: Changed LOCATIONS to DESTINATION to prevent ReferenceError
     const backupPath = path.join(
-      CONFIG,
+      DESTINATION[to],
       `${destination}_bak_${Date.now()}`,
     );
 
-    console.log(`Backing up ${destination}`);
+    console.log(
+      `Backing up existing ${destination} to ${path.basename(backupPath)}`,
+    );
     fs.renameSync(symlinkPath, backupPath);
   }
 
-  console.log(`Linking ${destination}`);
-  fs.symlinkSync(currentPath, symlinkPath);
+  console.log(`Linking ${destination} -> ${symlinkPath}`);
+  try {
+    fs.symlinkSync(currentPath, symlinkPath);
+  } catch (err) {
+    console.error(`Failed to link ${destination}: ${err.message}`);
+  }
 }
 
-SYMLINK_FOLDERS.forEach(createSymlink);
+// Create symlinks
+console.log("Starting symlink process...");
+SYMLINK_ITEMS.forEach(createSymlink);
+console.log("Symlink process complete.\n");
 
-spawnSync("systemctl", [
-  "--user",
-  "enable",
-  "--now",
-  "coolwall.timer",
-]);
+// Enable systemd timer
+console.log("Enabling coolwall.timer...");
+const systemctl = spawnSync(
+  "systemctl",
+  ["--user", "enable", "--now", "coolwall.timer"],
+  { stdio: "inherit" },
+);
+
+if (systemctl.error) {
+  console.error(
+    `Failed to execute systemctl: ${systemctl.error.message}`,
+  );
+}
