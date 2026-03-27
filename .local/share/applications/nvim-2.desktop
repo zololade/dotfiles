@@ -1,7 +1,0 @@
-[Desktop Entry]
-Exec=nvim
-MimeType=text/plain;
-Name=nvim
-NoDisplay=true
-Terminal=true
-Type=Application
