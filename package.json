@@ -8,7 +8,7 @@
     "dots-install": "./setup.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "node setup.js"
   },
   "repository": {
     "type": "git",
