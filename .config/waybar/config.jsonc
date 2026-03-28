@@ -49,11 +49,13 @@
 		"icon": true,
 		"icon-size": 14,
 		"format": "{}",
+		"max-length": 20,
 		"separate-outputs": true,
 		"rewrite": {
 			"(.*) — Mozilla Firefox": "Firefox",
 			"(.*) - Visual Studio Code": "Code",
-			"kitty": "Terminal"
+			"kitty": "Terminal",
+			"google-chrome": "Google Chrome"
 		}
 	},
 	"clock#1": {
