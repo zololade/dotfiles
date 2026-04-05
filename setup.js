@@ -14,11 +14,13 @@ const __dirname = dirname(__filename);
 const DESTINATION = {
   config: path.join(HOME, ".config"),
   local: path.join(HOME, ".local", "bin"),
+  home: HOME,
 };
 
 const LOCATION = {
   config: ".config",
   local: ".local/bin",
+  home: ".",
 };
 
 const SYMLINK_ITEMS = [
@@ -36,6 +38,10 @@ const SYMLINK_ITEMS = [
   "mimeapps.list",
   "nvim",
   "systemd/user",
+  [".bashrc", ".bashrc", "home"],
+  [".zshrc", ".zshrc", "home"],
+  [".uxplayrc", ".uxplayrc", "home"],
+  [".gitconfig", ".gitconfig", "home"],
 ];
 
 function createSymlink(item) {
