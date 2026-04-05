@@ -1,0 +1,162 @@
+# ── Terminal & Shell ────────────────────────────────────────────────
+zsh
+zsh-autosuggestions
+zsh-completions
+zsh-syntax-highlighting
+kitty
+tmux
+btop
+htop
+fastfetch
+fzf
+fd
+ripgrep
+gum
+
+# ── Editors & Dev Tools ─────────────────────────────────────────────
+neovim
+git
+ast-grep
+lazygit
+valgrind
+
+# ── Hyprland & Wayland Compositor ───────────────────────────────────
+hyprland
+hyprland-bash-completion
+hyprland-plugin-hyprbars
+hyprland-plugin-hyprexpo
+hyprland-plugin-hyprfocus
+hyprland-qt-support
+hyprland-qtutils
+hyprland-wallpapers
+hyprcursor
+hypridle
+hyprlock
+hyprpicker
+hyprpolkitagent
+hyprsunset
+hyprwayland-scanner
+uwsm
+xdg-desktop-portal-hyprland
+
+# ── Wayland Utilities ────────────────────────────────────────────────
+waybar
+SwayNotificationCenter
+swww
+wlogout
+rofi-wayland
+grim
+slurp
+cliphist
+playerctl
+brightnessctl
+libnotify-tools
+
+# ── KDE / Plasma ─────────────────────────────────────────────────────
+patterns-kde-kde
+
+# ── Display & Graphics ───────────────────────────────────────────────
+gstreamer-plugins-bad
+gstreamer-plugins-good-extra
+gstreamer-plugins-libav
+gstreamer-plugins-ugly
+gstreamer-plugins-vaapi
+ffmpeg-7
+ffmpegthumbs
+dav1d
+mozilla-openh264
+qt6-multimedia
+libQt6WebEngineCore6
+kf6-kfilemetadata
+
+# ── Audio ────────────────────────────────────────────────────────────
+pavucontrol
+pipewire-spa-plugins-0_2
+
+# ── Fonts ────────────────────────────────────────────────────────────
+fetchmsttfonts
+google-noto-fonts
+google-noto-serif-fonts
+nerd-fira-code-fonts
+nerdfonts-JetBrainsMono
+nerdfonts-Monaspace
+rozynski-comic-neue-fonts
+indic-fonts
+
+# ── Networking ───────────────────────────────────────────────────────
+NetworkManager
+NetworkManager-applet
+firewalld
+chrony
+
+# ── Bluetooth ────────────────────────────────────────────────────────
+blueman
+bluez-test
+
+# ── Virtualization ───────────────────────────────────────────────────
+virt-manager
+patterns-server-kvm_server
+patterns-server-kvm_tools
+
+# ── Containers ───────────────────────────────────────────────────────
+docker
+docker-compose
+
+# ── Database ─────────────────────────────────────────────────────────
+mariadb
+
+# ── Kernel & Boot ────────────────────────────────────────────────────
+kernel-longterm
+kernel-longterm-devel
+sdbootutil
+grub2-x86_64-efi-bls
+os-prober
+zram-generator
+irqbalance
+thermald
+numactl
+
+# ── Storage & Filesystems ────────────────────────────────────────────
+snapper
+btrfsprogs
+dosfstools
+exfatprogs
+e2fsprogs
+nvme-cli
+kdump
+kexec-tools
+
+# ── Media ────────────────────────────────────────────────────────────
+vlc
+vlc-noX
+vlc-qt
+qbittorrent
+
+# ── Apps ─────────────────────────────────────────────────────────────
+code
+github-desktop
+google-chrome-stable
+discord
+spotify-client
+spotify-easyrpm
+gedit
+uxplay
+v4l-utils
+
+# ── System Utilities ─────────────────────────────────────────────────
+opi
+meson
+python311-setuptools
+gdk-pixbuf-loader-libheif
+libheif1
+libheif-aom
+libheif-dav1d
+libheif-ffmpeg
+libheif-jpeg
+libheif-openh264
+libheif-openjpeg
+libheif-rav1e
+libheif-svtenc
+
+# ── Fun ──────────────────────────────────────────────────────────────
+stockfish
