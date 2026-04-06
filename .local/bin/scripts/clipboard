@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+ACTION="$1"
+
+if [ "$ACTION" = "delete" ]; then
+    cliphist list \
+    | rofi -dmenu -display-columns 2 \
+    -theme-str 'element-icon { size: 0; vertical-align: 0; }' \
+    | cliphist delete
+
+else
+    cliphist list \
+    | rofi -dmenu -display-columns 2 \
+    -theme-str 'element-icon { size: 0; vertical-align: 0; }' \
+    | cliphist decode \
+    | wl-copy
+fi

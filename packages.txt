@@ -38,6 +38,7 @@ hyprsunset
 hyprwayland-scanner
 uwsm
 xdg-desktop-portal-hyprland
+niri
 
 # ── Wayland Utilities ────────────────────────────────────────────────
 waybar

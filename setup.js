@@ -34,6 +34,7 @@ const SYMLINK_ITEMS = [
   "wlogout",
   "starship.toml",
   ["coolwall.js", "coolwall.js", "local"],
+  ["scripts", "scripts", "local"],
   "gtk-3.0",
   "gtk-4.0",
   "mimeapps.list",

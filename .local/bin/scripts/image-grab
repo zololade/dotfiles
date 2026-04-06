@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cp "$(cat ~/.current_wallpaper)" ~/.config/img
+

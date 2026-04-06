@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+config="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-3.0/settings.ini"
+[ -f "$config" ] || exit 1
+
+schema="org.gnome.desktop.interface"
+
+get_val() {
+  grep "^$1=" "$config" | cut -d'=' -f2
+}
+
+gtk_theme=$(get_val gtk-theme-name)
+icon_theme=$(get_val gtk-icon-theme-name)
+cursor_theme=$(get_val gtk-cursor-theme-name)
+font_name=$(get_val gtk-font-name)
+
+[ -n "$gtk_theme" ] && gsettings set $schema gtk-theme "$gtk_theme"
+[ -n "$icon_theme" ] && gsettings set $schema icon-theme "$icon_theme"
+[ -n "$cursor_theme" ] && gsettings set $schema cursor-theme "$cursor_theme"
+[ -n "$font_name" ] && gsettings set $schema font-name "$font_name"
+
+gsettings set $schema color-scheme "prefer-dark"
