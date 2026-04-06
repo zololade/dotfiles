@@ -3,4 +3,10 @@ output "eDP-1" {
     scale 1
     transform "normal"
     position x=0 y=0  // Start at the origin unless you have a second monitor
+    background-color "#1e1e2e"
+}
+
+overview {
+    backdrop-color "#1e1e2e"
+    zoom 1
 }
