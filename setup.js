@@ -33,6 +33,7 @@ const SYMLINK_ITEMS = [
   "waybar",
   "wlogout",
   "starship.toml",
+  "xdg-desktop-portal",
   ["coolwall.js", "coolwall.js", "local"],
   ["scripts", "scripts", "local"],
   "gtk-3.0",
