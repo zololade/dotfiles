@@ -30,3 +30,6 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # 7. Legacy Alias file (If you use it)
 test -s ~/.alias && . ~/.alias || true
+
+#misc
+export PATH=$PATH:~/Android/Sdk/platform-tools
