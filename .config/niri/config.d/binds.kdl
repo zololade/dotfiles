@@ -89,4 +89,12 @@ binds {
     Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
     Mod+Tab { focus-workspace-previous; }
     Print { spawn "/home/ololade/.local/bin/scripts/screenshot"; }
+
+    Mod+BracketLeft  { consume-or-expel-window-left; }
+    Mod+BracketRight { consume-or-expel-window-right; }
+    Mod+Comma  { consume-window-into-column; }
+    Mod+Period { expel-window-from-column; }
+    Mod+W { toggle-column-tabbed-display; }
+    Mod+R { switch-preset-column-width; }
+    Mod+Ctrl+F { expand-column-to-available-width; }
 }
