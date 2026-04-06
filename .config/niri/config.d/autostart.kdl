@@ -1,0 +1,10 @@
+spawn-at-startup "nm-applet"
+spawn-at-startup "swww-daemon"
+spawn-at-startup "waybar"
+spawn-at-startup "swaync"
+spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
+spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
+// spawn-at-startup "import-gsettings"  // after moving it to ~/.local/bin
+spawn-at-startup "/usr/libexec/polkit-kde-authentication-agent-1"
+spawn-at-startup "uxplay"
+spawn-at-startup "/home/ololade/.config/hypr/scripts/import-gsettings"

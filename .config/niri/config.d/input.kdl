@@ -1,0 +1,20 @@
+input {
+    keyboard {
+        xkb {
+            layout "us"
+        }
+    }
+
+    touchpad {
+        tap 
+        dwt 
+        natural-scroll 
+    }
+
+    focus-follows-mouse max-scroll-amount="0%"
+}
+
+cursor {
+    xcursor-theme "Catppuccin-Mocha-Mauve-Cursors"
+    xcursor-size 20
+}

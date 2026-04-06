@@ -1,0 +1,7 @@
+environment {
+    QT_QPA_PLATFORM "wayland;xcb"
+    QT_QPA_PLATFORMTHEME "kde"
+    ELECTRON_OZONE_PLATFORM_HINT "wayland"
+    SAL_USE_VCLPLUGIN "kf6"
+    XDG_MENU_PREFIX "plasma-"
+}

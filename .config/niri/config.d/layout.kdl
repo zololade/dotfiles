@@ -1,0 +1,38 @@
+layout {
+    gaps 8
+    center-focused-column "never"
+    
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+    
+    default-column-width { proportion 0.5; }
+
+    focus-ring {
+        width 1
+        active-color "#303446ff" 
+        inactive-color "#24273a99"
+    }
+
+    border {
+        off // Niri docs recommend using either border OR focus-ring, not both.
+    }
+
+    shadow {
+        on
+        softness 30
+        spread 5
+        color "#000000c0"
+    }
+
+     struts {
+        left 8
+         right 8
+         top 8
+         bottom 8
+    }
+}
+prefer-no-csd
+

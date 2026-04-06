@@ -26,6 +26,7 @@ const LOCATION = {
 const SYMLINK_ITEMS = [
   "btop",
   ["hyprland", "hypr"],
+  "niri",
   "kitty",
   "rofi",
   "swaync",

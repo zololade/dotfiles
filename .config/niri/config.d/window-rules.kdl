@@ -1,0 +1,82 @@
+// --- Global Window Aesthetics ---
+window-rule {
+    geometry-corner-radius 12 
+    clip-to-geometry true
+}
+
+// --- Development & Productivity ---
+// VS Code: Fixed width for your backend work
+window-rule {
+    match app-id="code" 
+    min-width 1700
+}
+
+// Browser: Handle the Profile Picker vs Main Browser
+window-rule {
+    match app-id="google-chrome"
+    exclude title="^(Google Chrome)$" 
+    min-width 1700
+}
+
+window-rule {
+    match title="^(Google Chrome)$"
+    open-floating true
+    default-column-width { proportion 0.5; } 
+}
+
+// --- Floating Rules: System Utilities & Dialogs ---
+window-rule {
+    match app-id="pavucontrol"
+    match app-id="org.pulseaudio.pavucontrol"
+    match app-id="nm-connection-editor"
+    match app-id="blueman-manager"
+    match app-id="org.freedesktop.impl.portal.desktop.kde"
+    match app-id="kcm_.*"
+    match app-id=".*plasmawindowed.*"
+    open-floating true
+}
+
+// Common File/Dialog Titles (Using Regex for consolidation)
+window-rule {
+    match title="^(Open File|Select a File|Choose wallpaper|Open Folder|Save As|Library|File Upload|Authentication Required).*"
+    match title="^File Operation Progress.*"
+    match title="^(.*)(wants to (save|open))$"
+    match title="^Mendeley Citation Editor$"
+    open-floating true
+}
+
+// --- Media, Chat & Social ---
+window-rule {
+    match app-id="spotify"
+    match title="^(WhatsApp Web|Snapchat)$"
+    match title="^((Suwayomi - 127.0.0.1)|Suwayomi)$"
+    match app-id="^(com.rtosta.zapzap)$"
+    open-floating true
+}
+
+// --- Tools & Emulators ---
+window-rule {
+    match title="^FastAirPlay$"
+    match app-id="LucasR"
+    match title="^Emulator.*$" 
+    match app-id="^.*[Pp]roton.*$"
+    open-floating true
+}
+
+// --- Terminals ---
+// To control size in Niri, we use default-column-width and default-window-height
+window-rule {
+    match app-id="^(Alacritty|kitty)$"
+    open-floating true
+    default-column-width { fixed 800; }
+    default-window-height { fixed 600; }
+}
+
+// --- Tab & Focus Styling (Catppuccin Mocha Mauve) ---
+window-rule {
+    tab-indicator {
+        active-color "#cba6f7"   
+        inactive-color "#585b70" 
+        urgent-color "#f38ba8"   
+    }
+}
