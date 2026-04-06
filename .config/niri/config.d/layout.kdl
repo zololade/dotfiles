@@ -34,5 +34,11 @@ layout {
          bottom 8
     }
 }
+
+hotkey-overlay {
+    skip-at-startup
+    hide-not-bound
+}
+
 prefer-no-csd
 
