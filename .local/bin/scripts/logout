@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+case "$XDG_CURRENT_DESKTOP" in
+    Hyprland)
+        hyprshutdown
+        ;;
+    niri)
+        niri msg action quit --skip-confirmation
+        ;;
+    *)
+        loginctl terminate-session "$XDG_SESSION_ID"
+        ;;
+esac

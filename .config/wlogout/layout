@@ -12,7 +12,7 @@
 }
 {
     "label" : "logout",
-    "action" : "hyprshutdown",
+    "action" : "/home/ololade/.local/bin/scripts/logout",
     "text" : "Logout",
     "keybind" : "e"
 }
