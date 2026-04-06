@@ -134,7 +134,7 @@ function applyWallpaper(file, url) {
   fs.appendFileSync(HISTORY_FILE, url + "\n");
   fs.writeFileSync(path.join(HOME, ".current_wallpaper"), file);
 
-  const script = path.join(HOME, ".config/hypr/scripts/image-grab");
+  const script = path.join(HOME, ".local/bin/scripts/image-grab");
   if (fs.existsSync(script)) {
     spawnSync(script);
   }
