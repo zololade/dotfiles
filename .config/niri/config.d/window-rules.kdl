@@ -80,3 +80,8 @@ window-rule {
         urgent-color "#f38ba8"   
     }
 }
+
+layer-rule {
+    match namespace="^swww-daemon$"
+    place-within-backdrop true
+}

@@ -7,6 +7,13 @@ output "eDP-1" {
 }
 
 overview {
+     workspace-shadow {
+        off
+    }
     backdrop-color "#1e1e2e"
     zoom 1
+}
+
+layout {
+    background-color "transparent"
 }
