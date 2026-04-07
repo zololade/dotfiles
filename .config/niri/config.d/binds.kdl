@@ -5,7 +5,7 @@ binds {
     Mod+O repeat=false { toggle-overview; }
     Mod+E { spawn "dolphin"; }
     Mod+D { spawn "rofi" "-show" "drun"; } 
-    Mod+F { fullscreen-window; }
+    Mod+Ctrl+F { fullscreen-window; }
     Mod+Space { toggle-window-floating; }
     Mod+V { spawn "~/.local/bin/scripts/clipboard" "copy"; }
     Mod+X { spawn "~/.local/bin/scripts/clipboard" "delete"; }
@@ -96,5 +96,5 @@ binds {
     Mod+Period { expel-window-from-column; }
     Mod+W { toggle-column-tabbed-display; }
     Mod+R { switch-preset-column-width; }
-    Mod+Ctrl+F { expand-column-to-available-width; }
+    Mod+F { expand-column-to-available-width; }
 }
