@@ -1,5 +1,5 @@
 layout {
-    gaps 10
+    gaps 15
     center-focused-column "always"
     
     preset-column-widths {
@@ -28,10 +28,10 @@ layout {
     }
 
      struts {
-        left 20
-         right 20
-         top 10
-         bottom 10
+        left 100
+         right 100
+         top 0
+         bottom 0
     }
 }
 
