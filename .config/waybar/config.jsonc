@@ -6,8 +6,8 @@
 	"margin": "10 15 0 15 ",
 	"autohide": true,
 	"modules-left": [
-		"hyprland/workspaces",
-		"hyprland/window",
+		"niri/workspaces",
+		"niri/window",
 	],
 	"modules-center": [
 		"clock#1",
@@ -26,7 +26,7 @@
 		"battery",
 		"custom/powermenu"
 	],
-	"hyprland/workspaces": {
+	"niri/workspaces": {
 		"format": "{icon}",
 		"active-only": false,
 		"sort-by-number": false,
@@ -45,7 +45,7 @@
 			"10": "10"
 		}
 	},
-	"hyprland/window": {
+	"niri/window": {
 		"icon": true,
 		"icon-size": 14,
 		"format": "{}",
