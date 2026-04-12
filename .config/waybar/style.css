@@ -16,7 +16,7 @@ label {
 }
 
 window#waybar {
-  background: @waybar-special-bg;
+  background: @bg;
   color: @fg;
   border-radius: 3px;
 }
