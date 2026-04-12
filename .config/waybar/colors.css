@@ -1,5 +1,5 @@
 /* Core & Grayscale */
-@define-color bg       alpha(#1e1e2e, 0.7);
+@define-color bg       alpha(#1e1e2e, 1);
 @define-color fg       alpha(#cdd6f4, 0.7);
 @define-color dark-fg  alpha(#bac2de, 0.7);
 @define-color base     alpha(#1e1e2e, 0.7);

@@ -1,66 +1,96 @@
 @import url("colors.css");
 
+/* ── Reset ───────────────────────────────────────────────────────────────── */
 * {
   min-height: 0;
   margin: 0;
   padding: 0;
-  border-radius: 0px;
-  font-family: "JetBrains Mono Nerd Font";
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 10pt;
   font-weight: 700;
-  padding-bottom: 0px;
 }
 
-label {
-  font-family: "JetBrainsMono Nerd Font";
-}
-
+/* ── Bar ─────────────────────────────────────────────────────────────────── */
 window#waybar {
   background: @bg;
   color: @fg;
   border-radius: 3px;
+  border: 0.1px solid @mauve;
 }
 
-/* This adds space between the icon and the text label */
-#window > box > image {
-  margin-right: 10px;
-}
-
-/* If you want to hide the icon when no windows are open */
-window#waybar.empty #window {
-  background-color: transparent;
-  border-bottom: 2px solid transparent;
-}
-#window {
-  color: @fg;
-  padding: 0 0 0 7px;
-  border-bottom: 2px solid @fg;
-  margin: 1px 2px;
-}
-
-#workspaces {
-  /* background-color: @bg; */
-  background-color: transparent;
-  color: @dark-fg;
-  font-family: "JetBrainsMono Nerd Font";
+/* ── Shared module base ──────────────────────────────────────────────────── */
+/*    All modules get the same padding/margin unless overridden below        */
+#clock,
+#custom-weather,
+#custom-cpu,
+#custom-memory,
+#custom-disk-home,
+#pulseaudio,
+#battery,
+#custom-swaync,
+#custom-tray-icon,
+#custom-powermenu,
+#idle_inhibitor {
   padding: 0 5px;
-  margin: 1px 0px;
+  margin: 1px 0;
+}
+
+/* ── Module colors ───────────────────────────────────────────────────────── */
+#clock {
+  color: @green;
+}
+#custom-weather {
+  color: @peach;
+}
+#custom-cpu {
+  color: @blue;
+  font-size: 12px;
+}
+#custom-memory {
+  color: @lavender;
+  font-size: 12px;
+}
+#custom-disk-home {
+  color: @peach;
+  font-size: 12px;
+}
+#pulseaudio {
+  color: @green;
+}
+#battery {
+  color: @peach;
+}
+#custom-swaync {
+  color: @dark-fg;
+}
+#idle_inhibitor {
+  color: @fg;
+}
+#custom-powermenu {
+  color: @red;
+  padding: 0 8px;
+  margin: 1px 5px 1px 2px;
+}
+
+/* ── Workspaces ──────────────────────────────────────────────────────────── */
+#workspaces {
+  background: transparent;
+  color: @dark-fg;
+  padding: 0 5px;
+  margin: 1px 0;
 }
 
 #workspaces button {
-  background-color: transparent;
+  background: transparent;
   color: @fgFade;
-  font-family: "JetBrainsMono Nerd Font";
   padding: 0 5px;
   margin: 1px 2px;
-  border: 0px solid transparent;
-  border-bottom: 2px solid @fgFade;
+  border: none;
 }
 
 #workspaces button:hover {
   color: @peach;
-  padding: 0 5px;
-  margin: 1px 2px;
 }
 
 #workspaces button.focused,
@@ -68,154 +98,84 @@ window#waybar.empty #window {
   background: transparent;
   color: @red;
   font-weight: bold;
-  padding: 0 5px;
-  margin: 1px 2px;
-  border-bottom: 2px solid @red;
 }
 
-#clock {
-  color: @green;
-  border-bottom: 2px solid @green;
-  font-family: "JetBrainsMono Nerd Font";
-  padding: 0 5px;
-  margin: 1px 2px;
+/* ── Window title ────────────────────────────────────────────────────────── */
+#window {
+  color: @fg;
+  padding: 0 0 0 0;
+  margin: 1px 0px;
 }
 
-#custom-cpu {
-  font-size: 12px;
-  color: @blue;
-  border-bottom: 2px solid @blue;
-  padding: 0 5px;
-  margin: 1px 2px;
+#window > box > image {
+  margin-right: 10px;
 }
 
-#custom-memory {
-  font-size: 12px;
-  color: @lavender;
-  border-bottom: 2px solid @lavender;
-  padding: 0 5px;
-  margin: 1px 2px;
+window#waybar.empty #window {
+  background: transparent;
 }
 
-#custom-disk-home {
-  font-size: 12px;
-  color: @peach;
-  border-bottom: 2px solid @peach;
-  padding: 0 5px;
-  margin: 1px 2px;
-}
-
-#pulseaudio {
-  color: @green;
-  border-bottom: 2px solid @green;
-  font-family: "JetBrainsMono Nerd Font";
-  padding: 0 5px;
-  margin: 1px 2px;
-}
-
-#battery {
-  color: @peach;
-  border-bottom: 2px solid @peach;
-  font-family: "JetBrainsMono Nerd Font";
-  padding: 0 5px;
-  margin: 1px 2px;
-}
-
+/* ── Tray ────────────────────────────────────────────────────────────────── */
 #systray {
   color: @blue;
-  border-bottom: 2px solid @blue;
   padding: 0 5px;
-  margin: 1px 2px;
+  margin: 1px 0;
 }
 
 #tray {
-  margin: 0 2px;
+  margin: 0;
   padding: 0 5px;
 }
 
 #custom-tray-icon {
-  padding: 0 5px 0 2px;
-}
-
-#custom-powermenu {
-  color: @red;
-  border-bottom: 2px solid @red;
-  padding: 0 8px;
-  margin: 1px 5px 1px 2px;
-}
-
-#custom-swaync {
-  color: @dark-fg;
-  border-bottom: 2px solid @peach;
-  padding: 0 5px;
+  padding: 0 2px;
   margin: 1px 2px;
 }
 
+/* ── Notification states ─────────────────────────────────────────────────── */
 #custom-swaync.notification {
   background: @red;
   color: @bg;
   font-weight: bold;
-  padding: 0 5px;
-  margin: 1px 2px;
 }
 
 #custom-swaync.dnd {
   color: @gray2;
-  border-bottom: 2px solid @gray2;
-  padding: 0 5px;
-  margin: 1px 2px;
 }
 
-#custom-weather {
-  color: @peach;
-  border-bottom: 2px solid @peach;
-  padding: 0 5px;
-  margin: 1px 2px;
-}
-
-#idle_inhibitor {
-  color: @fg;
-  border-bottom: 2px solid @fg;
-  padding: 0 5px;
-  margin: 1px 2px;
-}
-
+/* ── Idle inhibitor state ────────────────────────────────────────────────── */
 #idle_inhibitor.activated {
   color: @green;
-  border-bottom: 2px solid @green;
 }
 
-/* testing */
+/* ── Tooltip ─────────────────────────────────────────────────────────────── */
+tooltip {
+  background: rgba(30, 30, 46, 0.9);
+  border: 1px solid #cba6f7;
+  border-radius: 5px;
+}
 
+tooltip label {
+  color: #cdd6f4;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* ── Context menu ────────────────────────────────────────────────────────── */
 menu {
-  background: #1e1e2e; /* Catppuccin Mocha Base */
-  border: 1px solid #cba6f7; /* Mauve accent */
+  background: #1e1e2e;
+  border: 1px solid #cba6f7;
   border-radius: 12px;
   padding: 8px;
 }
 
 menu item {
-  color: #cdd6f4; /* Text color */
+  color: #cdd6f4;
   padding: 4px 10px;
   border-radius: 8px;
-  transition: all 0.2s ease;
 }
 
 menu item:hover {
-  background: #313244; /* Surface color */
-  color: #cba6f7; /* Mauve highlight */
-  transition: all 0.2s ease;
-}
-
-tooltip {
-  background: rgba(30, 30, 46, 0.9); /* Transparent Mocha */
-  border: 1px solid #cba6f7;
-  border-radius: 5px;
-  box-shadow: none;
-}
-
-tooltip label {
-  color: #cdd6f4;
-  font-family: "JetBrainsMono Nerd Font";
-  font-size: 11px;
+  background: #313244;
+  color: #cba6f7;
 }
