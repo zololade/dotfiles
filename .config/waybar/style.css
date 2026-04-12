@@ -151,26 +151,26 @@ window#waybar.empty #window {
 /* ── Tooltip ─────────────────────────────────────────────────────────────── */
 tooltip {
   background: rgba(30, 30, 46, 0.9);
-  border: 1px solid #cba6f7;
+  border: 0.1px solid #cba6f7;
   border-radius: 5px;
 }
 
 tooltip label {
-  color: #cdd6f4;
-  font-size: 11px;
+  color: @fg;
+  font-size: 13px;
   font-weight: 500;
 }
 
 /* ── Context menu ────────────────────────────────────────────────────────── */
 menu {
   background: #1e1e2e;
-  border: 1px solid #cba6f7;
+  border: 0.1px solid #cba6f7;
   border-radius: 12px;
   padding: 8px;
 }
 
 menu item {
-  color: #cdd6f4;
+  color: @fg;
   padding: 4px 10px;
   border-radius: 8px;
 }
