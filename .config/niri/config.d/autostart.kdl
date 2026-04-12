@@ -9,4 +9,4 @@ spawn-at-startup "uxplay"
 spawn-sh-at-startup "/home/ololade/.local/bin/scripts/import-gsettings"
 spawn-sh-at-startup "hypridle -c /home/ololade/.config/niri/hypridle.conf"
 spawn-at-startup "gammastep"
-// spawn-at-startup "gammastep-indicator"
+

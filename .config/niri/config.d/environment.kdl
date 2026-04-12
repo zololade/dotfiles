@@ -1,6 +1,9 @@
 environment {
+    XDG_CURRENT_DESKTOP "niri"
     QT_QPA_PLATFORM "wayland;xcb"
     QT_QPA_PLATFORMTHEME "kde"
+    QT_QPA_PLATFORMTHEME_QT6 "kde"
+    KDE_FULL_SESSION "true"
     ELECTRON_OZONE_PLATFORM_HINT "wayland"
     SAL_USE_VCLPLUGIN "kf6"
     XDG_MENU_PREFIX "plasma-"
