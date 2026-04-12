@@ -4,4 +4,5 @@
 DISK_USAGE=$(df -h / | awk 'NR==2 {print $4}')
 
 # Output the free space with home icon (nerd font)
-echo -e "\uf015 ${DISK_USAGE}"
+# echo -e "\uf015 ${DISK_USAGE}"
+echo -e "${DISK_USAGE}"

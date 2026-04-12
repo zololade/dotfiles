@@ -11,4 +11,5 @@ USED=$((($TOTAL - $AVAILABLE) / 1024 / 1024))
 PERCENT=$(awk "BEGIN {printf \"%.0f\", (($TOTAL - $AVAILABLE) / $TOTAL) * 100}")
 
 # Output with memory icon (nerd font)
-echo -e "\uf538 ${USED}GB (${PERCENT}%)"
+# echo -e "\uf538 ${USED}GB (${PERCENT}%)"
+echo -e "${USED}GB (${PERCENT}%)"

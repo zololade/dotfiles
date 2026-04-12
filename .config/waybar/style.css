@@ -33,7 +33,7 @@ window#waybar.empty #window {
 }
 #window {
   color: @fg;
-  padding: 0 5px;
+  padding: 0 0 0 7px;
   border-bottom: 2px solid @fg;
   margin: 1px 2px;
 }
@@ -73,23 +73,7 @@ window#waybar.empty #window {
   border-bottom: 2px solid @red;
 }
 
-#clock.1 {
-  color: @green;
-  border-bottom: 2px solid @green;
-  font-family: "JetBrainsMono Nerd Font";
-  padding: 0 5px;
-  margin: 1px 2px;
-}
-
-#clock.2 {
-  color: @green;
-  border-bottom: 2px solid @green;
-  font-family: "JetBrainsMono Nerd Font";
-  padding: 0 5px;
-  margin: 1px 2px;
-}
-
-#clock.3 {
+#clock {
   color: @green;
   border-bottom: 2px solid @green;
   font-family: "JetBrainsMono Nerd Font";
@@ -137,11 +121,20 @@ window#waybar.empty #window {
   margin: 1px 2px;
 }
 
-#tray {
+#systray {
   color: @blue;
   border-bottom: 2px solid @blue;
   padding: 0 5px;
   margin: 1px 2px;
+}
+
+#tray {
+  margin: 0 2px;
+  padding: 0 5px;
+}
+
+#custom-tray-icon {
+  padding: 0 5px 0 2px;
 }
 
 #custom-powermenu {

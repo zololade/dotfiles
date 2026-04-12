@@ -1,159 +1,201 @@
 // -*- mode: json -*-
 {
-	"layer": "bottom",
-	"position": "top",
-	"exclusive-zone": true,
-	"margin": "10 15 0 15 ",
-	"autohide": true,
-	"modules-left": [
-		"niri/workspaces",
-		"niri/window",
-	],
-	"modules-center": [
-		"clock#1",
-		"clock#2",
-		"clock#3",
-	],
-	"modules-right": [
-		"custom/weather",
-		"custom/cpu",
-		"custom/memory",
-		"custom/disk-home",
-		"pulseaudio",
-		"custom/swaync",
-		"idle_inhibitor",
-		"tray",
-		"battery",
-		"custom/powermenu"
-	],
-	"niri/workspaces": {
-		"format": "{icon}",
-		"active-only": false,
-		"sort-by-number": false,
-		"on-click": "activate",
-		"all-outputs": false,
-		"format-icons": {
-			"1": "1",
-			"2": "2",
-			"3": "3",
-			"4": "4",
-			"5": "5",
-			"6": "6",
-			"7": "7",
-			"8": "8",
-			"9": "9",
-			"10": "10"
-		}
-	},
-	"niri/window": {
-		"icon": true,
-		"icon-size": 14,
-		"format": "{}",
-		"max-length": 20,
-		"separate-outputs": true,
-		"rewrite": {
-			"(.*) — Mozilla Firefox": "Firefox",
-			"(.*) - Visual Studio Code": "Code",
-			"kitty": "Terminal",
-			"google-chrome": "Google Chrome"
-		}
-	},
-	"clock#1": {
-		"format": "{:%A}",
-		"tooltip": false
-	},
-	"clock#2": {
-		"format": "{:%B %e, %Y}",
-		"tooltip": false
-	},
-	"clock#3": {
-		"format": "{:%I:%M %p}",
-		"tooltip": false
-	},
-	"custom/disk-home": {
-		"exec": "~/.config/waybar/scripts/disk-home.sh",
-		"interval": 30,
-		"format": "{}"
-	},
-	"tray": {
-		"icon-size": 13,
-		"spacing": 8,
-		"show-passive-items": false
-	},
-	"custom/memory": {
-		"exec": "~/.config/waybar/scripts/memory.sh",
-		"interval": 5,
-		"tooltip": false
-	},
-	"custom/cpu": {
-		"exec": "~/.config/waybar/scripts/cpu.sh",
-		"interval": 5,
-		"tooltip": false
-	},
-	"custom/weather": {
-		"exec": "~/.config/waybar/scripts/weather.sh",
-		"interval": 300,
-		"format": "{}",
-		"tooltip": true,
-		"return-type": "json",
-	},
-	"pulseaudio": {
-		"format": "{icon} {volume:2}%",
-		"format-bluetooth": "{icon} {volume}% 󰂯",
-		"format-muted": "MUTE",
-		"format-icons": {
-			"headphones": "󰋋",
-			"default": [
-				"󰕿",
-				"󰖀"
-			]
-		},
-		"scroll-step": 5,
-		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-		"on-click-right": "pavucontrol",
-		"on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+",
-		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-"
-	},
-	"battery": {
-		"interval": 2,
-		"states": {
-			"warning": 30,
-			"critical": 15
-		},
-		"format": "{icon} {capacity}%",
-		"format-full": "{icon} {capacity}%",
-		"format-charging": " {capacity}%",
-		"format-plugged": " {capacity}%",
-		"format-alt": "{icon} {time}",
-		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			""
-		]
-	},
-	"custom/powermenu": {
-		"format": "󰐥",
-		"tooltip": "Power Menu",
-		"on-click": "wlogout"
-	},
-	"custom/swaync": {
-		"tooltip": true,
-		"format": "󰂚 {}",
-		"exec": "swaync-client -c",
-		"interval": 1,
-		"on-click": "swaync-client -t -sw",
-		"on-click-right": "swaync-client -d -sw"
-	},
-	"idle_inhibitor": {
-		"format": "{icon}",
-		"format-icons": {
-			"activated": "󰅶",
-			"deactivated": "󰛊"
-		},
-		"tooltip": true,
-		"tooltip-format-activated": "Screen will stay awake",
-		"tooltip-format-deactivated": "Screen can sleep"
-	}
+    // ── Bar ───────────────────────────────────────────────────────────────
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "spacing": 6,
+    "margin": "8 12 0 12",
+    "exclusive-zone": true,
+    "autohide": true,
+    // ── Layout ────────────────────────────────────────────────────────────
+    "modules-left": [
+        "niri/workspaces",
+        "niri/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "custom/weather",
+        "group/system",
+        "pulseaudio",
+        "group/systray",
+        "group/controls",
+        "battery",
+        "custom/powermenu"
+    ],
+    // ── Workspaces ────────────────────────────────────────────────────────
+    "niri/workspaces": {
+        "format": "{icon}",
+        "active-only": false,
+        "sort-by-number": true,
+        "on-click": "activate",
+        "all-outputs": false,
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    // ── Window title ──────────────────────────────────────────────────────
+    "niri/window": {
+        "icon": true,
+        "icon-size": 16,
+        "format": "",
+        "separate-outputs": true
+    },
+    // ── Clock — day/date shown in tooltip on hover ─────────────────────
+    "clock": {
+        "interval": 60,
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%A, %B %d, %Y}",
+        "tooltip": false
+    },
+    // ── Weather ───────────────────────────────────────────────────────────
+    "custom/weather": {
+        "exec": "~/.config/waybar/scripts/weather.sh",
+        "interval": 300,
+        "format": "{}",
+        "tooltip": true,
+        "return-type": "json"
+    },
+    // ── System drawer — CPU / Memory / Disk (hover to expand) ─────────────
+    "group/system": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 400,
+            "children-class": "not-system",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/cpu",
+            "custom/memory",
+            "custom/disk-home"
+        ]
+    },
+    "custom/cpu": {
+        "exec": "~/.config/waybar/scripts/cpu.sh",
+        "interval": 5,
+        "format": "󰘚 {}",
+        "tooltip": false
+    },
+    "custom/memory": {
+        "exec": "~/.config/waybar/scripts/memory.sh",
+        "interval": 5,
+        "format": "󰍛 {}",
+        "tooltip": false
+    },
+    "custom/disk-home": {
+        "exec": "~/.config/waybar/scripts/disk-home.sh",
+        "interval": 30,
+        "format": "󰋊 {}",
+        "tooltip": false
+    },
+    // ── Tray drawer ───────────────────────────────────────────────────────
+    "group/systray": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 400,
+            "children-class": "not-tray",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/tray-icon",
+            "tray"
+        ]
+    },
+    "custom/tray-icon": {
+        "format": "󱒔",
+        "tooltip": false,
+        "interval": "once"
+    },
+    // ── Audio ─────────────────────────────────────────────────────────────
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}% 󰂯",
+        "format-muted": "󰝟 MUTE",
+        "format-icons": {
+            "headphones": "󰋋",
+            "default": [
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ]
+        },
+        "scroll-step": 5,
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-",
+        "tooltip": false
+    },
+    // ── Controls drawer — Notifications / Idle / Tray / Battery / Power ───
+    "group/controls": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 400,
+            "children-class": "not-controls",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/swaync",
+            "idle_inhibitor"
+        ]
+    },
+    "custom/swaync": {
+        "format": "󰂚 {}",
+        "exec": "swaync-client -c",
+        "interval": 1,
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "tooltip": false
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰅶",
+            "deactivated": "󰛊"
+        },
+        "tooltip": true,
+        "tooltip-format-activated": "Screen will stay awake",
+        "tooltip-format-deactivated": "Screen can sleep"
+    },
+    "tray": {
+        "icon-size": 13,
+        "spacing": 8,
+        "show-passive-items": false
+    },
+    "battery": {
+        "interval": 2,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰚥 {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-icons": [
+            "󰁺",
+            "󰁼",
+            "󰁾",
+            "󰂀",
+            "󰁹"
+        ]
+    },
+    // ── Power menu ────────────────────────────────────────────────────────
+    "custom/powermenu": {
+        "format": "󰐥",
+        "tooltip": false,
+        "on-click": "wlogout"
+    }
 }
