@@ -10,7 +10,8 @@ overview {
      workspace-shadow {
         off
     }
-    backdrop-color "#1e1e2e"
+    // backdrop-color "#1e1e2e"
+     backdrop-color "#000000"
     zoom 1
 }
 
