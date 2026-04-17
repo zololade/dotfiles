@@ -1,6 +1,6 @@
 environment {
     XDG_CURRENT_DESKTOP "niri"
-    
+
     // QT settings
     QT_QPA_PLATFORM "wayland"
     QT_QPA_PLATFORMTHEME "kde"
