@@ -101,16 +101,4 @@ function createSymlink(item) {
 console.log("Starting symlink process...");
 SYMLINK_ITEMS.forEach(createSymlink);
 
-// Enable systemd timer
-console.log("\nReloading systemd and enabling coolwall.timer...");
-// Reload first so systemd finds the new symlinks in ~/.config/systemd/user
-spawnSync("systemctl", ["--user", "daemon-reload"], {
-  stdio: "inherit",
-});
-spawnSync(
-  "systemctl",
-  ["--user", "enable", "--now", "coolwall.timer"],
-  { stdio: "inherit" },
-);
-
 console.log("\nSetup complete.");
