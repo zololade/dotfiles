@@ -20,7 +20,7 @@ const MIN_RESOLUTION = "2560x1440";
 const COLORS = "000000";
 const MAX_WALLPAPERS = 8;
 const RETRY_COUNT = 3;
-const QUERY_LIST = ["minimal"];
+const QUERY_LIST = ["fantasy", "art", "nature"];
 const MAX_RESULTS = 8;
 
 const SEED = new Date().toISOString().split("T")[0];
