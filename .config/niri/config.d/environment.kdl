@@ -1,10 +1,20 @@
 environment {
     XDG_CURRENT_DESKTOP "niri"
-    QT_QPA_PLATFORM "wayland;xcb"
+    
+    // QT settings
+    QT_QPA_PLATFORM "wayland"
     QT_QPA_PLATFORMTHEME "kde"
     QT_QPA_PLATFORMTHEME_QT6 "kde"
-    KDE_FULL_SESSION "true"
-    ELECTRON_OZONE_PLATFORM_HINT "wayland"
-    SAL_USE_VCLPLUGIN "kf6"
+    
+    // Important: Tell KDE apps which menu to use (prevents empty "Open With" lists)
     XDG_MENU_PREFIX "plasma-"
+    
+    // Electron apps (Zed, VS Code) - Use 'auto' or 'wayland'
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    
+    // LibreOffice KDE integration
+    SAL_USE_VCLPLUGIN "kf6"
+    
+    // Ensure KWallet can unlock properly
+    KDE_FULL_SESSION "true"
 }
