@@ -43,7 +43,7 @@ niri
 # ── Wayland Utilities ────────────────────────────────────────────────
 waybar
 SwayNotificationCenter
-swww
+awww
 wlogout
 rofi-wayland
 grim

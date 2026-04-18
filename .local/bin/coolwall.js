@@ -38,7 +38,7 @@ function requireCmd(cmd) {
   }
 }
 
-["identify", "swww"].forEach(requireCmd);
+["identify", "awww"].forEach(requireCmd);
 
 // === INIT ===
 fs.mkdirSync(WALLPAPER_DIR, { recursive: true });
@@ -122,7 +122,7 @@ async function downloadWallpaper(url) {
 
 // === APPLY ===
 function applyWallpaper(file, url) {
-  spawnSync("swww", [
+  spawnSync("awww", [
     "img",
     file,
     "--transition-type",

@@ -37,7 +37,7 @@ Personal dotfiles for my Hyprland setup on **openSUSE Tumbleweed**.
 | CPU optimization           | auto-cpufreq                                                          |
 | Thermal management         | thermald                                                              |
 | Memory optimization        | zram + swappiness tuning                                              |
-| Wallpaper manager          | swww                                                                  |
+| Wallpaper manager          | awww                                                                  |
 | Theme (GTK, icons, cursor) | Catppuccin (Mocha)                                                    |
 | Fonts                      | JetBrains Mono, Fira Code, Monaspace (all Nerd Font variants)         |
 

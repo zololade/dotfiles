@@ -45,7 +45,7 @@ sudo zypper install -y \
     zram-generator \
     wlogout \
     thermald \
-    swww \
+    awww \
     SwayNotificationCenter \
     NetworkManager \
     NetworkManager-applet \
