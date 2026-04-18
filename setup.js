@@ -32,6 +32,7 @@ const SYMLINK_ITEMS = [
   "rofi",
   "swaync",
   "waybar",
+  "autostart",
   "wlogout",
   "starship.toml",
   "xdg-desktop-portal",

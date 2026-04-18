@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=UxPlay
+Exec=/usr/bin/uxplay
+X-GNOME-Autostart-enabled=true
