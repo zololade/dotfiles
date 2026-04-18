@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-convert "$(cat ~/.current_wallpaper)" -blur 0x8 -blur 0x8 -blur 0x8 ~/.config/img
