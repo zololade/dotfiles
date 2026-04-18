@@ -11,33 +11,15 @@ fastfetch
 fzf
 fd
 ripgrep
-gum
 
 # ── Editors & Dev Tools ─────────────────────────────────────────────
 neovim
 git
 ast-grep
 lazygit
-valgrind
 
-# ── Hyprland & Wayland Compositor ───────────────────────────────────
-hyprland
-hyprland-bash-completion
-hyprland-plugin-hyprbars
-hyprland-plugin-hyprexpo
-hyprland-plugin-hyprfocus
-hyprland-qt-support
-hyprland-qtutils
-hyprland-wallpapers
-hyprcursor
-hypridle
+# ── Wayland Compositor ───────────────────────────────────────────────
 hyprlock
-hyprpicker
-hyprpolkitagent
-hyprsunset
-hyprwayland-scanner
-uwsm
-xdg-desktop-portal-hyprland
 niri
 
 # ── Wayland Utilities ────────────────────────────────────────────────
@@ -52,6 +34,7 @@ cliphist
 playerctl
 brightnessctl
 libnotify-tools
+swayidle
 
 # ── KDE / Plasma ─────────────────────────────────────────────────────
 patterns-kde-kde
@@ -139,14 +122,17 @@ github-desktop
 google-chrome-stable
 discord
 spotify-client
-spotify-easyrpm
 gedit
 uxplay
 v4l-utils
 
+# ── Power ────────────────────────────────────────────────────────────
+auto-cpufreq
+gammastep
+gammastep-indicator
+
 # ── System Utilities ─────────────────────────────────────────────────
 opi #use this to install codecs
-meson
 python311-setuptools
 gdk-pixbuf-loader-libheif
 libheif1
