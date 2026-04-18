@@ -6,7 +6,6 @@ zsh-syntax-highlighting
 kitty
 tmux
 btop
-htop
 fastfetch
 fzf
 fd
@@ -33,7 +32,6 @@ slurp
 cliphist
 playerctl
 brightnessctl
-libnotify-tools
 swayidle
 
 # ── KDE / Plasma ─────────────────────────────────────────────────────
@@ -133,7 +131,6 @@ gammastep-indicator
 
 # ── System Utilities ─────────────────────────────────────────────────
 opi #use this to install codecs
-python311-setuptools
 gdk-pixbuf-loader-libheif
 libheif1
 libheif-aom
