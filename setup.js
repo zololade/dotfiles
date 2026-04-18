@@ -29,6 +29,7 @@ const SYMLINK_ITEMS = [
   "gammastep",
   "niri",
   "swayidle",
+  "swaylock",
   "kitty",
   "rofi",
   "swaync",

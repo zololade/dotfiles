@@ -1,0 +1,11 @@
+image=/home/ololade/.config/img
+scaling=fill
+indicator-radius=100
+indicator-thickness=7
+inside-color=ffffff22
+ring-color=00000088
+key-hl-color=ffffffff
+text-color=ffffffff
+font=JetBrainsMono Nerd Font
+font-size=32
+fade-in=0.2
