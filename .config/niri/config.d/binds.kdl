@@ -11,7 +11,7 @@ binds {
     Mod+X { spawn "~/.local/bin/scripts/clipboard" "delete"; }
     Mod+N { spawn "swaync-client" "-t"; }
     Mod+M { quit; }
-    Mod+L { spawn "hyprlock"; }
+    Mod+L { spawn "swaylock"; }
     
     // Focus movement 
     Mod+Left  { focus-column-left; }
