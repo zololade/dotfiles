@@ -5,6 +5,7 @@ case "$XDG_CURRENT_DESKTOP" in
         hyprshutdown
         ;;
     niri)
+        pkill awww-daemon
         niri msg action quit --skip-confirmation
         ;;
     *)
