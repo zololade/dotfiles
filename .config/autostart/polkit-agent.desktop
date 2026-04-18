@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Polkit KDE Agent
+Exec=/usr/libexec/polkit-kde-authentication-agent-1
+Type=Application
+
+# Crucial: Don't start this in KDE/GNOME (they have their own)
+OnlyShowIn=niri;hyprland;sway;

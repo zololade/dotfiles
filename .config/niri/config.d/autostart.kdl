@@ -1,11 +1,11 @@
 spawn-at-startup "bash" "-c" "dbus-update-activation-environment --systemd --all && sleep 2 && systemctl --user restart xdg-desktop-portal"
-spawn-at-startup "nm-applet"
+
+// UI and Layout
 spawn-at-startup "swww-daemon"
 spawn-at-startup "waybar"
-spawn-at-startup "swaync"
+
+// Specialized Scripts
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
 spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
-spawn-at-startup "/usr/libexec/polkit-kde-authentication-agent-1"
 spawn-sh-at-startup "/home/ololade/.local/bin/scripts/import-gsettings"
 spawn-sh-at-startup "hypridle -c /home/ololade/.config/niri/hypridle.conf"
-

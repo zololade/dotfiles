@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Sway Notification Center
+Exec=swaync
+Type=Application
+
+# Prevents it from clashing with KDE/GNOME notifications
+OnlyShowIn=niri;hyprland;sway;
