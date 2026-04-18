@@ -7,8 +7,8 @@ binds {
     Mod+D { spawn "rofi" "-show" "drun"; } 
     Mod+Ctrl+F { fullscreen-window; }
     Mod+Space { toggle-window-floating; }
-    Mod+V { spawn "$HOME/.local/bin/scripts/clipboard" "copy"; }
-    Mod+X { spawn "$HOME/.local/bin/scripts/clipboard" "delete"; }
+    Mod+V { spawn "~/.local/bin/scripts/clipboard" "copy"; }
+    Mod+X { spawn "~/.local/bin/scripts/clipboard" "delete"; }
     Mod+N { spawn "swaync-client" "-t"; }
     Mod+M { quit; }
     Mod+L { spawn "hyprlock"; }
@@ -88,7 +88,7 @@ binds {
     Mod+Shift+Ctrl+Up { move-column-to-monitor-up; }
     Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
     Mod+Tab { focus-workspace-previous; }
-    Print { spawn "$HOME/.local/bin/scripts/screenshot"; }
+    Print { spawn "~/.local/bin/scripts/screenshot"; }
 
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
