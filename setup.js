@@ -28,6 +28,7 @@ const SYMLINK_ITEMS = [
   ["hyprland", "hypr"],
   "gammastep",
   "niri",
+  "swayidle",
   "kitty",
   "rofi",
   "swaync",
