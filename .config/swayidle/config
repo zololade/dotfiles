@@ -1,4 +1,4 @@
-timeout 300 'swaylock -f'
+timeout 300 'hyprlock -q'
 timeout 600 'loginctl lock-session'
 timeout 900 'niri msg action power-off-monitors' resume 'niri msg action power-on-monitors'
-before-sleep 'swaylock -f'
+before-sleep 'hyprlock -q'
