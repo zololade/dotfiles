@@ -145,7 +145,7 @@ uxplay
 v4l-utils
 
 # ── System Utilities ─────────────────────────────────────────────────
-opi
+opi #use this to install codecs
 meson
 python311-setuptools
 gdk-pixbuf-loader-libheif
