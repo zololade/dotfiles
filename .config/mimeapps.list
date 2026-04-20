@@ -1,5 +1,6 @@
 [Added Associations]
 application/pdf=org.kde.okular.desktop;
+image/heif=org.kde.gwenview.desktop;
 inode/directory=dev.zed.Zed.desktop;
 text/css=code.desktop;
 text/x-csrc=code.desktop;
@@ -8,6 +9,7 @@ x-scheme-handler/https=firefox.desktop;
 
 [Default Applications]
 application/pdf=org.kde.okular.desktop;
+image/heif=org.kde.gwenview.desktop;
 inode/directory=dev.zed.Zed.desktop;
 text/css=code.desktop;
 text/html=google-chrome.desktop

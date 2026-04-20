@@ -8,6 +8,7 @@ window-rule {
 // VS Code: Fixed width for your backend work
 window-rule {
     match app-id="code" 
+    match app-id="dev.zed.Zed"
     min-width 1700
 }
 
