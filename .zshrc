@@ -33,3 +33,6 @@ test -s ~/.alias && . ~/.alias || true
 
 #misc
 export PATH=$PATH:~/Android/Sdk/platform-tools
+
+# opencode
+export PATH=/home/ololade/.opencode/bin:$PATH

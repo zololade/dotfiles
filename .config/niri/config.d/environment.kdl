@@ -7,7 +7,7 @@ environment {
     QT_QPA_PLATFORMTHEME_QT6 "kde"
     
     // Important: Tell KDE apps which menu to use (prevents empty "Open With" lists)
-    XDG_MENU_PREFIX "plasma-"
+    // XDG_MENU_PREFIX "plasma-" # stopping default apps from starting
     
     // Electron apps (Zed, VS Code) - Use 'auto' or 'wayland'
     ELECTRON_OZONE_PLATFORM_HINT "auto"

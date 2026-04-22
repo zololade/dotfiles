@@ -1,20 +1,30 @@
 [Added Associations]
 application/pdf=org.kde.okular.desktop;
+image/avif=org.kde.gwenview.desktop;
+image/bmp=org.kde.gwenview.desktop;
 image/heif=org.kde.gwenview.desktop;
+image/jpeg=org.kde.gwenview.desktop;
+image/png=org.kde.gwenview.desktop;
+image/webp=org.kde.gwenview.desktop;
 inode/directory=dev.zed.Zed.desktop;
 text/css=code.desktop;
 text/x-csrc=code.desktop;
-x-scheme-handler/http=firefox.desktop;
-x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/http=google-chrome.desktop;com.google.Chrome.desktop;firefox.desktop;
+x-scheme-handler/https=google-chrome.desktop;com.google.Chrome.desktop;firefox.desktop;
 
 [Default Applications]
 application/pdf=org.kde.okular.desktop;
+image/avif=org.kde.gwenview.desktop;
+image/bmp=org.kde.gwenview.desktop;
 image/heif=org.kde.gwenview.desktop;
+image/jpeg=org.kde.gwenview.desktop;
+image/png=org.kde.gwenview.desktop;
+image/webp=org.kde.gwenview.desktop;
 inode/directory=dev.zed.Zed.desktop;
 text/css=code.desktop;
 text/html=google-chrome.desktop
 text/x-csrc=code.desktop;
-x-scheme-handler/http=google-chrome.desktop
-x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop;
+x-scheme-handler/https=google-chrome.desktop;
 x-scheme-handler/x-github-client=github-desktop.desktop
 x-scheme-handler/x-github-desktop-auth=github-desktop.desktop
