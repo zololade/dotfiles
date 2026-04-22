@@ -1,4 +1,3 @@
-spawn-at-startup "kwalletd6"
 spawn-at-startup "bash" "-c" "dbus-update-activation-environment --systemd --all && sleep 2 && systemctl --user restart xdg-desktop-portal"
 
 // UI and Layout
