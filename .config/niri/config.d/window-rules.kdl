@@ -82,7 +82,19 @@ window-rule {
     }
 }
 
+// --- Explicit layer rules ---
 layer-rule {
     match namespace="^awww-daemon$"
     place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="rofi"
+    match namespace="waybar"
+    shadow {
+        on
+        softness 30
+        spread 5
+        color "#000000c0"
+    }
 }
