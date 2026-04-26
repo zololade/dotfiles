@@ -84,7 +84,7 @@ window-rule {
 
 // --- Explicit layer rules ---
 layer-rule {
-    match namespace="^awww-daemon$"
+    match namespace="^awww-daemon_backdrop$"
     place-within-backdrop true
 }
 
