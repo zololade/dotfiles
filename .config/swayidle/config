@@ -1,4 +1,11 @@
-timeout 300 'hyprlock -q'
-timeout 600 'loginctl lock-session'
-timeout 900 'niri msg action power-off-monitors' resume 'niri msg action power-on-monitors'
-before-sleep 'hyprlock -q'
+# Lock the screen after 5 minutes
+timeout 300 'hyprlock'
+
+# Turn off monitors after 10 minutes
+timeout 600 'niri msg action power-off-monitors' resume 'niri msg action power-on-monitors'
+
+# suspend
+timeout 900 'systemctl suspend'
+
+# Lock immediately before the system suspends
+before-sleep 'hyprlock'
