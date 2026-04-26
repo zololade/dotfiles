@@ -1,10 +1,10 @@
 binds {
     Mod+Slash { show-hotkey-overlay; }
-    Mod+Return { spawn "kitty"; } 
+    Mod+Return { spawn "kitty"; }
     Mod+Q { close-window; }
     Mod+O repeat=false { toggle-overview; }
     Mod+E { spawn "dolphin"; }
-    Mod+D { spawn "rofi" "-show" "drun"; } 
+    Mod+D { spawn "rofi" "-show" "drun"; }
     Mod+Ctrl+F { fullscreen-window; }
     Mod+Space { toggle-window-floating; }
     Mod+V { spawn "~/.local/bin/scripts/clipboard" "copy"; }
@@ -12,8 +12,8 @@ binds {
     Mod+N { spawn "swaync-client" "-t"; }
     Mod+M { spawn "bash" "-c" "~/.local/bin/scripts/logout"; }
     Mod+L { spawn "hyprlock"; }
-    
-    // Focus movement 
+
+    // Focus movement
     Mod+Left  { focus-column-left; }
     Mod+Right { focus-column-right; }
     Mod+Up    { focus-window-or-monitor-up; }

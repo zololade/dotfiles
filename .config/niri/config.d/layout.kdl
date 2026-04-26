@@ -1,18 +1,18 @@
 layout {
     gaps 15
     center-focused-column "always"
-    
+
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
     }
-    
+
     default-column-width { proportion 0.5; }
 
     focus-ring {
         width 1
-        active-color "#303446ff" 
+        active-color "#303446ff"
         inactive-color "#24273a99"
     }
 
@@ -41,4 +41,3 @@ hotkey-overlay {
 }
 
 prefer-no-csd
-
