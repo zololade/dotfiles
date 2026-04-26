@@ -97,4 +97,5 @@ layer-rule {
         spread 5
         color "#000000c0"
     }
+    geometry-corner-radius 12
 }
