@@ -14,12 +14,14 @@ const __dirname = dirname(__filename);
 const DESTINATION = {
   config: path.join(HOME, ".config"),
   local: path.join(HOME, ".local", "bin"),
+  pictures: path.join(HOME, "Pictures"),
   home: HOME,
 };
 
 const LOCATION = {
   config: ".config",
   local: ".local/bin",
+  pictures: "Pictures",
   home: ".",
 };
 
@@ -40,6 +42,7 @@ const SYMLINK_ITEMS = [
   "xdg-desktop-portal",
   ["coolwall.js", "coolwall.js", "local"],
   ["scripts", "scripts", "local"],
+  ["wall", "wall", "pictures"],
   "gtk-3.0",
   "gtk-4.0",
   "mimeapps.list",
@@ -75,9 +78,7 @@ function createSymlink(item) {
     if (stats.isSymbolicLink()) {
       // Check if it already points to the right place
       if (fs.readlinkSync(symlinkPath) === currentPath) {
-        console.log(
-          `Skipping ${destination} (already correctly linked)`,
-        );
+        console.log(`Skipping ${destination} (already correctly linked)`);
         return;
       }
       // If it's a link but points elsewhere (or is broken), remove it to re-link
