@@ -6,8 +6,8 @@ generateTheme(
   (c) => `
 layout {
     focus-ring {
-        active-color "${c.surface0}"
-        inactive-color "${c.overlay0}"
+        active-color "${c.surface1}"
+        inactive-color "${c.surface0}"
     }
 }
 `,
