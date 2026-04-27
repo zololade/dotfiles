@@ -1,9 +1,9 @@
-spawn-at-startup "bash" "-c" "dbus-update-activation-environment --systemd --all && sleep 2 && systemctl --user restart xdg-desktop-portal"
+spawn-sh-at-startup "dbus-update-activation-environment --systemd --all && sleep 2 && systemctl --user restart xdg-desktop-portal"
 
 // UI and Layout
 spawn-at-startup "awww-daemon"
 spawn-at-startup "awww-daemon" "-n" "_backdrop"
-spawn-at-startup "bash" "-c" "awww img ~/Pictures/wall/cat.webp && awww img -n _backdrop ~/Pictures/wall/cat-blurred.png"
+spawn-sh-at-startup "sleep 1 && awww img $HOME/Pictures/wall/cat.webp && awww img -n _backdrop $HOME/Pictures/wall/cat-blurred.png"
 spawn-at-startup "waybar"
 
 // Specialized Scripts
