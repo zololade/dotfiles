@@ -3,12 +3,33 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+
 [user]
 	name = Ololade
 	email = 73138104+zololade@users.noreply.github.com
+
 [init]
 	defaultBranch = main
+
 [pull]
 	rebase = false
+
 [core]
 	editor = code --wait
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	dark = true
+	side-by-side = true
+
+[merge]
+	conflictStyle = zdiff3
+
+[alias]
+	lg = log --oneline --graph --decorate --all
+	undo = reset HEAD~1 --mixed
+	aliases = config --get-regexp alias
