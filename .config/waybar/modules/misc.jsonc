@@ -1,0 +1,14 @@
+{
+    "clock": {
+        "interval": 60,
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%A, %B %d, %Y}",
+        "tooltip": false
+    },
+    "custom/weather": {
+        "exec": "~/.config/waybar/scripts/weather.sh",
+        "interval": 300,
+        "format": "{}",
+        "return-type": "json"
+    }
+}

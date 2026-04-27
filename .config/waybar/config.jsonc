@@ -1,4 +1,4 @@
-// -*- mode: json -*-
+// -*- mode: jsonc -*-
 {
     // ── Bar ───────────────────────────────────────────────────────────────
     "layer": "top",
@@ -8,6 +8,18 @@
     "margin": "8 12 0 12",
     "exclusive-zone": true,
     "autohide": true,
+
+    // ── Includes ──────────────────────────────────────────────────────────
+    "include": [
+        "~/.config/waybar/modules/niri.jsonc",
+        "~/.config/waybar/modules/system.jsonc",
+        "~/.config/waybar/modules/audio.jsonc",
+        "~/.config/waybar/modules/notifications.jsonc",
+        "~/.config/waybar/modules/tray.jsonc",
+        "~/.config/waybar/modules/power.jsonc",
+        "~/.config/waybar/modules/misc.jsonc"
+    ],
+
     // ── Layout ────────────────────────────────────────────────────────────
     "modules-left": [
         "niri/workspaces",
@@ -24,178 +36,5 @@
         "group/controls",
         "battery",
         "custom/powermenu"
-    ],
-    // ── Workspaces ────────────────────────────────────────────────────────
-    "niri/workspaces": {
-        "format": "{icon}",
-        "active-only": false,
-        "sort-by-number": true,
-        "on-click": "activate",
-        "all-outputs": false,
-        "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6",
-            "7": "7",
-            "8": "8",
-            "9": "9",
-            "10": "10"
-        }
-    },
-    // ── Window title ──────────────────────────────────────────────────────
-    "niri/window": {
-        "icon": true,
-        "icon-size": 16,
-        "format": "",
-        "separate-outputs": true
-    },
-    // ── Clock — day/date shown in tooltip on hover ─────────────────────
-    "clock": {
-        "interval": 60,
-        "format": "{:%I:%M %p}",
-        "format-alt": "{:%A, %B %d, %Y}",
-        "tooltip": false
-    },
-    // ── Weather ───────────────────────────────────────────────────────────
-    "custom/weather": {
-        "exec": "~/.config/waybar/scripts/weather.sh",
-        "interval": 300,
-        "format": "{}",
-        "tooltip": true,
-        "return-type": "json"
-    },
-    // ── System drawer — CPU / Memory / Disk (hover to expand) ─────────────
-    "group/system": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 400,
-            "children-class": "not-system",
-            "transition-left-to-right": false
-        },
-        "modules": [
-            "custom/cpu",
-            "custom/memory",
-            "custom/disk-home"
-        ]
-    },
-    "custom/cpu": {
-        "exec": "~/.config/waybar/scripts/cpu.sh",
-        "interval": 5,
-        "format": "󰘚 {}",
-        "tooltip": false
-    },
-    "custom/memory": {
-        "exec": "~/.config/waybar/scripts/memory.sh",
-        "interval": 5,
-        "format": "󰍛 {}",
-        "tooltip": false
-    },
-    "custom/disk-home": {
-        "exec": "~/.config/waybar/scripts/disk-home.sh",
-        "interval": 30,
-        "format": "󰋊 {}",
-        "tooltip": false
-    },
-    // ── Tray drawer ───────────────────────────────────────────────────────
-    "group/systray": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 400,
-            "children-class": "not-tray",
-            "transition-left-to-right": false
-        },
-        "modules": [
-            "custom/tray-icon",
-            "tray"
-        ]
-    },
-    "custom/tray-icon": {
-        "format": "󱒔",
-        "tooltip": false,
-        "interval": "once"
-    },
-    // ── Audio ─────────────────────────────────────────────────────────────
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "{icon} {volume}% 󰂯",
-        "format-muted": "󰝟 MUTE",
-        "format-icons": {
-            "headphones": "󰋋",
-            "default": [
-                "󰕿",
-                "󰖀",
-                "󰕾"
-            ]
-        },
-        "scroll-step": 5,
-        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-        "on-click-right": "pavucontrol",
-        "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+",
-        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-",
-        "tooltip": false
-    },
-    // ── Controls drawer — Notifications / Idle / Tray / Battery / Power ───
-    "group/controls": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 400,
-            "children-class": "not-controls",
-            "transition-left-to-right": false
-        },
-        "modules": [
-            "custom/swaync",
-            "idle_inhibitor"
-        ]
-    },
-    "custom/swaync": {
-        "format": "󰂚 {}",
-        "exec": "swaync-client -c",
-        "interval": 1,
-        "on-click": "swaync-client -t -sw",
-        "on-click-right": "swaync-client -d -sw",
-        "tooltip": false
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "󰅶",
-            "deactivated": "󰛊"
-        },
-        "tooltip": true,
-        "tooltip-format-activated": "Screen will stay awake",
-        "tooltip-format-deactivated": "Screen can sleep"
-    },
-    "tray": {
-        "icon-size": 12,
-        "spacing": 8,
-        "show-passive-items": false
-    },
-    "battery": {
-        "interval": 2,
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon} {capacity}%",
-        "format-full": "{icon} {capacity}%",
-        "format-charging": "󰂄 {capacity}%",
-        "format-plugged": "󰚥 {capacity}%",
-        "format-alt": "{icon} {time}",
-        "format-icons": [
-            "󰁺",
-            "󰁼",
-            "󰁾",
-            "󰂀",
-            "󰁹"
-        ]
-    },
-    // ── Power menu ────────────────────────────────────────────────────────
-    "custom/powermenu": {
-        "format": "󰐥",
-        "tooltip": false,
-        "on-click": "wlogout"
-    }
+    ]
 }

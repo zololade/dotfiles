@@ -1,150 +1,79 @@
-@import "catppuccin-mocha" 
+/**
+ * Catppuccin Mocha Rofi Theme - Functional Mappings
+ */
+
+@import "catppuccin-mocha"
 
 * {
-  selected-active-foreground: @background;
-  lightfg: @text;
-  separatorcolor: transparent;
-  urgent-foreground: @red;
-  alternate-urgent-background: @lightbg;
-  lightbg: @mantle;
-  border-color: @surface0;
-  normal-background: @background;
-  selected-urgent-background: @red;
-  alternate-active-background: @lightbg;
-  spacing: 2;
-  alternate-normal-foreground: @foreground;
-  urgent-background: @background;
-  selected-normal-foreground: @lightbg;
-  active-foreground: @blue;
-  background: @base;
-  background-color: transparent;
-  selected-active-background: @blue;
-  active-background: @background;
-  selected-normal-background: @lightfg;
-  alternate-normal-background: @lightbg;
-  foreground: @text;
-  selected-urgent-foreground: @background;
-  normal-foreground: @foreground;
-  alternate-urgent-foreground: @red;
-  alternate-active-foreground: @blue;
+    /* Functional colors */
+    bg-color:      @base;
+    fg-color:      @text;
+    accent-color:  @blue;
+    urgent-color:  @red;
+    active-color:  @green;
+    
+    border-color:  @surface0;
+    separator:     transparent;
+    
+    background-color: transparent;
 }
+
+/* --- Element State Logic --- */
 
 element normal.normal {
-  background-color: transparent;
-  text-color: @normal-foreground;
+    background-color: transparent;
+    text-color:       @fg-color;
 }
+
 element normal.urgent {
-  background-color: @urgent-background;
-  text-color: @urgent-foreground;
+    background-color: @urgent-color;
+    text-color:       @bg-color;
 }
+
 element normal.active {
-  background-color: @active-background;
-  text-color: @active-foreground;
+    background-color: transparent;
+    text-color:       @active-color;
 }
+
 element selected.normal {
-  background-color: @selected-normal-background;
-  text-color: @selected-normal-foreground;
+    background-color: @accent-color;
+    text-color:       @bg-color;
 }
+
 element selected.urgent {
-  background-color: @selected-urgent-background;
-  text-color: @selected-urgent-foreground;
+    background-color: @urgent-color;
+    text-color:       @bg-color;
 }
+
 element selected.active {
-  background-color: @selected-active-background;
-  text-color: @selected-active-foreground;
+    background-color: @active-color;
+    text-color:       @bg-color;
 }
+
 element alternate.normal {
-  background-color: transparent;
-  text-color: @alternate-normal-foreground;
+    background-color: transparent;
+    text-color:       @fg-color;
 }
+
 element alternate.urgent {
-  background-color: @alternate-urgent-background;
-  text-color: @alternate-urgent-foreground;
+    background-color: transparent;
+    text-color:       @urgent-color;
 }
+
 element alternate.active {
-  background-color: @alternate-active-background;
-  text-color: @alternate-active-foreground;
+    background-color: transparent;
+    text-color:       @active-color;
 }
+
 element-text {
-  background-color: transparent;
-  cursor: inherit;
-  highlight: inherit;
-  text-color: inherit;
+    background-color: transparent;
+    text-color:       inherit;
+    highlight:        inherit;
+    cursor:           inherit;
 }
+
 element-icon {
-  background-color: transparent;
-  size: 1em;
-  cursor: inherit;
-  text-color: inherit;
-}
-
-window {
-  background-color: @background;
-}
-
-textbox {
-  text-color: @foreground;
-}
-listview {
-  scrollbar: false;
-  border-color: @separatorcolor;
-}
-
-sidebar {
-  border-color: @separatorcolor;
-  border: 2px dash 0px 0px;
-}
-button {
-  cursor: pointer;
-  spacing: 0;
-  text-color: @normal-foreground;
-}
-button selected {
-  background-color: @selected-normal-background;
-  text-color: @selected-normal-foreground;
-}
-num-filtered-rows {
-  expand: false;
-  text-color: Gray;
-}
-num-rows {
-  expand: false;
-  text-color: Gray;
-}
-textbox-num-sep {
-  expand: false;
-  str: "/";
-  text-color: Gray;
-}
-inputbar {
-  padding: 1px;
-  spacing: 0px;
-  text-color: @normal-foreground;
-  children:
-    [ "prompt",
-    "textbox-prompt-colon",
-    "entry",
-    "num-filtered-rows",
-    "textbox-num-sep",
-    "num-rows",
-    "case-indicator"];
-}
-case-indicator {
-  spacing: 0;
-  text-color: @normal-foreground;
-}
-entry {
-  text-color: @normal-foreground;
-  cursor: text;
-  placeholder-color: Gray;
-}
-prompt {
-  spacing: 0;
-  text-color: @normal-foreground;
-}
-textbox-prompt-colon {
-  margin: 0px 0.3em 0em 0em;
-  expand: false;
-  str: ":";
-  text-color: inherit;
+    background-color: transparent;
+    text-color:       inherit;
+    cursor:           inherit;
 }

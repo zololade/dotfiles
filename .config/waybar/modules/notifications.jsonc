@@ -1,0 +1,28 @@
+{
+    "group/controls": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 400,
+            "children-class": "not-controls",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/swaync",
+            "idle_inhibitor"
+        ]
+    },
+    "custom/swaync": {
+        "format": "󰂚 {}",
+        "exec": "swaync-client -c",
+        "interval": 1,
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰅶",
+            "deactivated": "󰛊"
+        }
+    }
+}

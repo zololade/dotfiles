@@ -10,20 +10,12 @@
 # here, since multilingual X sessions would not work properly if LANG is over-
 # ridden in every subshell.
 
-test -s ~/.alias && . ~/.alias || true
+# Source shared configuration
+[ -f "$HOME/.shared.sh" ] && . "$HOME/.shared.sh"
 
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Load NVM
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-#starship
+# Starship init (shell-specific)
 eval "$(starship init bash)"
-
-export QT_QPA_PLATFORMTHEME=qt5ct
-export QT_QPA_PLATFORMTHEME=qt6ct
-
-export QEMU_AUDIO_DRV=pa
-
-export PATH="$PATH:$HOME/Desktop"
-export PATH="/opt/auto-cpufreq/venv/bin:$PATH"
-. "$HOME/.cargo/env"

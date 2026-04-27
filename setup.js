@@ -4,7 +4,7 @@ import fs from "fs";
 import path, { dirname } from "path";
 import os from "os";
 import { fileURLToPath } from "url";
-import { spawnSync } from "child_process";
+import { SYMLINK_ITEMS } from "./links.js";
 
 // === CONFIG ===
 const HOME = os.homedir();
@@ -24,35 +24,6 @@ const LOCATION = {
   pictures: "Pictures",
   home: ".",
 };
-
-const SYMLINK_ITEMS = [
-  "btop",
-  ["hyprland", "hypr"],
-  "gammastep",
-  "niri",
-  "swayidle",
-  "swaylock",
-  "kitty",
-  "rofi",
-  "swaync",
-  "waybar",
-  "autostart",
-  "wlogout",
-  "starship.toml",
-  "xdg-desktop-portal",
-  ["coolwall.js", "coolwall.js", "local"],
-  ["scripts", "scripts", "local"],
-  ["wall", "wall", "pictures"],
-  "gtk-3.0",
-  "gtk-4.0",
-  "mimeapps.list",
-  "nvim",
-  "systemd/user",
-  [".bashrc", ".bashrc", "home"],
-  [".zshrc", ".zshrc", "home"],
-  [".uxplayrc", ".uxplayrc", "home"],
-  [".gitconfig", ".gitconfig", "home"],
-];
 
 function createSymlink(item) {
   let [source, destination, to] = Array.isArray(item)

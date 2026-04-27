@@ -1,0 +1,16 @@
+{
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}% 󰂯",
+        "format-muted": "󰝟 MUTE",
+        "format-icons": {
+            "headphones": "󰋋",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "scroll-step": 5,
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-"
+    }
+}

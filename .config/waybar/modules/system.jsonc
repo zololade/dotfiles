@@ -1,0 +1,33 @@
+{
+    "group/system": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 400,
+            "children-class": "not-system",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/cpu",
+            "custom/memory",
+            "custom/disk-home"
+        ]
+    },
+    "custom/cpu": {
+        "exec": "~/.config/waybar/scripts/cpu.sh",
+        "interval": 5,
+        "format": "󰘚 {}",
+        "tooltip": false
+    },
+    "custom/memory": {
+        "exec": "~/.config/waybar/scripts/memory.sh",
+        "interval": 5,
+        "format": "󰍛 {}",
+        "tooltip": false
+    },
+    "custom/disk-home": {
+        "exec": "~/.config/waybar/scripts/disk-home.sh",
+        "interval": 30,
+        "format": "󰋊 {}",
+        "tooltip": false
+    }
+}

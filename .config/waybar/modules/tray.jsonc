@@ -1,0 +1,22 @@
+{
+    "group/systray": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 400,
+            "children-class": "not-tray",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/tray-icon",
+            "tray"
+        ]
+    },
+    "custom/tray-icon": {
+        "format": "󱒔",
+        "interval": "once"
+    },
+    "tray": {
+        "icon-size": 12,
+        "spacing": 8
+    }
+}
