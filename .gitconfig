@@ -25,6 +25,7 @@
 	navigate = true
 	dark = true
 	side-by-side = true
+	syntax-theme = Catppuccin Mocha
 
 [merge]
 	conflictStyle = zdiff3
