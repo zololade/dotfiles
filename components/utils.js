@@ -3,7 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-const themePath = path.join(__dirname, "themes", "mocha.json");
+const themePath = path.join(__dirname, ".themes", "mocha.json");
 const theme = JSON.parse(fs.readFileSync(themePath, "utf8"));
 
 const { colors, variants = {} } = theme;
