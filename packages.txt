@@ -14,6 +14,7 @@ ripgrep
 # ── Editors & Dev Tools ─────────────────────────────────────────────
 neovim
 git
+git-delta
 ast-grep
 lazygit
 
@@ -82,6 +83,7 @@ patterns-server-kvm_tools
 
 # ── Containers ───────────────────────────────────────────────────────
 docker
+lazydocker
 docker-compose
 
 # ── Database ─────────────────────────────────────────────────────────
