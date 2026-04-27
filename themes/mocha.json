@@ -27,5 +27,41 @@
     "pink": "#f5c2e7",
     "flamingo": "#f2cdcd",
     "rosewater": "#f5e0dc"
+  },
+  "variants": {
+    "waybar": {
+      "bg": "alpha(#1e1e2e, 0.99)",
+      "fg": "alpha(#cdd6f4, 0.7)",
+      "dark-fg": "alpha(#bac2de, 0.7)",
+      "base": "alpha(#1e1e2e, 0.7)",
+      "mantle": "alpha(#181825, 0.7)",
+      "crust": "alpha(#11111b, 0.7)",
+      "text": "alpha(#cdd6f4, 0.7)",
+      "subtext1": "alpha(#bac2de, 0.7)",
+      "subtext0": "alpha(#a6adc8, 0.7)",
+      "overlay2": "alpha(#9399b2, 0.7)",
+      "overlay1": "alpha(#7f849c, 0.7)",
+      "overlay0": "alpha(#6c7086, 0.7)",
+      "surface2": "alpha(#585b70, 0.7)",
+      "surface1": "alpha(#45475a, 0.7)",
+      "surface0": "alpha(#313244, 0.7)",
+      "gray2": "alpha(#9399b2, 0.7)",
+      "rosewater": "alpha(#f5e0dc, 0.7)",
+      "flamingo": "alpha(#f2cdcd, 0.7)",
+      "pink": "alpha(#f5c2e7, 0.7)",
+      "mauve": "alpha(#cba6f7, 0.7)",
+      "red": "alpha(#f38ba8, 0.7)",
+      "maroon": "alpha(#eba0ac, 0.7)",
+      "peach": "alpha(#fab387, 0.7)",
+      "yellow": "alpha(#f9e2af, 0.7)",
+      "green": "alpha(#a6e3a1, 0.7)",
+      "teal": "alpha(#94e2d5, 0.7)",
+      "sky": "alpha(#89dceb, 0.7)",
+      "sapphire": "alpha(#74c7ec, 0.7)",
+      "blue": "alpha(#89b4fa, 0.7)",
+      "lavender": "alpha(#b4befe, 0.7)",
+      "fgFade": "alpha(#f38ba8, 0.25)",
+      "waybar-special-bg": "rgba(30, 30, 46, 0.4)"
+    }
   }
 }
