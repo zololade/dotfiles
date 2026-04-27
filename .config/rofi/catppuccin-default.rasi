@@ -11,10 +11,10 @@
     accent-color:  @blue;
     urgent-color:  @red;
     active-color:  @green;
-    
+
     border-color:  @surface0;
     separator:     transparent;
-    
+
     background-color: transparent;
 }
 
