@@ -2,21 +2,21 @@
 
 /* ── Reset ───────────────────────────────────────────────────────────────── */
 * {
-    min-height: 0;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
-    font-family: "JetBrainsMono Nerd Font";
-    font-size: 10pt;
-    font-weight: 700;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 10pt;
+  font-weight: 700;
 }
 
 /* ── Bar ─────────────────────────────────────────────────────────────────── */
 window#waybar {
-    background: @bg;
-    color: @fg;
-    border-radius: 3px;
-    border: 0.1px solid @mauve;
+  background: @bg;
+  color: @fg;
+  border-radius: 3px;
+  border: 0.1px solid @surface1;
 }
 
 /* ── Shared module base ──────────────────────────────────────────────────── */
@@ -32,149 +32,149 @@ window#waybar {
 #custom-tray-icon,
 #custom-powermenu,
 #idle_inhibitor {
-    padding: 0 5px;
-    margin: 1px 0;
+  padding: 0 5px;
+  margin: 1px 0;
 }
 
 /* ── Module colors ───────────────────────────────────────────────────────── */
 #clock {
-    color: @green;
+  color: @green;
 }
 #custom-weather {
-    color: @peach;
+  color: @peach;
 }
 #custom-cpu {
-    color: @blue;
-    font-size: 12px;
+  color: @blue;
+  font-size: 12px;
 }
 #custom-memory {
-    color: @lavender;
-    font-size: 12px;
+  color: @lavender;
+  font-size: 12px;
 }
 #custom-disk-home {
-    color: @peach;
-    font-size: 12px;
+  color: @peach;
+  font-size: 12px;
 }
 #pulseaudio {
-    color: @green;
+  color: @green;
 }
 #battery {
-    color: @peach;
+  color: @peach;
 }
 #custom-swaync {
-    color: @dark-fg;
+  color: @dark-fg;
 }
 #idle_inhibitor {
-    color: @fg;
+  color: @fg;
 }
 #custom-powermenu {
-    color: @red;
-    padding: 0 8px;
-    margin: 1px 5px 1px 2px;
+  color: @red;
+  padding: 0 8px;
+  margin: 1px 5px 1px 2px;
 }
 
 /* ── Workspaces ──────────────────────────────────────────────────────────── */
 #workspaces {
-    background: transparent;
-    color: @dark-fg;
-    padding: 0 5px;
-    margin: 1px 0;
+  background: transparent;
+  color: @dark-fg;
+  padding: 0 5px;
+  margin: 1px 0;
 }
 
 #workspaces button {
-    background: transparent;
-    color: @fgFade;
-    padding: 0 5px;
-    margin: 1px 2px;
-    border: none;
+  background: transparent;
+  color: @fgFade;
+  padding: 0 5px;
+  margin: 1px 2px;
+  border: none;
 }
 
 #workspaces button:hover {
-    color: @peach;
+  color: @peach;
 }
 
 #workspaces button.focused,
 #workspaces button.active {
-    background: transparent;
-    color: @red;
-    font-weight: bold;
+  background: transparent;
+  color: @red;
+  font-weight: bold;
 }
 
 /* ── Window title ────────────────────────────────────────────────────────── */
 #window {
-    color: @fg;
-    padding: 0 0 0 0;
-    margin: 1px 0px;
+  color: @fg;
+  padding: 0 0 0 0;
+  margin: 1px 0px;
 }
 
 #window > box > image {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 window#waybar.empty #window {
-    background: transparent;
+  background: transparent;
 }
 
 /* ── Tray ────────────────────────────────────────────────────────────────── */
 #systray {
-    color: @blue;
-    padding: 0 5px;
-    margin: 1px 0;
+  color: @blue;
+  padding: 0 5px;
+  margin: 1px 0;
 }
 
 #tray {
-    margin: 0;
-    padding: 0 5px;
+  margin: 0;
+  padding: 0 5px;
 }
 
 #custom-tray-icon {
-    padding: 0 2px;
-    margin: 1px 2px;
+  padding: 0 2px;
+  margin: 1px 2px;
 }
 
 /* ── Notification states ─────────────────────────────────────────────────── */
 #custom-swaync.notification {
-    background: @red;
-    color: @bg;
-    font-weight: bold;
+  background: @red;
+  color: @bg;
+  font-weight: bold;
 }
 
 #custom-swaync.dnd {
-    color: @gray2;
+  color: @gray2;
 }
 
 /* ── Idle inhibitor state ────────────────────────────────────────────────── */
 #idle_inhibitor.activated {
-    color: @green;
+  color: @green;
 }
 
 /* ── Tooltip ─────────────────────────────────────────────────────────────── */
 tooltip {
-    background: rgb(30, 30, 46);
-    border: 0.1px solid #cba6f7;
+  background: rgb(30, 30, 46);
+  border: 0.1px solid @surface1;
 }
 
 tooltip label {
-    color: @fg;
-    font-size: 13px;
-    font-weight: 500;
+  color: @fg;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 /* ── Context menu ────────────────────────────────────────────────────────── */
 menu {
-    background: #1e1e2e;
-    border: 0.1px solid #cba6f7;
-    border-radius: 12px;
-    padding: 8px;
+  background: #1e1e2e;
+  border: 0.1px solid @surface1;
+  border-radius: 12px;
+  padding: 8px;
 }
 
 menu item {
-    color: @fg;
-    padding: 4px 10px;
-    border-radius: 8px;
+  color: @fg;
+  padding: 4px 10px;
+  border-radius: 8px;
 }
 
 menu item:hover {
-    background: #313244;
-    color: #cba6f7;
+  background: #313244;
+  color: #cba6f7;
 }
