@@ -1,0 +1,3 @@
+# ── Kernel parameter ────────────────────────────────────────────
+
+quiet splash vt.global_cursor_default=0 loglevel=0 systemd.show_status=false rd.systemd.show_status=false udev.log_level=0 rd.udev.log_level=0 psi=1 crashkernel=72M,low crashkernel=414M,high
