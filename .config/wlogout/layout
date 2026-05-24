@@ -1,12 +1,12 @@
 {
     "label" : "lock",
-    "action" : "hyprlock",
+    "action" : "/home/ololade/.local/bin/scripts/power -l",
     "text" : "Lock",
     "keybind" : "l"
 }
 {
     "label" : "hibernate",
-    "action" : "systemctl suspend",
+    "action" : "/home/ololade/.local/bin/scripts/power -h",
     "text" : "Hibernate",
     "keybind" : "h"
 }
@@ -18,19 +18,19 @@
 }
 {
     "label" : "shutdown",
-    "action" : "systemctl poweroff --no-wall",
+    "action" : "/home/ololade/.local/bin/scripts/power -s",
     "text" : "Shutdown",
     "keybind" : "s"
 }
 {
     "label" : "suspend",
-    "action" : "systemctl suspend",
+    "action" : "/home/ololade/.local/bin/scripts/power -u",
     "text" : "Suspend",
     "keybind" : "u"
 }
 {
     "label" : "reboot",
-    "action" : "systemctl reboot --no-wall",
+    "action" : "/home/ololade/.local/bin/scripts/power -r",
     "text" : "Reboot",
     "keybind" : "r"
 }

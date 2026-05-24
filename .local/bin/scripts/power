@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+case "$1" in
+    -r|--reboot)
+        niri msg exit 2>/dev/null
+        sleep 0.3
+        systemctl reboot
+        ;;
+
+    -s|--shutdown)
+        niri msg exit 2>/dev/null
+        sleep 0.3
+        systemctl poweroff
+        ;;
+
+    -u|--suspend)
+        systemctl suspend
+        ;;
+
+    -h|--hibernate)
+        systemctl hibernate
+        ;;
+
+    -l|--lock)
+        hyprlock
+        ;;
+
+    *)
+        echo "Usage: power [-r|--reboot] [-s|--shutdown] [-u|--suspend] [-h|--hibernate] [-l|--lock]"
+        exit 1
+        ;;
+esac
