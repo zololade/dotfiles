@@ -17,6 +17,7 @@ git
 git-delta
 ast-grep
 lazygit
+jq
 
 # ── Wayland Compositor ───────────────────────────────────────────────
 hyprlock
