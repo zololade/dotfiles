@@ -3,13 +3,13 @@
 case "$1" in
     -r|--reboot)
         niri msg exit 2>/dev/null
-        sleep 0.3
+        sleep 1
         systemctl reboot
         ;;
 
     -s|--shutdown)
         niri msg exit 2>/dev/null
-        sleep 0.3
+        sleep 1
         systemctl poweroff
         ;;
 
