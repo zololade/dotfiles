@@ -58,7 +58,7 @@ window-rule {
 
 // --- Tools & Emulators ---
 window-rule {
-    match title="^FastAirPlay$"
+    match app-id="^uxplay$"
     match app-id="LucasR"
     match title="^Emulator.*$"
     match app-id="^.*[Pp]roton.*$"
