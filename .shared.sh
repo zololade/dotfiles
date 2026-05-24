@@ -34,7 +34,7 @@ alias gl='git log --oneline --graph --decorate'
 
 # System
 alias reload='source ~/.bashrc' # Default, will be overridden in zshrc
-alias update='sudo zypper ref && sudo zypper dup'
+alias update='paru -Syu'
 
 # === FUNCTIONS ===
 function mkd() {
