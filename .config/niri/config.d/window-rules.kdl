@@ -15,6 +15,7 @@ window-rule {
 // Browser: Handle the Profile Picker vs Main Browser
 window-rule {
     match app-id="google-chrome"
+    match app-id="firefox"
     exclude title="^(Google Chrome)$"
     min-width 1700
 }
