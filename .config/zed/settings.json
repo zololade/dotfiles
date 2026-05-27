@@ -147,7 +147,7 @@
   },
   "cursor_shape": "bar",
   "cursor_blink": true,
-  "buffer_font_family": "MonaspiceXe Nerd Font Mono",
+  "buffer_font_family": "MonaspiceAr Nerd Font Propo",
   "auto_indent_on_paste": true,
   "linked_edits": true,
   "use_on_type_format": true,
