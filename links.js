@@ -6,6 +6,7 @@ export const SYMLINK_ITEMS = [
   "swayidle",
   "swaylock",
   "kitty",
+  "zed",
   "rofi",
   "swaync",
   "waybar",

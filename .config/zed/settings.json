@@ -7,154 +7,158 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "project_panel": {
-    "button": true
+ "show_wrap_guides": true,
+ "project_panel": {
+  "dock": "left",
+  "button": true,
+ },
+ "active_pane_modifiers": {
+  "border_size": 0.0,
+ },
+ "use_system_window_tabs": true,
+ "tab_bar": {
+  "show_pinned_tabs_in_separate_row": false,
+  "show": true,
+ },
+ "use_system_prompts": true,
+ "use_system_path_prompts": true,
+ "hover_popover_enabled": true,
+ "autoscroll_on_clicks": false,
+ "show_completions_on_input": true,
+ "diagnostics": {
+  "lsp_pull_diagnostics": {
+   "enabled": true,
   },
-  "active_pane_modifiers": {
-    "border_size": 0.0
+  "include_warnings": true,
+  "inline": {
+   "padding": 0,
+   "enabled": true,
   },
-  "use_system_window_tabs": true,
-  "tab_bar": {
-    "show_pinned_tabs_in_separate_row": false,
-    "show": true
+  "button": true,
+ },
+ "horizontal_scroll_margin": 5.0,
+ "inline_code_actions": true,
+ "colorize_brackets": true,
+ "inlay_hints": {
+  "show_parameter_hints": true,
+  "show_type_hints": false,
+  "show_value_hints": true,
+  "show_background": false,
+  "enabled": true,
+ },
+ "completions": {
+  "words": "enabled",
+ },
+ "indent_guides": {
+  "background_coloring": "disabled",
+  "coloring": "indent_aware",
+  "active_line_width": 2,
+  "line_width": 2,
+  "enabled": true,
+ },
+ "hard_tabs": false,
+ "tab_size": 2,
+ "scrollbar": {
+  "diagnostics": "all",
+  "axes": {
+   "horizontal": true,
+   "vertical": true,
   },
-  "use_system_prompts": true,
-  "use_system_path_prompts": true,
-  "hover_popover_enabled": true,
-  "autoscroll_on_clicks": false,
-  "show_completions_on_input": true,
-  "diagnostics": {
-    "lsp_pull_diagnostics": {
-      "enabled": true
+  "search_results": true,
+  "cursors": true,
+  "show": "never",
+ },
+ "relative_line_numbers": "enabled",
+ "gutter": {
+  "line_numbers": true,
+ },
+ "show_signature_help_after_edits": false,
+ "auto_signature_help": false,
+ "sticky_scroll": {
+  "enabled": false,
+ },
+ "scroll_beyond_last_line": "off",
+ "which_key": {
+  "enabled": true,
+ },
+ "lsp": {
+  "vtsls": {
+   "settings": {
+    "typescript": {
+     "updateImportsOnFileMove": {
+      "enabled": "always",
+     },
     },
-    "include_warnings": true,
-    "inline": {
-      "padding": 0,
-      "enabled": true
+    "javascript": {
+     "updateImportsOnFileMove": {
+      "enabled": "always",
+     },
     },
-    "button": true
+   },
+   "enable_lsp_tasks": true,
   },
-  "horizontal_scroll_margin": 5.0,
-  "inline_code_actions": true,
-  "colorize_brackets": true,
-  "inlay_hints": {
-    "show_parameter_hints": true,
-    "show_type_hints": false,
-    "show_value_hints": true,
-    "show_background": false,
-    "enabled": true
-  },
-  "completions": {
-    "words": "enabled"
-  },
-  "indent_guides": {
-    "background_coloring": "indent_aware",
-    "coloring": "fixed",
-    "active_line_width": 1,
-    "line_width": 1,
-    "enabled": true
-  },
-  "hard_tabs": false,
-  "tab_size": 1,
-  "scrollbar": {
-    "diagnostics": "all",
-    "axes": {
-      "horizontal": true,
-      "vertical": true
-    },
-    "search_results": true,
-    "cursors": true,
-    "show": "never"
-  },
-  "relative_line_numbers": "enabled",
-  "gutter": {
-    "line_numbers": true
-  },
-  "show_signature_help_after_edits": false,
-  "auto_signature_help": false,
-  "sticky_scroll": {
-    "enabled": false
-  },
-  "scroll_beyond_last_line": "off",
-  "which_key": {
-    "enabled": true
-  },
-  "lsp": {
-    "vtsls": {
-      "settings": {
-        "typescript": {
-          "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
-        },
-        "javascript": {
-          "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
-        }
-      },
-      "enable_lsp_tasks": true
-    }
-  },
-  "git_panel": {
-    "tree_view": false
-  },
-  "disable_ai": true,
-  "window_decorations": "server",
-  "bottom_dock_layout": "contained",
-  "preview_tabs": {
-    "enable_preview_multibuffer_from_code_navigation": false
-  },
-  "title_bar": {
-    "show_branch_icon": true,
-    "show_menus": false
-  },
-  "tabs": {
-    "show_diagnostics": "off",
-    "file_icons": true,
-    "git_status": true
-  },
-  "prettier": {
-    "allowed": true
-  },
+ },
+ "git_panel": {
+  "dock": "left",
+  "tree_view": false,
+ },
+ "disable_ai": true,
+ "window_decorations": "server",
+ "bottom_dock_layout": "contained",
+ "preview_tabs": {
+  "enable_preview_multibuffer_from_code_navigation": false,
+ },
+ "title_bar": {
+  "show_user_picture": true,
+  "show_branch_status_icon": true,
+  "show_menus": false,
+ },
+ "tabs": {
+  "show_diagnostics": "off",
+  "file_icons": true,
+  "git_status": true,
+ },
+ "prettier": {
+  "allowed": true,
+ },
+ "toolbar": {
+  "selections_menu": true,
+  "quick_actions": false,
+  "breadcrumbs": false,
+  "code_actions": true,
+ },
+ "text_rendering_mode": "platform_default",
+ "ui_font_weight": 100.0,
+ "ui_font_family": "Comic Neue",
+ "buffer_line_height": "comfortable",
+ "buffer_font_weight": 100.0,
+ "session": {
+  "trust_all_worktrees": true,
+ },
+ "vim_mode": true,
+ "terminal": {
   "toolbar": {
-    "selections_menu": true,
-    "quick_actions": false,
-    "breadcrumbs": false,
-    "code_actions": true
+   "breadcrumbs": false,
   },
-  "text_rendering_mode": "platform_default",
-  "ui_font_weight": 200.0,
-  "ui_font_family": "JetBrainsMono Nerd Font",
-  "buffer_line_height": "standard",
-  "buffer_font_weight": 100.0,
-  "session": {
-    "trust_all_worktrees": true
-  },
-  "vim_mode": true,
-  "terminal": {
-    "toolbar": {
-      "breadcrumbs": false
-    },
-    "font_weight": 100.0,
-    "font_family": "JetBrainsMono Nerd Font",
-    "font_size": 12.0,
-    "cursor_shape": "underline"
-  },
-  "cursor_shape": "bar",
-  "cursor_blink": true,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
-  "auto_indent_on_paste": true,
-  "linked_edits": true,
-  "use_on_type_format": true,
-  "soft_wrap": "editor_width",
-  "icon_theme": "Zed (Default)",
-  "base_keymap": "VSCode",
-  "ui_font_size": 14.0,
-  "buffer_font_size": 12.0,
-  "theme": {
-    "mode": "dark",
-    "light": "One Light",
-    "dark": "Catppuccin Mocha - No Italics",
-  },
+  "font_weight": 100.0,
+  "font_family": "JetBrainsMono Nerd Font",
+  "font_size": 12.0,
+  "cursor_shape": "underline",
+ },
+ "cursor_shape": "bar",
+ "cursor_blink": true,
+ "buffer_font_family": "MonaspiceXe Nerd Font Mono",
+ "auto_indent_on_paste": true,
+ "linked_edits": true,
+ "use_on_type_format": true,
+ "soft_wrap": "editor_width",
+ "icon_theme": "Zed (Default)",
+ "base_keymap": "VSCode",
+ "ui_font_size": 15.0,
+ "buffer_font_size": 11.0,
+ "theme": {
+  "mode": "dark",
+  "light": "Gruvbox Dark Hard",
+  "dark": "One Dark",
+ },
 }
