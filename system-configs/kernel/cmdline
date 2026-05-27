@@ -1,0 +1,1 @@
+root=PARTUUID=c61a8df1-c5dd-48cc-8ad4-00e457607342 zswap.enabled=0 rootflags=subvol=@ rw rootfstype=btrfs quiet loglevel=0 vt.global_cursor_default=0 splash
