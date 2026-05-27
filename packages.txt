@@ -4,146 +4,147 @@ zsh-autosuggestions
 zsh-completions
 zsh-syntax-highlighting
 kitty
+alacritty
 tmux
 btop
+htop
 fastfetch
 fzf
 fd
-ripgrep
+tree
 
 # ── Editors & Dev Tools ─────────────────────────────────────────────
 neovim
+vim
+nano
 git
 git-delta
 ast-grep
 lazygit
 jq
+visual-studio-code-bin
 
 # ── Wayland Compositor ───────────────────────────────────────────────
-hyprlock
 niri
+hyprlock
+xwayland-satellite
 
 # ── Wayland Utilities ────────────────────────────────────────────────
 waybar
-SwayNotificationCenter
+swaync
 awww
 wlogout
-rofi-wayland
+rofi
+fuzzel
 grim
 slurp
 cliphist
-playerctl
 brightnessctl
 swayidle
 
 # ── KDE / Plasma ─────────────────────────────────────────────────────
-patterns-kde-kde
-
-# ── Display & Graphics ───────────────────────────────────────────────
-gstreamer-plugins-bad
-gstreamer-plugins-good-extra
-gstreamer-plugins-libav
-gstreamer-plugins-ugly
-gstreamer-plugins-vaapi
-ffmpeg-7
-ffmpegthumbs
-dav1d
-mozilla-openh264
-qt6-multimedia
-libQt6WebEngineCore6
-kf6-kfilemetadata
+plasma-meta
 
 # ── Audio ────────────────────────────────────────────────────────────
 pavucontrol
-pipewire-spa-plugins-0_2
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+pipewire-libcamera
+wireplumber
+gst-plugin-pipewire
+libpulse
 
 # ── Fonts ────────────────────────────────────────────────────────────
-fetchmsttfonts
-google-noto-fonts
-google-noto-serif-fonts
-nerd-fira-code-fonts
-nerdfonts-JetBrainsMono
-nerdfonts-Monaspace
-rozynski-comic-neue-fonts
-indic-fonts
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ttf-firacode-nerd
+ttf-jetbrains-mono-nerd
+otf-monaspace-nerd
+ttf-comic-neue
+ttf-indic-otf
+ttf-ms-fonts
+ttf-dejavu
+ttf-liberation
 
 # ── Networking ───────────────────────────────────────────────────────
-NetworkManager
-NetworkManager-applet
+networkmanager
+network-manager-applet
 firewalld
 chrony
+iwd
 
 # ── Bluetooth ────────────────────────────────────────────────────────
 blueman
-bluez-test
-
-# ── Virtualization ───────────────────────────────────────────────────
-virt-manager
-patterns-server-kvm_server
-patterns-server-kvm_tools
+bluez
+bluez-utils
 
 # ── Containers ───────────────────────────────────────────────────────
 docker
-lazydocker
 docker-compose
+lazydocker
 
 # ── Database ─────────────────────────────────────────────────────────
 mariadb
 
 # ── Kernel & Boot ────────────────────────────────────────────────────
-kernel-longterm
-kernel-longterm-devel
-sdbootutil
-grub2-x86_64-efi-bls
-os-prober
+linux-zen
+linux-firmware
+intel-ucode
 zram-generator
 irqbalance
 thermald
-numactl
+efibootmgr
+plymouth
 
 # ── Storage & Filesystems ────────────────────────────────────────────
 snapper
-btrfsprogs
-dosfstools
-exfatprogs
-e2fsprogs
-nvme-cli
-kdump
-kexec-tools
+btrfs-progs
+smartmontools
 
 # ── Media ────────────────────────────────────────────────────────────
 vlc
-vlc-noX
-vlc-qt
+vlc-plugins-all
 qbittorrent
 
 # ── Apps ─────────────────────────────────────────────────────────────
-code
-github-desktop
-google-chrome-stable
+github-desktop-bin
+google-chrome
 discord
-spotify-client
-gedit
+spotify-launcher
+firefox
 uxplay
-v4l-utils
+proton-vpn-gtk-app
+ark
 
 # ── Power ────────────────────────────────────────────────────────────
-auto-cpufreq
 gammastep
-gammastep-indicator
+auto-cpufreq
 
 # ── System Utilities ─────────────────────────────────────────────────
-opi #use this to install codecs
-gdk-pixbuf-loader-libheif
-libheif1
-libheif-aom
-libheif-dav1d
-libheif-ffmpeg
-libheif-jpeg
-libheif-openh264
-libheif-openjpeg
-libheif-rav1e
-libheif-svtenc
+libheif
+xdg-desktop-portal-gnome
+xdg-utils
+gvfs-afc
+usbmuxd
+rsync
+wget
+cups
+cups-pk-helper
+system-config-printer
+vulkan-intel
+intel-media-driver
+libva-intel-driver
+sof-firmware
+python-pip
+xorg-xlsclients
+paru
+paru-debug
+base
+base-devel
+sudo
 
 # ── Fun ──────────────────────────────────────────────────────────────
 stockfish
