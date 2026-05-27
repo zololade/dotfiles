@@ -49,7 +49,7 @@ window-rule {
 
 // --- Media, Chat & Social ---
 window-rule {
-    match app-id="spotify"
+    match app-id="Spotify"
     match title="^(WhatsApp Web|Snapchat)$"
     match title="^((Suwayomi - 127.0.0.1)|Suwayomi)$"
     match app-id="^(com.rtosta.zapzap)$"
