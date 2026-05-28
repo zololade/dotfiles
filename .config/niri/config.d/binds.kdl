@@ -3,7 +3,7 @@ binds {
     Mod+Return { spawn "kitty"; }
     Mod+Q { close-window; }
     Mod+O repeat=false { toggle-overview; }
-    Mod+E { spawn "dolphin"; }
+    Mod+E { spawn "thunar"; }
     Mod+D { spawn "rofi" "-show" "drun"; }
     Mod+Ctrl+F { fullscreen-window; }
     Mod+Space { toggle-window-floating; }
