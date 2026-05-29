@@ -3,7 +3,7 @@ spawn-sh-at-startup "dbus-update-activation-environment --systemd --all && sleep
 // UI and Layout
 spawn-at-startup "awww-daemon"
 spawn-at-startup "awww-daemon" "-n" "_backdrop"
-spawn-sh-at-startup "sleep 1 && awww img $HOME/Pictures/wall/human_cat.jpg && awww img -n _backdrop $HOME/Pictures/wall/cat-blurred.png"
+spawn-sh-at-startup "sleep 1 && awww img $HOME/Pictures/wall/human_cat.jpg && awww img -n _backdrop $HOME/Pictures/wall/human_cat_blurred.jpg"
 spawn-at-startup "waybar"
 
 // Specialized Scripts
