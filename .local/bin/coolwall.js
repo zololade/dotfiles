@@ -20,7 +20,7 @@ const MIN_RESOLUTION = "2560x1440";
 const COLORS = "000000";
 const MAX_WALLPAPERS = 8;
 const RETRY_COUNT = 3;
-const QUERY_LIST = ["fantasy", "art", "nature"];
+const QUERY_LIST = ["cat", "art"];
 const MAX_RESULTS = 8;
 
 const SEED = new Date().toISOString().split("T")[0];
@@ -69,9 +69,7 @@ async function fetchWallpapers() {
 
   log("Fetching wallpapers...");
   try {
-    const res = await fetch(
-      `https://wallhaven.cc/api/v1/search?${params}`,
-    );
+    const res = await fetch(`https://wallhaven.cc/api/v1/search?${params}`);
 
     if (!res.ok) {
       console.error("Fetch failed.");
@@ -89,10 +87,7 @@ async function fetchWallpapers() {
 // === DOWNLOAD ===
 async function downloadWallpaper(url) {
   const ext = url.split(".").pop();
-  const filename = path.join(
-    WALLPAPER_DIR,
-    `wallpaper_${Date.now()}.${ext}`,
-  );
+  const filename = path.join(WALLPAPER_DIR, `wallpaper_${Date.now()}.${ext}`);
 
   log(`Downloading ${url}`);
   try {
