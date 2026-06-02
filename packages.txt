@@ -73,7 +73,6 @@ networkmanager
 network-manager-applet
 firewalld
 chrony
-iwd
 
 # ── Bluetooth ────────────────────────────────────────────────────────
 blueman
