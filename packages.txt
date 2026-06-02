@@ -4,7 +4,6 @@ zsh-autosuggestions
 zsh-completions
 zsh-syntax-highlighting
 kitty
-alacritty
 tmux
 btop
 htop
@@ -12,6 +11,7 @@ fastfetch
 fzf
 fd
 tree
+yazi
 
 # ── Editors & Dev Tools ─────────────────────────────────────────────
 neovim
@@ -35,15 +35,19 @@ swaync
 awww
 wlogout
 rofi
-fuzzel
 grim
 slurp
 cliphist
 brightnessctl
 swayidle
 
-# ── KDE / Plasma ─────────────────────────────────────────────────────
-plasma-meta
+# ── Theming & Lock ─────────────────────────────────────────────────────
+systemsettings
+kde-gtk-config
+breeze-gtk
+polkit-gnome
+sddm
+breeze
 
 # ── Audio ────────────────────────────────────────────────────────────
 pavucontrol
@@ -73,7 +77,6 @@ ttf-liberation
 networkmanager
 network-manager-applet
 firewalld
-chrony
 iwd
 
 # ── Bluetooth ────────────────────────────────────────────────────────
@@ -91,6 +94,7 @@ mariadb
 
 # ── Kernel & Boot ────────────────────────────────────────────────────
 linux-zen
+linux-zen-headers
 linux-firmware
 intel-ucode
 zram-generator
@@ -113,11 +117,16 @@ qbittorrent
 github-desktop-bin
 google-chrome
 discord
-spotify-launcher
+spotify
 firefox
 uxplay
 proton-vpn-gtk-app
 ark
+thunar
+waydroid
+fwupd
+android-tools
+wsu
 
 # ── Power ────────────────────────────────────────────────────────────
 gammastep
@@ -140,6 +149,7 @@ libva-intel-driver
 sof-firmware
 python-pip
 xorg-xlsclients
+v4l2loopback-dkms
 paru
 paru-debug
 base

@@ -16,6 +16,7 @@ window-rule {
 window-rule {
     match app-id="google-chrome"
     match app-id="firefox"
+    match app-id="Waydroid"
     exclude title="^(Google Chrome)$"
     min-width 1700
 }
@@ -49,7 +50,7 @@ window-rule {
 
 // --- Media, Chat & Social ---
 window-rule {
-    match app-id="spotify"
+    match app-id="Spotify"
     match title="^(WhatsApp Web|Snapchat)$"
     match title="^((Suwayomi - 127.0.0.1)|Suwayomi)$"
     match app-id="^(com.rtosta.zapzap)$"
