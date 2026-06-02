@@ -41,12 +41,13 @@ cliphist
 brightnessctl
 swayidle
 
-# ── KDE / Plasma ─────────────────────────────────────────────────────
+# ── Theming & Lock ─────────────────────────────────────────────────────
 systemsettings
 kde-gtk-config
 breeze-gtk
 polkit-gnome
 sddm
+breeze
 
 # ── Audio ────────────────────────────────────────────────────────────
 pavucontrol
