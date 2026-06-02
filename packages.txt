@@ -35,7 +35,6 @@ swaync
 awww
 wlogout
 rofi
-fuzzel
 grim
 slurp
 cliphist
