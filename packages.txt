@@ -46,8 +46,8 @@ systemsettings
 kde-gtk-config
 breeze-gtk
 polkit-gnome
-sddm
 breeze
+plasma-login-manager
 
 # ── Audio ────────────────────────────────────────────────────────────
 pavucontrol
