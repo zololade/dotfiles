@@ -58,6 +58,7 @@ pipewire-pulse
 pipewire-libcamera
 wireplumber
 gst-plugin-pipewire
+gst-plugins-ugly
 libpulse
 
 # ── Fonts ────────────────────────────────────────────────────────────
