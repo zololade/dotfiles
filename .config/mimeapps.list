@@ -12,6 +12,7 @@ text/x-csrc=code.desktop;
 x-scheme-handler/http=google-chrome.desktop;com.google.Chrome.desktop;firefox.desktop;
 x-scheme-handler/https=google-chrome.desktop;com.google.Chrome.desktop;firefox.desktop;
 application/zip=org.kde.ark.desktop;
+text/x-qml=code.desktop;
 
 [Default Applications]
 application/pdf=org.kde.okular.desktop;
