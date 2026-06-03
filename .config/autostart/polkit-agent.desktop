@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Polkit KDE Agent
-Exec=/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+Name=Polkit Hypr Agent
+Exec=/usr/lib/hyprpolkitagent/hyprpolkitagent
 Type=Application
 
 # Crucial: Don't start this in KDE/GNOME (they have their own)
