@@ -10,8 +10,8 @@
   "base_keymap": "VSCode",
 
   "autoscroll_on_clicks": false,
-  "auto_signature_help": false,
-  "show_signature_help_after_edits": false,
+  "auto_signature_help": true,
+  "show_signature_help_after_edits": true,
   "hover_popover_enabled": true,
   "inline_code_actions": true,
   "linked_edits": true,
