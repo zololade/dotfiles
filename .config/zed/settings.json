@@ -1,165 +1,235 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
+// Zed Settings — Optimised for TypeScript + Oxc Development
+// Documentation: https://zed.dev/docs/configuring-zed
+
 {
-  "cli_default_open_behavior": "existing_window",
-  "show_wrap_guides": true,
-  "project_panel": {
-    "dock": "left",
-    "button": true,
-  },
-  "active_pane_modifiers": {
-    "border_size": 0.0,
-  },
-  "use_system_window_tabs": true,
-  "tab_bar": {
-    "show_pinned_tabs_in_separate_row": false,
-    "show": true,
-  },
-  "use_system_prompts": true,
-  "use_system_path_prompts": true,
-  "hover_popover_enabled": true,
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 1. EDITOR BEHAVIOR
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+
   "autoscroll_on_clicks": false,
-  "show_completions_on_input": true,
-  "diagnostics": {
-    "lsp_pull_diagnostics": {
-      "enabled": true,
-    },
-    "include_warnings": true,
-    "inline": {
-      "padding": 0,
-      "enabled": true,
-    },
-    "button": true,
-  },
-  "horizontal_scroll_margin": 5.0,
+  "auto_signature_help": false,
+  "show_signature_help_after_edits": false,
+  "hover_popover_enabled": true,
   "inline_code_actions": true,
+  "linked_edits": true,
+  "use_on_type_format": true,
+  "auto_indent_on_paste": true,
+
+  "show_wrap_guides": true,
+  "soft_wrap": "editor_width",
+  "scroll_beyond_last_line": "off",
+  "horizontal_scroll_margin": 5.0,
+  "sticky_scroll": {
+    "enabled": false
+  },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 2. TEXT RENDERING & TYPOGRAPHY
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  "text_rendering_mode": "platform_default",
+  "buffer_line_height": "comfortable",
+  "buffer_font_family": "MonaspiceAr Nerd Font Propo",
+  "buffer_font_size": 11.0,
+  "buffer_font_weight": 400, // Normal (was 100 — too thin)
+
+  "ui_font_family": "Comic Neue",
+  "ui_font_size": 15.0,
+  "ui_font_weight": 500, // Medium
+
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font",
+    "font_size": 12.0,
+    "font_weight": 400, // Normal (was 100)
+    "cursor_shape": "underline",
+    "toolbar": {
+      "breadcrumbs": false
+    }
+  },
+
   "colorize_brackets": true,
+  "cursor_shape": "bar",
+  "cursor_blink": true,
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 3. INDENTATION & WHITESPACE
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  "hard_tabs": false,
+  "tab_size": 2,
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware",
+    "background_coloring": "disabled",
+    "line_width": 2,
+    "active_line_width": 2
+  },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 4. GUTTER, SCROLLBAR & LINE NUMBERS
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  "gutter": {
+    "line_numbers": true
+  },
+  "relative_line_numbers": "wrapped",
+
+  "scrollbar": {
+    "show": "never",
+    "diagnostics": "all",
+    "search_results": true,
+    "cursors": true,
+    "axes": {
+      "horizontal": true,
+      "vertical": true
+    }
+  },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 5. DIAGNOSTICS & INLAY HINTS
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  "diagnostics": {
+    "include_warnings": true,
+    "lsp_pull_diagnostics": {
+      "enabled": true
+    },
+    "inline": {
+      "enabled": true,
+      "padding": 0
+    },
+    "button": true
+  },
+
   "inlay_hints": {
+    "enabled": true,
     "show_parameter_hints": true,
     "show_type_hints": false,
     "show_value_hints": true,
-    "show_background": false,
-    "enabled": true,
+    "show_background": false
   },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 6. COMPLETIONS & AUTO-IMPORT
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
   "completions": {
-    "words": "enabled",
+    "words": "enabled"
   },
-  "indent_guides": {
-    "background_coloring": "disabled",
-    "coloring": "indent_aware",
-    "active_line_width": 2,
-    "line_width": 2,
-    "enabled": true,
+  "show_completions_on_input": true,
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 7. FORMATTING & LINTING (OXC)
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  "format_on_save": "on",
+  "prettier": {
+    "allowed": false // Prevent conflicts with oxfmt
   },
-  "hard_tabs": false,
-  "tab_size": 2,
-  "scrollbar": {
-    "diagnostics": "all",
-    "axes": {
-      "horizontal": true,
-      "vertical": true,
-    },
-    "search_results": true,
-    "cursors": true,
-    "show": "never",
-  },
-  "relative_line_numbers": "enabled",
-  "gutter": {
-    "line_numbers": true,
-  },
-  "show_signature_help_after_edits": false,
-  "auto_signature_help": false,
-  "sticky_scroll": {
-    "enabled": false,
-  },
-  "scroll_beyond_last_line": "off",
-  "which_key": {
-    "enabled": true,
-  },
+  "formatter": [{ "language_server": { "name": "oxfmt" } }, { "code_action": "source.fixAll.oxc" }],
+
   "lsp": {
     "vtsls": {
+      "enable_lsp_tasks": true,
       "settings": {
         "typescript": {
-          "updateImportsOnFileMove": {
-            "enabled": "always",
-          },
+          "updateImportsOnFileMove": { "enabled": "always" }
         },
         "javascript": {
-          "updateImportsOnFileMove": {
-            "enabled": "always",
-          },
-        },
-      },
-      "enable_lsp_tasks": true,
+          "updateImportsOnFileMove": { "enabled": "always" }
+        }
+      }
     },
+    "oxlint": {
+      "initialization_options": {
+        "settings": {
+          "typeAware": true // Enables type-aware linting (requires oxlint-tsgolint)
+        }
+      }
+    }
+  },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 8. UI PANELS & LAYOUT
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  "project_panel": {
+    "dock": "left",
+    "button": true
   },
   "git_panel": {
     "dock": "left",
-    "tree_view": false,
+    "tree_view": false
   },
-  "disable_ai": true,
-  "window_decorations": "server",
   "bottom_dock_layout": "contained",
-  "preview_tabs": {
-    "enable_preview_multibuffer_from_code_navigation": false,
-  },
-  "title_bar": {
-    "show_user_picture": true,
-    "show_branch_status_icon": true,
-    "show_menus": false,
+
+  "tab_bar": {
+    "show": true,
+    "show_pinned_tabs_in_separate_row": false
   },
   "tabs": {
     "show_diagnostics": "off",
     "file_icons": true,
-    "git_status": true,
+    "git_status": true
   },
-  "prettier": {
-    "allowed": true,
+  "preview_tabs": {
+    "enable_preview_multibuffer_from_code_navigation": false
   },
+
+  "active_pane_modifiers": {
+    "border_size": 0.0
+  },
+
   "toolbar": {
     "selections_menu": true,
     "quick_actions": false,
     "breadcrumbs": false,
-    "code_actions": true,
+    "code_actions": true
   },
-  "text_rendering_mode": "platform_default",
-  "ui_font_weight": 500.0,
-  "ui_font_family": "Comic Neue",
-  "buffer_line_height": "comfortable",
-  "buffer_font_weight": 100.0,
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 9. WINDOW & TITLE BAR
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  "use_system_window_tabs": true,
+  "use_system_prompts": true,
+  "use_system_path_prompts": true,
+  "window_decorations": "server",
+  "title_bar": {
+    "show_user_picture": true,
+    "show_branch_status_icon": true,
+    "show_menus": false
+  },
+  "cli_default_open_behavior": "existing_window",
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 10. SESSION & THEME
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
   "session": {
-    "trust_all_worktrees": true,
+    "trust_all_worktrees": true
   },
-  "vim_mode": true,
-  "terminal": {
-    "toolbar": {
-      "breadcrumbs": false,
-    },
-    "font_weight": 100.0,
-    "font_family": "JetBrainsMono Nerd Font",
-    "font_size": 12.0,
-    "cursor_shape": "underline",
-  },
-  "cursor_shape": "bar",
-  "cursor_blink": true,
-  "buffer_font_family": "MonaspiceAr Nerd Font Propo",
-  "auto_indent_on_paste": true,
-  "linked_edits": true,
-  "use_on_type_format": true,
-  "soft_wrap": "editor_width",
-  "icon_theme": "Zed (Default)",
-  "base_keymap": "VSCode",
-  "ui_font_size": 15.0,
-  "buffer_font_size": 11.0,
   "theme": {
     "mode": "dark",
     "light": "Gruvbox Dark Hard",
-    "dark": "One Dark",
+    "dark": "One Dark"
   },
+  "icon_theme": "Zed (Default)",
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 11. SHORTCUTS & TOOLS
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  "which_key": {
+    "enabled": true
+  },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 12. AI & PRIVACY
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  "disable_ai": true // Disables Zed's built-in AI assistant
 }
