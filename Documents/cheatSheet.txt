@@ -1,0 +1,17 @@
+find . -type f \
+  ! -path '*/node_modules/*' \
+  ! -path '*/.git/*' \
+  ! -path '*/.next/*' \
+  ! -path '*/dist/*' \
+  ! -path '*/build/*' \
+  ! -name '*.png' ! -name '*.jpg' ! -name '*.jpeg' \
+  ! -name '*.gif' ! -name '*.svg' ! -name '*.ico' \
+  ! -name '*.woff' ! -name '*.woff2' ! -name '*.ttf' \
+  ! -name '*.lock' ! -name 'package-lock.json' \
+  | sort | while read -r file; do
+    echo "========================================"
+    echo "FILE: $file"
+    echo "========================================"
+    cat "$file"
+    echo -e "\n"
+  done > project_dump.txt

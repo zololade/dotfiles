@@ -5,7 +5,7 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 export QT_QPA_PLATFORMTHEME=qt6ct
 export QEMU_AUDIO_DRV=pa
-export NVM_DIR="$HOME/.config/nvm"
+export NVM_DIR="$HOME/.nvm"
 
 # === PATH ===
 # Standard paths

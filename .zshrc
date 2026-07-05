@@ -22,3 +22,10 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt HIST_IGNORE_DUPS
 setopt SHARE_HISTORY
+
+# bun completions
+[ -s "/home/ololade/.bun/_bun" ] && source "/home/ololade/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

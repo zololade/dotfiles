@@ -45,9 +45,9 @@ swayidle
 systemsettings
 kde-gtk-config
 breeze-gtk
-polkit-gnome
-sddm
+hyprpolkitagent
 breeze
+plasma-login-manager
 
 # ── Audio ────────────────────────────────────────────────────────────
 pavucontrol
@@ -58,6 +58,7 @@ pipewire-pulse
 pipewire-libcamera
 wireplumber
 gst-plugin-pipewire
+gst-plugins-ugly
 libpulse
 
 # ── Fonts ────────────────────────────────────────────────────────────

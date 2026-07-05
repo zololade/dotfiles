@@ -2,15 +2,15 @@
 
 case "$1" in
     -r|--reboot)
-        systemctl reboot
+        reboot --no-wall
         ;;
 
     -s|--shutdown)
-        systemctl poweroff
+        poweroff --no-wall
         ;;
 
     -u|--suspend)
-        systemctl suspend
+        suspend
         ;;
 
     -h|--hibernate)
