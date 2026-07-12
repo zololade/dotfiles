@@ -5,7 +5,7 @@ find . -type f \
   ! -path '*/dist/*' \
   ! -path '*/build/*' \
   ! -name '*.png' ! -name '*.jpg' ! -name '*.jpeg' \
-  ! -name '*.gif' ! -name '*.svg' ! -name '*.ico' \
+  ! -name '*.gif' ! -name '*.svg' ! -name '*.ico' ! -name '*.webp' \
   ! -name '*.woff' ! -name '*.woff2' ! -name '*.ttf' \
   ! -name '*.lock' ! -name 'package-lock.json' \
   | sort | while read -r file; do
