@@ -115,13 +115,6 @@
           "updateImportsOnFileMove": { "enabled": "always" }
         }
       }
-    },
-    "oxlint": {
-      "initialization_options": {
-        "settings": {
-          "typeAware": true // Enables type-aware linting (requires oxlint-tsgolint)
-        }
-      }
     }
   },
 
@@ -188,5 +181,11 @@
   // 12. AI & PRIVACY
   // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  "disable_ai": true // Disables Zed's built-in AI assistant
+  "disable_ai": true, // Disables Zed's built-in AI assistant
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 13. LANGUAGE SERVERS COVERRIDES
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  "language_servers": ["!typescript-language-server", "..."]
 }
