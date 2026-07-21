@@ -137,7 +137,8 @@ auto-cpufreq
 libheif
 xdg-desktop-portal-gnome
 xdg-utils
-gvfs-afc
+gvfs-afc 
+gvfs-mtp
 usbmuxd
 rsync
 wget
