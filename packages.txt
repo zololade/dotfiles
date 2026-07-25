@@ -28,6 +28,7 @@ visual-studio-code-bin
 niri
 hyprlock
 xwayland-satellite
+plasma-meta
 
 # ── Wayland Utilities ────────────────────────────────────────────────
 waybar
@@ -120,6 +121,7 @@ google-chrome
 discord
 spotify
 firefox
+adspower-global-bin
 uxplay
 proton-vpn-gtk-app
 ark
@@ -128,6 +130,9 @@ waydroid
 fwupd
 android-tools
 wsu
+gedit
+gimp
+inkscape
 
 # ── Power ────────────────────────────────────────────────────────────
 gammastep
