@@ -6,7 +6,7 @@
   // 1. EDITOR BEHAVIOR
   // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  
+
   "vim_mode": true,
 
   "soft_wrap": "editor_width",

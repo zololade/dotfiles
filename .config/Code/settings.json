@@ -1,0 +1,131 @@
+{
+  // ============================================================
+  // APPEARANCE — theme, layout, chrome
+  // ============================================================
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.activityBar.location": "top",
+  "workbench.activityBar.compact": true,
+  "workbench.activityBar.autoHide": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "window.menuBarVisibility": "toggle",
+  "breadcrumbs.filePath": "last",
+  "explorer.confirmDelete": false,
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+  },
+
+  // ============================================================
+  // TYPOGRAPHY — editor, terminal, chat all matched
+  // ============================================================
+  "editor.fontFamily": "'MonaspiceAr Nerd Font Propo'",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "300",
+  "editor.fontSize": 12,
+  "editor.inlayHints.fontFamily": "'JetBrainsMono Nerd Font'",
+  "editor.codeLensFontFamily": "'JetBrainsMono Nerd Font'",
+  "editor.cursorStyle": "underline",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontWeight": "1",
+  "terminal.integrated.fontWeightBold": "1",
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorStyleInactive": "underline",
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.suggest.quickSuggestions": {
+    "commands": "on",
+    "arguments": "on",
+    "unknown": "on",
+  },
+
+  "chat.fontSize": 12.5,
+  "chat.editor.fontSize": 12.5,
+  "scm.inputFontSize": 12.5,
+  "debug.console.fontSize": 12,
+
+  // ============================================================
+  // EDITOR BEHAVIOR
+  // ============================================================
+  "editor.linkedEditing": true,
+  "editor.wordWrap": "on",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+  },
+
+  // Added from Zed — all native, no extension needed
+  "editor.tabSize": 2,
+  "editor.scrollBeyondLastLine": false,
+  "editor.stickyScroll.enabled": false,
+  "breadcrumbs.enabled": false,
+
+  // Inlay hint *types*
+  "js/ts.inlayHints.parameterNames.enabled": "all",
+
+  // ============================================================
+  // FORMATTING & LINTING
+  // Prettier + ESLint = the global default, guaranteed to work
+  // everywhere. Oxc is enabled for its speed, but is only
+  // promoted to *default formatter* inside project-level
+  // .vscode/settings.json where .oxlintrc.json / .oxfmtrc.json
+  // actually exist — see the per-project snippet below.
+  // ============================================================
+  "editor.formatOnSave": true,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[markdown]": { "editor.defaultFormatter": "DavidAnson.vscode-markdownlint" },
+
+  //prettier config
+  "prettier.printWidth": 100,
+  "prettier.semi": true,
+  "prettier.singleQuote": false,
+  "prettier.trailingComma": "all",
+
+  //oxc
+  "oxc.enable": true,
+  "oxc.enable.oxlint": true,
+
+  // Lint-fixers are safe to stack: whichever tool has no config
+  // in a given project simply no-ops, the other one still fires.
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "always",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit",
+  },
+
+  // ============================================================
+  // GIT & DIFF
+  // ============================================================
+  "git.autofetch": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // ============================================================
+  // DEBUG & SECURITY
+  // ============================================================
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // ============================================================
+  // AI / COPILOT / CHAT
+  // ============================================================
+  "chat.viewSessions.orientation": "stacked",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+  },
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    ".claude/rules": true,
+    "~/.copilot/instructions": true,
+    "~/.claude/rules": true,
+  },
+}
